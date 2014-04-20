@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 20, 2014 at 10:43 AM
+-- Generation Time: Apr 20, 2014 at 06:49 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `category` (
   `parent` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `position` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=160 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=162 ;
 
 --
 -- Dumping data for table `category`
@@ -86,7 +86,9 @@ INSERT INTO `category` (`id`, `categoryid`, `categoryname`, `parent`, `position`
 (148, 'credit', 'Vay nợ', 'tkthu', 14),
 (143, 'tiencom', 'Chi phí trong gia đình', 'chiphi', 13),
 (146, 'hosttingdomain', 'Hosting domain', 'tkthu', 13),
-(156, 'thanhtoanncc', 'Trả nợ nhà cung cấp', 'chiphi', 16);
+(156, 'thanhtoanncc', 'Trả nợ nhà cung cấp', 'chiphi', 16),
+(160, 'trangthaitour', 'Trạng thai tour', 'category', 9),
+(161, 'tournoibat', 'Tour nổi bật', 'trangthaitour', 1);
 
 -- --------------------------------------------------------
 
@@ -399,14 +401,17 @@ CREATE TABLE IF NOT EXISTS `file` (
   `deleteddate` datetime NOT NULL,
   `deletedby` varchar(50) NOT NULL,
   PRIMARY KEY (`fileid`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=2 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `file`
 --
 
 INSERT INTO `file` (`fileid`, `filetypeid`, `filename`, `folderid`, `filepath`, `fileparent`, `width`, `height`, `filesize`, `extension`, `tagkeyword`, `activeby`, `activedate`, `updateddate`, `updatedby`, `deleteddate`, `deletedby`) VALUES
-(1, 'any', 'banner.png', 1, 'upload/banner.png', 0, 0, 0, '654.2216796875', 'png', '', 'admin', '2014-04-20 14:30:54', '2014-04-20 14:30:54', 'admin', '0000-00-00 00:00:00', '');
+(1, 'any', 'banner.png', 1, 'upload/banner.png', 0, 0, 0, '654.2216796875', 'png', '', 'admin', '2014-04-20 14:30:54', '2014-04-20 14:30:54', 'admin', '0000-00-00 00:00:00', ''),
+(2, 'any', 'layout-option2_09.jpg', 0, 'upload/layout-option2_09.jpg', 0, 0, 0, '18.4453125', 'jpg', '', 'admin', '2014-04-21 00:50:48', '2014-04-21 00:50:48', 'admin', '0000-00-00 00:00:00', ''),
+(3, 'any', 'layout-option2_08.jpg', 0, 'upload/layout-option2_08.jpg', 0, 0, 0, '415.021484375', 'jpg', '', 'admin', '2014-04-21 00:50:49', '2014-04-21 00:50:49', 'admin', '0000-00-00 00:00:00', ''),
+(4, 'any', 'bg-header.png', 0, 'upload/bg-header.png', 0, 0, 0, '107.439453125', 'png', '', 'admin', '2014-04-21 00:50:50', '2014-04-21 00:50:50', 'admin', '0000-00-00 00:00:00', '');
 
 -- --------------------------------------------------------
 
@@ -531,7 +536,7 @@ CREATE TABLE IF NOT EXISTS `media` (
   FULLTEXT KEY `medianame` (`title`),
   FULLTEXT KEY `description` (`description`),
   FULLTEXT KEY `summary` (`summary`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `media`
@@ -540,7 +545,8 @@ CREATE TABLE IF NOT EXISTS `media` (
 INSERT INTO `media` (`id`, `mediaid`, `barcode`, `ref`, `code`, `sizes`, `unit`, `color`, `material`, `brand`, `mediaparent`, `mediatype`, `refersitemap`, `userid`, `title`, `summary`, `description`, `alias`, `keyword`, `metadescription`, `author`, `source`, `saleprice`, `price`, `noteprice`, `discountpercent`, `pricepromotion`, `imageid`, `imagepath`, `fileid`, `filepath`, `groupkeys`, `viewcount`, `position`, `status`, `temp`, `statusdate`, `statusby`, `updateddate`, `noted`) VALUES
 (1, 'defaultho-tro-truc-tuyen', '', '', '', '', '', '', '', '', '', 'module/information', '', 'admin', 'Hỗ trợ trực tuyến', '', '&lt;p&gt;\r\n	&lt;strong&gt;Ph&amp;ograve;ng kinh doanh&lt;/strong&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;color:#f00;&quot;&gt;&lt;strong&gt;1. 0916.472.445 Mr Vũ&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;a href=&quot;ymsgr:sendIM?laptophoangvu&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://opi.yahoo.com/online?u=laptophoangvu&amp;amp;m=g&amp;amp;t=2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;strong&gt;Ph&amp;ograve;ng kỹ thuật&lt;/strong&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;span style=&quot;color:#f00;&quot;&gt;&lt;strong&gt;0916.472.445 Mr Vũ (24/24)&lt;br /&gt;\r\n	&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;\r\n&lt;p&gt;\r\n	&lt;a href=&quot;ymsgr:sendIM?laptophoangvu&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://opi.yahoo.com/online?u=laptophoangvu&amp;amp;m=g&amp;amp;t=2&quot; /&gt;&lt;/a&gt;&lt;/p&gt;', '', '', '', '', '', '', 0, '', 0, 0, 0, '', 0, '', '', 0, 0, 'active', '', '2014-04-20 17:40:21', '', '2014-04-20 17:41:08', ''),
 (2, '2014041', '', '', '', '', '', '', '', '', '', 'module/link', '[bannerhome]', '', '', '', '', '', '', '', '', '', '', 0, '', 0, 0, 1, 'upload/banner.png', 0, '', '', 0, 0, 'active', '', '2014-04-20 17:42:25', '', '2014-04-20 17:42:31', ''),
-(3, '2014042', '', '', '', '', '', '', '', '', '', 'module/link', '[bannerhome]', '', '', '', '', '', '', '', '', '', '', 0, '', 0, 0, 1, 'upload/banner.png', 0, '', '', 0, 0, 'active', '', '2014-04-20 17:42:34', '', '2014-04-20 17:42:42', '');
+(3, '2014042', '', '', '', '', '', '', '', '', '', 'module/link', '[bannerhome]', '', '', '', '', '', '', '', '', '', '', 0, '', 0, 0, 1, 'upload/banner.png', 0, '', '', 0, 0, 'active', '', '2014-04-20 17:42:34', '', '2014-04-20 17:42:42', ''),
+(4, '2014043', '', '', '', '', '', '', '', '', '', 'module/banner', '[khach-hang-than-thiet]', 'admin', 'Viet Nam Airline', '&lt;p&gt;\r\n	dfv sdf&lt;/p&gt;', '', 'viet-nam-airline', '', '', '', '', '', 0, '', 0, 0, 1, 'upload/banner.png', 0, '', '', 0, 0, 'active', '', '2014-04-20 19:19:08', 'admin', '2014-04-20 19:19:08', '');
 
 -- --------------------------------------------------------
 
@@ -554,7 +560,7 @@ CREATE TABLE IF NOT EXISTS `media_information` (
   `fieldname` varchar(50) NOT NULL,
   `fieldvalue` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=20 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
 
 --
 -- Dumping data for table `media_information`
@@ -579,7 +585,8 @@ INSERT INTO `media_information` (`id`, `mediaid`, `fieldname`, `fieldvalue`) VAL
 (16, 'setting', 'qcbanner4', ''),
 (17, '2014041', 'Link', ''),
 (18, 'defaultho-tro-truc-tuyen', 'attachment', ''),
-(19, '2014042', 'Link', '');
+(19, '2014042', 'Link', ''),
+(20, '', 'attachment', '');
 
 -- --------------------------------------------------------
 
@@ -681,7 +688,7 @@ CREATE TABLE IF NOT EXISTS `module` (
   `moduleparent` bigint(50) DEFAULT NULL,
   `permission` text,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=176 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=177 ;
 
 --
 -- Dumping data for table `module`
@@ -752,7 +759,8 @@ INSERT INTO `module` (`id`, `moduleid`, `modulename`, `moduleparent`, `permissio
 (172, 'core/content', 'Quản lý website', 164, NULL),
 (173, 'thongke/congno', 'Tổng kết công nợ', 150, NULL),
 (174, 'addon/order', 'Đơn đặt hàng', 1, NULL),
-(175, 'addon/nhantin', 'Gửi tin quảng cáo', 164, NULL);
+(175, 'addon/nhantin', 'Gửi tin quảng cáo', 164, NULL),
+(176, 'ste/tour', 'Quản lý tour', 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -1211,7 +1219,7 @@ CREATE TABLE IF NOT EXISTS `sitemap` (
   `status` varchar(30) NOT NULL,
   `forward` text NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=15 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 AUTO_INCREMENT=16 ;
 
 --
 -- Dumping data for table `sitemap`
@@ -1224,14 +1232,42 @@ INSERT INTO `sitemap` (`id`, `sitemapid`, `siteid`, `sitemapparent`, `sitemapnam
 (4, 'bang-tin', 'default', 'menu-chinh', 'Bảng tin', '', 3, 'module/news', 0, '', 'Active', ''),
 (5, 'tuyen-dung', 'default', 'menu-chinh', 'Tuyển dụng', '', 4, 'module/information', 0, '', 'Active', ''),
 (6, 'lien-he', 'default', 'menu-chinh', 'Liên hệ', '', 5, 'module/contact', 0, '', 'Active', ''),
-(7, 'bannerhome', 'default', '', 'Banner home', '', 2, 'module/link', 0, '', 'Active', ''),
+(7, 'bannerhome', 'default', '', 'Banner home', '', 2, 'module/link', 0, '', 'Addon', ''),
 (8, 'danh-muc', 'default', '', 'Danh mục', '', 3, 'group', 0, '', 'Active', ''),
 (9, 'tour-nuoc-ngoai', 'default', 'danh-muc', 'Tour nước ngoài', '', 1, 'module/information', 0, '', 'Active', ''),
 (10, 'tour-trong-nuoc', 'default', 'danh-muc', 'Tour trong nước', '', 2, 'module/information', 0, '', 'Active', ''),
 (11, 'honeymoon-tour', 'default', 'danh-muc', 'Honeymoon tour', '', 3, 'module/information', 0, '', 'Active', ''),
 (12, 'khach-san', 'default', 'danh-muc', 'Khách sạn', '', 4, 'module/information', 0, '', 'Active', ''),
 (13, 've-may-bay', 'default', 'danh-muc', 'Vé máy bay', '', 5, 'module/information', 0, '', 'Active', ''),
-(14, 'ho-tro-truc-tuyen', 'default', '', 'Hỗ trợ trực tuyến', '', 4, 'module/information', 0, '', 'Addon', '');
+(14, 'ho-tro-truc-tuyen', 'default', '', 'Hỗ trợ trực tuyến', '', 4, 'module/information', 0, '', 'Addon', ''),
+(15, 'khach-hang-than-thiet', 'default', '', 'Khách hàng thân thiết', '', 5, 'module/banner', 0, '', 'Active', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `ste_tour`
+--
+
+CREATE TABLE IF NOT EXISTS `ste_tour` (
+  `id` bigint(20) NOT NULL AUTO_INCREMENT,
+  `tentour` text NOT NULL,
+  `thoigian` text NOT NULL,
+  `giatour` double NOT NULL,
+  `chuongtrinh` text NOT NULL,
+  `chitiet` text NOT NULL,
+  `thongtin` text NOT NULL,
+  `trangthai` text NOT NULL,
+  `khuyenmai` double NOT NULL,
+  `images` text NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `ste_tour`
+--
+
+INSERT INTO `ste_tour` (`id`, `tentour`, `thoigian`, `giatour`, `chuongtrinh`, `chitiet`, `thongtin`, `trangthai`, `khuyenmai`, `images`) VALUES
+(1, 'dhrgsd', '45w5', 4534354, '&lt;p&gt;\r\n	ertb erttwe&lt;/p&gt;', '&lt;p&gt;\r\n	ergt ertgter&lt;/p&gt;', '&lt;p&gt;\r\n	drg ergwef&lt;/p&gt;', 'noibat', 30, '[3][4][2]');
 
 -- --------------------------------------------------------
 
