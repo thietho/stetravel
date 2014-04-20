@@ -388,7 +388,7 @@ input.ben-button:active {border-style: inset;}
 {
 	color:#FFF;
 	font-size:1.5em;
-	font-family:"Times New Roman", Times, serif;
+	
 }
 /* Optional Top */
 #ben-top{
@@ -528,14 +528,14 @@ display:block;
 #ben-content {margin:0 auto; width:1000px;background:#fff;}
 
 #ben-maincontent{}
-.ben-two-columns #ben-maincontent{width: 730px; padding:10px;}
+.ben-two-columns #ben-maincontent{width: 728px; padding:10px;}
 .ben-three-columns #ben-maincontent{width:896px; margin:0 2px;}
 .ben-three-columns-right #ben-maincontent{width:520px; margin-right:20px}
 
 
 /* Sidebar */
 #ben-sidebar{} /*Div chua 2 sidebar*/
-.ben-sidebar{width:250px;background:#58595b;}
+.ben-sidebar{width:252px;background:#58595b;}
 
 
 /* Columns */
@@ -593,7 +593,7 @@ display:block;
 }
 .ben-section-title .title
 {
-	font-family:"Times New Roman", Times, serif;
+	text-align:center;
 	
 }
 .ben-sidebar .ben-section-title 
@@ -602,8 +602,8 @@ display:block;
 	padding:7px 15px;
 	background:#0d87ae;
 	color: #FFF;
-	font: 1.7em sans-serif;
-	text-transform:uppercase;
+	font: 1.2em sans-serif;
+	font-weight:bold;
 }
 #ben-maincontent .ben-section-title {margin-bottom: 8px;}
 
@@ -619,7 +619,7 @@ display:block;
 	color: #777;
 	padding:0px 20px;
 	background:#58595b;
-	font-family:"Times New Roman", Times, serif;
+	
 }
 #ben-footer img
 {
@@ -689,7 +689,7 @@ ul#menu a {
   padding: 0.2em;	
   background:transparent;
   color:#FFF;
-  font-family:"Times New Roman", Times, serif;
+  
   font-size:1.5em;
 }
 
