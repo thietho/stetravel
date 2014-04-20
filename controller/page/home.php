@@ -88,8 +88,9 @@ class ControllerPageHome extends Controller
 		//Left sitebar
 		$arr = array('danh-muc');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
-		$this->data['leftsitebar']['myaccount'] = $this->loadModule('sitebar/myaccount');
-		$this->data['leftsitebar']['trackingorder'] = $this->loadModule('sitebar/trackingorder');
+		$this->data['leftsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
+		//$this->data['leftsitebar']['myaccount'] = $this->loadModule('sitebar/myaccount');
+		//$this->data['leftsitebar']['trackingorder'] = $this->loadModule('sitebar/trackingorder');
 		//$this->data['leftsitebar']['search'] = $this->loadModule('sitebar/searchproduct');
 		//$this->data['leftsitebar']['dknhantinh'] = $this->loadModule('sitebar/dangkynhantin');
 		
