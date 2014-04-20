@@ -18,13 +18,13 @@ class ControllerPageHome extends Controller
 			//Banner home
 			$template = array(
 						  'template' => "home/bannerhome.tpl",
-						  'width' => 894,
-						  'height' =>894
+						  'width' => 1000,
+						  'height' =>400,
 						  );
 		
 			$arr = array("bannerhome",0,"",$template);
 			$this->data['bannerhome'] = $this->loadModule('module/block','getList',$arr);
-			//Tin nóng
+			/*//Tin nóng
 			$template = array(
 						  'template' => "home/news_list.tpl",
 						  'width' => 514,
@@ -67,9 +67,9 @@ class ControllerPageHome extends Controller
 			$medias = $this->getProduct('sanphamhot');
 			//print_r($medias);
 			$arr = array("",100000,"",$template,$medias);
-			$this->data['producthot'] = $this->loadModule('module/productlist','index',$arr);
-			/*$arr = array("gioithieu");
-			$this->data['producthome'] = $this->loadModule('module/information','index',$arr);*/
+			$this->data['producthot'] = $this->loadModule('module/productlist','index',$arr);*/
+			$arr = array("home");
+			$this->data['home'] = $this->loadModule('module/information','index',$arr);
 			//
 			
 			$this->loadSiteBar();
@@ -86,17 +86,19 @@ class ControllerPageHome extends Controller
 	private function loadSiteBar()
 	{
 		//Left sitebar
-		$arr = array('san-pham');
+		$arr = array('home');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
-		$this->data['leftsitebar']['search'] = $this->loadModule('sitebar/searchproduct');
-		$this->data['leftsitebar']['dknhantinh'] = $this->loadModule('sitebar/dangkynhantin');
+		$this->data['leftsitebar']['myaccount'] = $this->loadModule('sitebar/myaccount');
+		$this->data['leftsitebar']['trackingorder'] = $this->loadModule('sitebar/trackingorder');
+		//$this->data['leftsitebar']['search'] = $this->loadModule('sitebar/searchproduct');
+		//$this->data['leftsitebar']['dknhantinh'] = $this->loadModule('sitebar/dangkynhantin');
 		
 		//$this->data['leftsitebar']['exchange'] = $this->loadModule('sitebar/exchange');
 		
-		$this->data['leftsitebar']['hitcounter'] = $this->loadModule('sitebar/hitcounter');
+		//$this->data['leftsitebar']['hitcounter'] = $this->loadModule('sitebar/hitcounter');
 		
 		//Rigth sitebar
-		$this->data['rightsitebar']['cart'] = $this->loadModule('sitebar/cart');
+		/*$this->data['rightsitebar']['cart'] = $this->loadModule('sitebar/cart');
 		$this->data['rightsitebar']['login'] = $this->loadModule('sitebar/login');
 		$this->data['rightsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
 		
@@ -108,7 +110,7 @@ class ControllerPageHome extends Controller
 						  );
 		$arr = array('tin-tuc-san-pham',10,'',$template);
 		$this->data['rightsitebar']['newsproduct'] = $this->loadModule('sitebar/news','index',$arr);
-		$this->data['rightsitebar']['weblink'] = $this->loadModule('sitebar/weblink');
+		$this->data['rightsitebar']['weblink'] = $this->loadModule('sitebar/weblink');*/
 		//$this->data['rightsitebar']['search'] = $this->loadModule('sitebar/search');
 		
 		//$this->data['rightsitebar']['banner'] = $this->loadModule('sitebar/banner');

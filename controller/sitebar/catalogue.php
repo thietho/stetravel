@@ -18,7 +18,7 @@ class ControllerSitebarCatalogue extends Controller
 	
 	public function getMenu($parentid,$status)
 	{
-		$siteid = $this->user->getSiteId();
+		$siteid = $this->member->getSiteId();
 		$str = "";
 		
 		$sitemaps = $this->model_core_sitemap->getListByParent($parentid, $siteid, $status);
@@ -38,7 +38,7 @@ class ControllerSitebarCatalogue extends Controller
 			if($item['moduleid'] != "group" && $item['moduleid'] != "homepage")
 			{
 				//$link='<a class="left" href="?route='.$item['moduleid']."&sitemapid=".$item['sitemapid'].'" title="[Detail]">'.$item['sitemapname'].'</a>';
-				$link = "<a  href='".$this->document->createLink($item['sitemapid'])."'>".$item['sitemapname']."</a>";
+				$link = "<a  href='".$this->document->createLink($item['sitemapid'])."'>".$item['sitemapname'.$this->language->getLang()]."</a>";
 			}
 			
 			$str .= "<li>";

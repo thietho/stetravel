@@ -51,5 +51,21 @@ class ControllerCommonWarring extends Controller
 		$this->template='warring/cart.tpl';
 		$this->render();
 	}
+	public function wishlist()
+	{
+		
+		$data = $this->request->get;
+		if(!isset($_SESSION['wishlist']))
+		{
+			$_SESSION['wishlist'] = array();	
+		}
+		$mediaid = $data['mediaid'];
+		
+		$this->data['media'] = $this->getItem($mediaid);
+
+		$this->id='content';
+		$this->template='warring/wishlist.tpl';
+		$this->render();
+	}
 }
 ?>

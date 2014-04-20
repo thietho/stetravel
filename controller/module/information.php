@@ -22,6 +22,7 @@ class ControllerModuleInformation extends Controller
 		}
 		$this->document->meta_description = strip_tags($this->data['media']['description']);
 		$this->data['media']['description'] = html_entity_decode($this->data['media']['description']);
+		$this->data['media']['description'.$this->language->getLang()] = html_entity_decode($this->data['media']['description'.$this->language->getLang()]);
 		$this->data['child'] = $this->model_core_media->getListByParent($this->member->getSiteId().$sitemapid," AND mediatype = 'subinfor' "," Order by position");
 		
 		$this->id="information";

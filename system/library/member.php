@@ -30,7 +30,7 @@ final class Member {
 				$this->siteid = SITEID;
 				break;
 		}*/
-		if(@$this->request->get['lang'])
+		/*if(@$this->request->get['lang'])
 		{
 			
 			$this->siteid = $this->request->get['lang'];
@@ -38,8 +38,8 @@ final class Member {
 		else
 		{
 			$this->siteid = SITEID;
-		}
-		
+		}*/
+		$this->siteid = SITEID;
 		if(@$this->request->get['contry'])
 		{
 			$this->go_country = $this->request->get['contry'];
@@ -72,7 +72,7 @@ final class Member {
 			}
     	}
 		//$this->updatelistonline();
-		$this->writelog();
+		//$this->writelog();
   	}
 		
   	public function login($username, $password) 

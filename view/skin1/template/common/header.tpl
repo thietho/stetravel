@@ -1,59 +1,75 @@
 <div id="ben-header">
     <div id="ben-top">
         <div class="ben-left" id="ben-logo">
-            <a href="<?php echo HTTP_SERVER?>"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>logo.png" height="110px" alt="Logo" title="logo"/></a>
+            <a href="<?php echo HTTP_SERVER?>"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>logo.png" alt="Logo" title="logo"/></a>
         </div>
-    	<div id="halinhsport" style="position:absolute;margin-left:181px;margin-top:15px;">
-        	<img src="<?php echo HTTP_SERVER.DIR_IMAGE?>halinhsport.png" alt="Hà Linh Sport" title="Hà Linh Sport"/>
-        </div>
-        <div id="cungcap" style="position:absolute;margin-left:148px;margin-top:75px;">
-        	<img src="<?php echo HTTP_SERVER.DIR_IMAGE?>cungcap.png" alt="Chuyên cung cấp sỉ & lẻ tất cả dung cụ thể dụng thể thao
-In số tên logo giao hàng trong vòng 24h" title="Chuyên cung cấp sỉ & lẻ tất cả dung cụ thể dụng thể thao
-In số tên logo giao hàng trong vòng 24h"/></div>
-        <div id="khiemhuongnt" style="position:absolute;margin-left:955px;margin-top:32px;">
-        	<img src="<?php echo HTTP_SERVER.DIR_IMAGE?>khiemhuongnt.png" alt="Khiêm Hương NT" title="Khiêm Hường NT"/>
-        </div>
-        <div id="ben-top-menu">
+    	
+        
+        <div id="ben-top-menu" class="ben-right">
         	<ul>
-            	<li><a href="<?php echo HTTP_SERVER?>">Trang chủ</a></li>
+            	<li><a href="#" title="English" id="en" class="lang"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>flagen.png" /></a></li>
+                <li><a href="#" title="Việt Nam" id="vn" class="lang"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>flagvn.png" /></a></li>
+                <?php if($this->member->isLogged()){?>
+                <li><a href="<?php echo $this->document->createLink('memberinfor')?>"><?php echo $this->member->getId()?></a> <a>|</a> <a href="#" onclick="logout();"><?php echo $text_logout?></a></li>
+                <?php }else{ ?>
+            	<li><a href="<?php echo $this->document->createLink('memberinfor')?>"><?php echo $text_myaccount?></a></li>
+                <?php }?>
                 <li>|</li>
-                <li><a href="<?php echo $this->document->createLink('cart')?>">Giỏ hàng</a></li>
+                <li><a href="<?php echo HTTP_SERVER?>"><?php echo $text_gift?></a></li>
                 <li>|</li>
-                <li><a href="<?php echo $this->document->createLink('sitemap')?>">Site map</a></li>
+                <li><a href="<?php echo HTTP_SERVER?>"><?php echo $text_outbrands?></a></li>
                 <li>|</li>
-                <li><a href="<?php echo $this->document->createLink('lien-he')?>">Liên hệ</a></li>
+                <li><a href="<?php echo $this->document->createLink('cart')?>" id="cartcout"><?php echo $text_cardisempty?></a></li>
+                
                 
             </ul>
         	
         </div>
     	
-        <div id="ben-top-terms">
-        	<table>
-            	<tr>
-                	<td><a href="<?php echo $this->document->createLink('doi-tra-hang')?>" title="Đổi trả hàng"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>doitrahang.jpg" height="34px" alt="Đổi trả hàng" title="Đổi trả hàng"/></a></td>
-                    <td><a href="<?php echo $this->document->createLink('doi-tra-hang')?>" title="Đổi trả hàng">ĐỔI TRẢ HÀNG</a></td>
-                    <td><a href="<?php echo $this->document->createLink('giao-hang-tan-noi')?>" title="Giao hàng tận nơi"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>giaohangtannoi.jpg" height="34px" alt="Giao hàng tận nơi" title="Giao hàng tận nơi"/></a></td>
-                    <td><a href="<?php echo $this->document->createLink('giao-hang-tan-noi')?>" title="Giao hàng tận nơi">GIAO HÀNG TẬN NƠI</a></td>
-                    <td><a href="<?php echo $this->document->createLink('thanh-toan-khi-nhan-hang')?>" title="Thanh toán khi nhận"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>thanhtoankhinhan.jpg" height="34px" alt="Thanh toán khi nhận" title="Thanh toán khi nhận"/></a></td>
-                    <td><a href="<?php echo $this->document->createLink('thanh-toan-khi-nhan-hang')?>" title="Thanh toán khi nhận">THANH TOÁN KHI NHẬN</a></td>
-                    <td><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>dienthoai.png" height="34px" alt="Điện thoại" title="Điện thoại"/></td>
-                    <td><a>0937 799 389 - 0905 042 611</a></td>
-                </tr>
-            </table>
-        </div>
-        <div style="position:absolute;margin-left:710px; margin-top:98px;">
-        	<table>
-            	<td>Email: khiemhuongnt@yahoo.com.vn</td>
-                <td><a target="_blank" href="https://www.facebook.com/profile.php?id=100000198136520" title="Facebook"><img src="<?php echo HTTP_SERVER.DIR_IMAGE?>facebook.gif" alt="Facebook" title="Facebook"/></a></td>
-                <td><a target="_blank" href="https://www.facebook.com/profile.php?id=100000198136520" title="Facebook">Khiêm X-Men's</a></td>
-            </table>
         
+        
+        <div class="clearer">&nbsp;</div>
+        <div class="ben-right" id="ben-header-search">
+        	
+            <input id="txtsearch" class="ben-textbox" type="text" value="<?php echo $button_search?>" style="width:221px;" onclick="this.value = ''" onblur="if(this.value == '') this.value = '<?php echo $button_search?>'"/>
         </div>
         <div class="clearer">&nbsp;</div>
         
-        
-        
     </div>
+    <div class="ben-navigation ">
+        
+        <ul id="ben-main-nav">
+            <?php echo $mainmenu?>
+        </ul>
+
+        <div class="clearer">&nbsp;</div>
+
+    </div>
+    <div id="ben-header-bottom"></div>
 </div>
 
 <script src="<?php echo HTTP_SERVER.DIR_JS?>menu.js" language="javascript"></script>
+<script language="javascript">
+$('.lang').click(function(e) {
+    $.get("<?php echo HTTP_SERVER?>?lang="+this.id,function(){
+		$.blockUI({ message: "<h1>Please wait!!!</h1>" }); 
+		window.location.reload();	
+	});
+});
+$('#txtsearch').keyup(function(e) {
+    if(e.keyCode == 13)
+	{
+		window.location = "<?php echo HTTP_SERVER?>search/keyword/"+ this.value+".html";
+	}
+});
+<?php
+	if($_GET['keyword'])
+	{
+?>
+$(document).ready(function(e) {
+    $('#txtsearch').val("<?php echo $_GET['keyword']?>");
+});
+<?php
+	}
+?>
+</script>

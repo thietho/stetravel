@@ -2,13 +2,14 @@ function Cart()
 {
 	this.load = function()
 	{
-		$("#sitebarcartlist").load(HTTP_SERVER+"?route=sitebar/cart/getList");
+		//$("#sitebarcartlist").load(HTTP_SERVER+"?route=sitebar/cart/getList");
 			
 		$.ajax({
 			url: HTTP_SERVER+"?route=sitebar/cart/getCount",
 			cache: false,
 			success: function(html){
-				$("#cartcout").html(html);
+				if(html != "0")
+					$("#cartcout").html("Cart: "+html);
 				if(html == 0)
 					$("#ben-cart").hide();
 				else

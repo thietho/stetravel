@@ -26,9 +26,9 @@ html {
 }
 
 body {
-	background: #FFF;
-	color: #444;
-	font: normal 75% Arial, Tahoma, Helvetica, sans-serif;
+	
+	color: #000;
+	font: normal 75% Tahoma,Arial, Helvetica, sans-serif;
 	line-height: 1.5;
 }
 
@@ -74,7 +74,7 @@ a.ben-other:hover {}
 
 
 /* Paragraph */
-p {margin-bottom: 0.5em;}
+p {}
 
 object { vertical-align:top; outline:none;border:0}
 
@@ -305,6 +305,7 @@ input.ben-textbox, textarea, select {
 	border: 1px inset #AAA;
 	margin: 0.2em 0;
 	padding: 4px 5px;
+	border-radius:5px;
 }
 
 textarea
@@ -362,8 +363,8 @@ input.ben-button:active {border-style: inset;}
 /* Wrapper */
 #ben-main {
 	margin: 0 auto;
-	width: 1300px;
-	background:#FFF;
+	width: 1000px;
+	border-top:#161617 thin solid;
 }
 
 
@@ -373,19 +374,33 @@ input.ben-button:active {border-style: inset;}
 /*---------- HEADER AREA ------------*/
 /* Header */
 #ben-header {padding-top: 0px;}
-
+#ben-header a{color:#86888b}
+#ben-header-bottom
+{
+	height:32px;
+	background:#a7a9ac;
+	border-top:#0f8eb6 2px solid;
+	border-bottom:#0f8eb6 2px solid;	
+}
+#ben-header label
+{
+	color:#FFF;
+	font-size:1.5em;
+	font-family:"Times New Roman", Times, serif;
+}
 /* Optional Top */
 #ben-top{
 	margin: 0 auto;
-	width: 1300px;
-	height:120px;
+	width: 1000px;
+	height:155px;
 	padding-bottom: 0px;
 }
 
 
 /* Logo */
 #ben-logo {	
-	margin:5px 10px;
+	position:absolute;
+	margin-top:38px;
 }
 #ben-logo img {}
 
@@ -407,33 +422,44 @@ position:relative;
 line-height:1.5em; 
 z-index:100;
 }
+@font-face
+{
+	font-family: BankGothicLtBTLight;
+	src:url(BankGothicLtBTLight.ttf);
+}
 .ben-navigation 
 {
-	padding:6px;
+	background:#58595b;
 }
 #ben-main-nav a{
-display:block;
-padding:0px 47px;
-
-color:#fff;
-text-decoration:none;
-
+	font-family:BankGothicLtBTLight;
+	display:block;
+	padding:14px 13px;
+	color:#fff;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:2em;
+	font-weight:bold;
 }
 
 #ben-main-nav a:hover{
-
-color:red;
+	color:red;
+	background:#FFF;
 }
 
 #ben-main-nav li{
-float:left;
-position:relative;
-margin-left:5px;
+	float:left;
+	position:relative;
+	border-right:thin solid #000;
 }
+#ben-main-nav li:last-child
+{
+	border-right:none;
 
+}
 #ben-main-nav a.current-tab{
-	background-color:#000000;
-	color:#FFFFFF;
+	color:red;
+	background:#FFF;
 }
 
 #ben-main-nav ul {
@@ -493,17 +519,17 @@ display:block;
 
 
 /*---------- BODY AREA ------------*/
-#ben-content {margin:0 auto; width:1300px}
+#ben-content {margin:0 auto; width:1000px;background:#fff;}
 
 #ben-maincontent{}
-.ben-two-columns #ben-maincontent{width: 750px;}
+.ben-two-columns #ben-maincontent{width: 730px; padding:10px;}
 .ben-three-columns #ben-maincontent{width:896px; margin:0 2px;}
 .ben-three-columns-right #ben-maincontent{width:520px; margin-right:20px}
 
 
 /* Sidebar */
 #ben-sidebar{} /*Div chua 2 sidebar*/
-.ben-sidebar{width:200px;}
+.ben-sidebar{width:250px;background:#58595b;}
 
 
 /* Columns */
@@ -544,27 +570,35 @@ display:block;
 
 
 /* Sections */
-.ben-section {margin-bottom: 10px; }
+.ben-section { }
 .ben-sidebar .ben-section{}
 #ben-maincontent .ben-section{}
 
-.ben-section-content{border: thin solid #CCCCCC;}
+.ben-section-content{}
 .ben-sidebar .ben-section-content{padding:5px;}
-#ben-maincontent .ben-section-content{padding:5px;margin-bottom:5px;}
+#ben-maincontent .ben-section-content{}
 
 .ben-section-title {
-	background:url(../image/bg-section-tile.png) repeat-x;
-	height:33px;
-	color: #FFF;
-	font: bold 1.2em sans-serif;
 	
+	
+	padding-left:13px;
+	padding-top:5px;
+	font-size:2em;
 }
 .ben-section-title .title
 {
-	padding:7px 20px;
-	background:url(../image/bg-setion-tile-icon.png) no-repeat;
+	font-family:"Times New Roman", Times, serif;
+	
 }
-.ben-sidebar .ben-section-title {}
+.ben-sidebar .ben-section-title 
+{
+	
+	padding:7px 15px;
+	background:#0d87ae;
+	color: #FFF;
+	font: 1.7em sans-serif;
+	text-transform:uppercase;
+}
 #ben-maincontent .ben-section-title {margin-bottom: 8px;}
 
 
@@ -577,20 +611,37 @@ display:block;
 #ben-footer {
 	
 	color: #777;
-	padding: 16px 5px 4px;
-	background:#FFF;
+	padding:0px 20px;
+	background:#58595b;
+	font-family:"Times New Roman", Times, serif;
+}
+#ben-footer img
+{
+	margin-right:8px;	
 }
 #ben-footer-left {}
+
 #ben-footer-right {
-	width: 459px;
 	text-align: right;
+	margin-top:26px;
 }
-#ben-footer p {margin-bottom: 0.4em;}
+#ben-footer p {}
 #ben-footer .text-separator {
 	padding: 0 3px;
 	color: #BBB;
 }
 #ben-footer a:hover {color: #000;}
+#ben-footer .companyname
+{
+	color:#1287af;
+	font-size:3em;
+	
+}
+#ben-footer .companyinfo
+{
+	color:#FFF;	
+	font-size:1.5em;	
+}
 .ben-page
 {
 	margin-top:5px;
@@ -631,11 +682,14 @@ ul#menu a {
   text-decoration: none;
   padding: 0.2em;	
   background:transparent;
+  color:#FFF;
+  font-family:"Times New Roman", Times, serif;
+  font-size:1.5em;
 }
 
 ul#menu div.collape{
 	cursor:pointer;
-	padding:10px 6px 10px 10px;
+	padding:5px 15px;;
 }
 ul#menu span.collape{
 	margin-top:5px;
@@ -654,7 +708,7 @@ ul#menu li {
 
 ul#menu li div {
   
-  	background:#ececec;
+  	background:#58595b;
 	
 
 }
@@ -670,8 +724,8 @@ ul#menu li div:hover{
 }
 
 ul#menu li ul li div {
-  background: #fff;
-  color: #000;
+  
+  
   padding-left: 20px !important;
 }
 
@@ -686,7 +740,7 @@ ul#menu li ul li ul li div {
 }
 
 ul#menu li ul li ul li div a {
-  color: #000;
+  
 }
 
 ul#menu li ul li div:hover {
@@ -699,7 +753,7 @@ ul#menu li ul li div:hover {
 }
 .container
 {
-	margin-bottom:10px;	
+	
 }
 
 .ben-editor td
@@ -728,9 +782,9 @@ ul#menu li ul li div:hover {
 }
 #ben-top-menu
 {
-	position:absolute;
-	margin-left:420px;
-	margin-top:31px;
+	
+	
+	margin-top:12px;
 }
 #ben-top-menu li
 {
@@ -802,4 +856,8 @@ ul#menu li ul li div:hover {
 .tooltip-summary
 {
 	padding:5px;
+}
+#ben-header-search
+{
+	margin-top:15px;	
 }

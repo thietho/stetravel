@@ -34,7 +34,7 @@ final class Language {
 		}else{
 			$this->set('vn');
 		}
-
+		
 		$this->load($this->languages[$this->code]['filename']);
 		
 	}
@@ -106,7 +106,13 @@ final class Language {
   	public function getCode() {
     	return $this->code;
   	}  	
-	
+	public function getLang()
+	{
+		if($this->getCode() == 'vn')
+			return '';
+		else
+			return $this->getCode();
+	}
 	public function getData(){
 		return $this->data;
 	}

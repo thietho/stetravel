@@ -4,6 +4,8 @@ class ControllerAddonHistoryorder extends Controller
 	private $error = array();
 	public function index()
 	{
+		if($this->member->isLogged()==false)
+			$this->response->redirect($this->document->createLink('login'));
 		$this->document->breadcrumb .= '<a href="'.$this->document->createLink('member').'">Thông tin thành viên </a> » '."Lịch sử mua hàng";
 		$this->getList();
 		$this->id="content";
