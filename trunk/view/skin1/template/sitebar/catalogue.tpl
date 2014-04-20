@@ -1,7 +1,7 @@
 
                     <div class="ben-section">
                     	<div class="ben-section-title"><div class="title">Danh mục</div></div>
-                        <div>
+                        <div class="ben-section-content">
                         	
                         	<ul id="menu">
                                 <?php echo $menu?>
