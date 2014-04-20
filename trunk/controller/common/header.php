@@ -36,7 +36,7 @@ class ControllerCommonHeader extends Controller
 		$rootid = $this->model_core_sitemap->getRoot($this->document->sitemapid, $siteid,1);
 
 		if($this->document->sitemapid == "")
-			$rootid = 'trangchu';
+			$rootid = 'trang-chu';
 		$str = "";
 		
 		
