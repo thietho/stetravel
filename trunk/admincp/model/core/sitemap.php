@@ -8,7 +8,7 @@ class ModelCoreSitemap extends Model
 							'module/register' => 'Register Page',
 							'module/news'=>'News',
 							//'module/event' => 'Event',
-							//'module/banner'=>'Banner',
+							'module/banner'=>'Banner',
 							//'module/album'=>'Album',
 							//'module/video'=>'Video',
 							//'module/audio'=>'Audio',

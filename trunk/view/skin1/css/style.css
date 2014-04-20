@@ -26,7 +26,7 @@ html {
 }
 
 body {
-	
+	background:#fcf4e4 url(../image/bg-body.png) no-repeat top center;
 	color: #000;
 	font: normal 75% Tahoma,Arial, Helvetica, sans-serif;
 	line-height: 1.5;
@@ -373,7 +373,7 @@ input.ben-button:active {border-style: inset;}
 
 /*---------- HEADER AREA ------------*/
 /* Header */
-#ben-header {background:url(../image/bg-header.png) no-repeat}
+#ben-header {}
 #ben-header a{color:#86888b}
 #ben-header-bottom
 {
@@ -525,10 +525,19 @@ display:block;
 
 
 /*---------- BODY AREA ------------*/
-#ben-content {margin:0 auto; width:1000px;background:#fff;}
+#ben-content {margin:0 auto; width:1000px;}
 
 #ben-maincontent{}
-.ben-two-columns #ben-maincontent{width: 728px; padding:10px;}
+.ben-two-columns
+{
+	border-radius:5px;
+	border:thin solid #c8c4bd;
+	margin-top:10px;	
+	background:#fff;
+	padding:10px 12px;
+	
+}
+.ben-two-columns #ben-maincontent{width: 722px;}
 .ben-three-columns #ben-maincontent{width:896px; margin:0 2px;}
 .ben-three-columns-right #ben-maincontent{width:520px; margin-right:20px}
 
@@ -577,11 +586,11 @@ display:block;
 
 /* Sections */
 .ben-section { }
-.ben-sidebar .ben-section{width:230px;margin-left:12px;}
+.ben-sidebar .ben-section{width:230px;margin-bottom:10px;}
 #ben-maincontent .ben-section{}
 
 .ben-section-content{}
-.ben-sidebar .ben-section-content{border:thin solid #c9c2c2;}
+.ben-sidebar .ben-section-content{border:thin solid #c9c2c2;padding:5px;}
 #ben-maincontent .ben-section-content{}
 
 .ben-section-title {
