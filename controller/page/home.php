@@ -92,7 +92,8 @@ class ControllerPageHome extends Controller
 		//$this->data['leftsitebar']['myaccount'] = $this->loadModule('sitebar/myaccount');
 		//$this->data['leftsitebar']['trackingorder'] = $this->loadModule('sitebar/trackingorder');
 		//$this->data['leftsitebar']['search'] = $this->loadModule('sitebar/searchproduct');
-		//$this->data['leftsitebar']['dknhantinh'] = $this->loadModule('sitebar/dangkynhantin');
+		$this->data['leftsitebar']['dknhantinh'] = $this->loadModule('sitebar/dangkynhantin');
+		$this->data['leftsitebar']['banner'] = $this->loadModule('sitebar/banner');
 		
 		//$this->data['leftsitebar']['exchange'] = $this->loadModule('sitebar/exchange');
 		

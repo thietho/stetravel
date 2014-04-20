@@ -7,7 +7,7 @@ class ControllerSitebarBanner extends Controller
 		$this->load->model("core/sitemap");
 		$this->load->helper('image');
 		
-		$sitemapid = "banner";
+		$sitemapid = "khach-hang-than-thiet";
 		$siteid = $this->member->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
 		
@@ -30,7 +30,7 @@ class ControllerSitebarBanner extends Controller
 			$imagethumbnail = "";
 			if($media['imagepath'] != ""  )
 			{
-				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], 198,198);
+				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], 218,218);
 			}
 
 			
