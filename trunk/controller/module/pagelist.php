@@ -10,7 +10,7 @@ class ControllerModulePagelist extends Controller
 			$sitemapid = $this->document->sitemapid;
 		$siteid = $this->member->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
-		$this->document->title .= " - ".$this->data['sitemap']['sitemapname'];
+		
 		$step = (int)$this->request->get['step'];
 		$to = $count;
 		
@@ -42,7 +42,8 @@ class ControllerModulePagelist extends Controller
 					$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
 				}
 	
-				$media['summary'] = html_entity_decode($media['summary']);
+				$media['summary'.$this->language->getLang()] = html_entity_decode($media['summary'.$this->language->getLang()]);
+				
 				$media['link']= $link;
 				$media['properties']= $properties;
 				$media['imagethumbnail']= $imagethumbnail;

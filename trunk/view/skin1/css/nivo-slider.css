@@ -83,15 +83,15 @@
 
 /* Caption - title - arrows */
 #slider {
-    width: 894px;
-    height: 300px;
+    width: 1000px;
+    height: 400px;
 	margin:0 auto;
 }
 #slider a img {
 	position:absolute;
 	top:0px; 
-	width: 894px;
-    height: 300px;
+	width: 1000px;
+    height: 400px;
 	left:0px;
 	display:none;
 }

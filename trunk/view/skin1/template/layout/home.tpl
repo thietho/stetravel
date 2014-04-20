@@ -56,6 +56,7 @@ var HTTP_SERVER = '<?php echo HTTP_SERVER?>';
 </script>
 <script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/common.js'></script>
 <script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/cart.js'></script>
+<script type='text/javascript' language='javascript' src='<?php echo HTTP_SERVER.DIR_VIEW?>js/wishlist.js'></script>
 
 <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>jquery.mousewheel-3.0.4.pack.js"></script>
 <script type="text/javascript" src="<?php echo HTTP_SERVER.DIR_JS?>jquery.fancybox-1.3.4.js"></script>
@@ -87,14 +88,14 @@ $(document).ready(function() {
 	});
 </script>
 <script language="javascript">
-$(function() {
+/*$(function() {
 	$(".ben-datepicker").datepicker({
 			changeMonth: true,
 			changeYear: true,
 			dateFormat: 'dd-mm-yy',
 			
 			});
-	});
+	});*/
 </script>
 
 <?php 
@@ -107,24 +108,22 @@ $(function() {
 
 <body>
 
-<div style="display:none"><?php echo $meta_keyword?></div>
-<div id="ben-body">
-    <div id="ben-main">
-        
-        <?php echo $header?>
-        
-        <div id="ben-content">
-            <?php echo $content?>
+	<div style="display:none"><?php echo $meta_keyword?></div>
+    <div id="ben-body">
+        <div id="ben-main">
             
+            <?php echo $header?>
+            
+            <div id="ben-content">
+                <?php echo $content?>
+                
+            </div>
+            
+            <?php echo $footer?> 
+        
         </div>
-        
-        
+    </div>
     
-    </div>
-</div>
-    <div id="ben-bottom">
-        <?php echo $footer?> 
-    </div>
     <div id="ben-popup" style="display:none">
         <div id="ben-popup-content"></div>
         

@@ -139,7 +139,7 @@ $("#ben-next").click(function(){
      
     </div>
     <div class="ben-right product-right">
-        <h2><?php echo $post['title']?></h2>
+        <h2><?php echo $this->document->productName($post)?></h2>
         <?php if($post['noted'] != "") echo "<h4>".$post['noted']."</h4>"; ?>
         
 <div id="fb-root"></div>
@@ -226,7 +226,7 @@ $("#ben-next").click(function(){
                                 
                             <span  class="product-price <?php echo $cls?>"><?php echo $this->string->numberFormate($post['price'])?> <?php echo $this->document->setup['Currency']?></span>
                             <input type="button" class="cart-order" onclick="cart.add('<?php echo $post['mediaid']?>')" value="Đặt hàng">
-                            
+                            <input type="button" class="ben-button" onclick="wishlist.add('<?php echo $post['mediaid']?>')" value="Đưa vào danh sách mong muốn"/>
                         </td>
                     </tr>
                     <?php } ?>

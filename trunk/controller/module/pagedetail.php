@@ -18,10 +18,10 @@ class ControllerModulePagedetail extends Controller
 		
 		if(count($this->data['post']) == 0)
 		{
-			$this->data['post']['description'] = "Updating...";
+			$this->data['post']['description'.$this->language->getLang()] = "Updating...";
 		}
-		$this->data['post']['summary'] = html_entity_decode($this->data['post']['summary']);
-		$this->data['post']['description'] = html_entity_decode($this->data['post']['description']);
+		$this->data['post']['summary'.$this->language->getLang()] = html_entity_decode($this->data['post']['summary'.$this->language->getLang()]);
+		$this->data['post']['description'.$this->language->getLang()] = html_entity_decode($this->data['post']['description'.$this->language->getLang()]);
 		$this->document->meta_description = strip_tags($this->data['post']['summary']);
 		$this->document->meta_keyword = strip_tags($this->data['post']['description']);
 		

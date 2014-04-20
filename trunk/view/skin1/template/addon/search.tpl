@@ -1,3 +1,4 @@
+
 <?php foreach($medias as $media) {?>
 <div class="ben-post">
 	<?php if($media['imagethumbnail'] !=""){ ?>

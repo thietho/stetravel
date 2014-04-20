@@ -28,8 +28,8 @@ class ControllerModuleProductlist extends Controller
 		if($headername!="")
 			$this->data['sitemap']['sitemapname'] = $headername;
 		
-		@$this->document->title .= " - ".$this->data['sitemap']['sitemapname'];
-		@$step = (int)$this->request->get['step'];
+		
+		$step = (int)$this->request->get['step'];
 		$to = $count;
 		//$_GET = $this->document->getPara();
 		//Get list
@@ -43,10 +43,10 @@ class ControllerModuleProductlist extends Controller
 		}
 		
 		$queryoptions = array();
-		@$queryoptions['mediaparent'] = '';
-		@$queryoptions['mediatype'] = '%';
-		@$queryoptions['refersitemap'] = $listsitemap;
-		@$order = $_GET['order'];
+		$queryoptions['mediaparent'] = '';
+		$queryoptions['mediatype'] = '%';
+		$queryoptions['refersitemap'] = $listsitemap;
+		$order = $_GET['order'];
 		$orderby = "";
 		switch($order)
 		{
@@ -78,7 +78,7 @@ class ControllerModuleProductlist extends Controller
 		//Page
 		
 		
-		@$page = $_GET['page'];
+		$page = $_GET['page'];
 		
 		$x=$page;		
 		$limit = $to;
@@ -89,10 +89,11 @@ class ControllerModuleProductlist extends Controller
 		$this->data['pager']  = $this->pager->pageLayoutWeb($total, $limit, $page,$uri); 
 		
 		$pager  = $this->pager->getPagerData($total, $limit, $page); 
-		$offset = (int)$pager->offset; 
+		$offset = $pager->offset; 
 		$limit  = $pager->limit; 
 		$page   = $pager->page;
 		for($i=$offset;$i < $offset + $limit && count($medias[$i])>0;$i++)
+		//foreach($medias as $media)
 		{
 			$index += 1;
 			$media = $medias[$i];
@@ -106,8 +107,8 @@ class ControllerModuleProductlist extends Controller
 			
 			//if($media['imagepath'] != "" )
 			{
-				@$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
-				@$imagetpreview = HelperImage::resizePNG($media['imagepath'], $template['widthpreview'], $template['heightpreview']);
+				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
+				$imagetpreview = HelperImage::resizePNG($media['imagepath'], $template['widthpreview'], $template['heightpreview']);
 			}
 			
 			
@@ -147,9 +148,9 @@ class ControllerModuleProductlist extends Controller
 		
 		
 		
-		@$this->data['status'] = $template['status'];
-		@$this->data['paging'] = $template['paging'];
-		@$this->data['sorting'] = $template['sorting'];
+		$this->data['status'] = $template['status'];
+		$this->data['paging'] = $template['paging'];
+		$this->data['sorting'] = $template['sorting'];
 		$this->id="news";
 		$this->template=$template['template'];
 		$this->render();

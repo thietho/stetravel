@@ -13,7 +13,7 @@ class ControllerCommonHeader extends Controller
 		
 		$this->id="header";
 		$this->template="common/header.tpl";
-		//$this->data['mainmenu'] = $this->getMenu("menu-chinh");
+		$this->data['mainmenu'] = $this->getMenu("menu-chinh");
 		$this->render();
 	}
 	
@@ -33,7 +33,7 @@ class ControllerCommonHeader extends Controller
 		//echo $parentid;
 		$siteid = $this->member->getSiteId();
 		
-		$rootid = $this->model_core_sitemap->getRoot($this->document->sitemapid, $siteid);
+		$rootid = $this->model_core_sitemap->getRoot($this->document->sitemapid, $siteid,1);
 
 		if($this->document->sitemapid == "")
 			$rootid = 'trangchu';
@@ -50,18 +50,20 @@ class ControllerCommonHeader extends Controller
 			if($item['sitemapid'] == $rootid) 
 				$currenttab = "class='current-tab'";
 			
-			$link = "<a ".$currenttab.">".$item['sitemapname']."</a>";
+			$link = "<a ".$currenttab.">".$item['sitemapname'.$this->language->getLang()]."</a>";
 			switch($item['moduleid'])
 			{
 				case "group":
-					$link = "<a ".$currenttab." title='".$item['sitemapname']."'>".html_entity_decode($item['sitemapname'])."</a>";
+					$link = "<a ".$currenttab." title='".$item['sitemapname'.$this->language->getLang()]."'>".html_entity_decode($item['sitemapname'.$this->language->getLang()])."</a>";
 					break;	
 				case "homepage":
-					$link = "<a ".$currenttab." href='".HTTP_SERVER."'>".html_entity_decode($item['sitemapname'])."</a>";
+					$link = "<a ".$currenttab." href='".HTTP_SERVER."'>".html_entity_decode($item['sitemapname'.$this->language->getLang()])."</a>";
 					break;
 				case "module/forward":
+					$link = "<a ".$currenttab." href='".$item['forward']."' title='".$item['sitemapname'.$this->language->getLang()]."'>".html_entity_decode($item['sitemapname'.$this->language->getLang()])."</a>";
+					break;
 				default:
-					$link = "<a ".$currenttab." href='".$item['forward']."' title='".$item['sitemapname']."'>".html_entity_decode($item['sitemapname'])."</a>";
+					$link = "<a ".$currenttab." href='".$this->document->createLink($item['sitemapid'])."' title='".$item['sitemapname'.$this->language->getLang()]."'>".html_entity_decode($item['sitemapname'.$this->language->getLang()])."</a>";
 					break;	
 			}
 			

@@ -16,7 +16,7 @@ final class User {
 		$this->json  = Registry::get('json');
 		$this->string  = Registry::get('string');
 		$this->date  = Registry::get('date');
-		if(@$this->request->get['lang'])
+		/*if($this->request->get['lang'])
 		{
 			$this->session->set('siteid',$this->request->get['lang']);
 		}
@@ -27,8 +27,9 @@ final class User {
 			}
 		}
 		
-		$this->siteid = $this->session->data['siteid'];
-		
+		$this->siteid = $this->session->data['siteid'];*/
+		$this->session->set('siteid',SITEID);
+		//$this->siteid = SITEID;
 	
     	if (isset($this->session->data['userid'])) {
 			$query = $this->db->query("SELECT * FROM user WHERE userid = '" . $this->db->escape($this->session->data['userid']) . "'");
