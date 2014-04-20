@@ -84,14 +84,14 @@
 /* Caption - title - arrows */
 #slider {
     width: 1000px;
-    height: 400px;
+    height: 350px;
 	margin:0 auto;
 }
 #slider a img {
 	position:absolute;
 	top:0px; 
 	width: 1000px;
-    height: 400px;
+    height: 350px;
 	left:0px;
 	display:none;
 }
