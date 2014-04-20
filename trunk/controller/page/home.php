@@ -86,7 +86,7 @@ class ControllerPageHome extends Controller
 	private function loadSiteBar()
 	{
 		//Left sitebar
-		$arr = array('home');
+		$arr = array('danh-muc');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['myaccount'] = $this->loadModule('sitebar/myaccount');
 		$this->data['leftsitebar']['trackingorder'] = $this->loadModule('sitebar/trackingorder');
