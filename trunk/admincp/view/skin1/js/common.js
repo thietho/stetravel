@@ -396,6 +396,8 @@ function browserFile(eid,type)
 		switch(type)
 		{
 			case "single":
+			case "editor":
+			case "video":
 			$( "#popup" ).dialog({
 				autoOpen: false,
 				show: "blind",
@@ -422,7 +424,7 @@ function browserFile(eid,type)
 							var fileid = $(this).attr('id');
 							var filename = $(this).attr('filename');
 							var imagethumbnail = $(this).attr('imagethumbnail');
-                            $('#attachment').append(attachment.creatAttachmentRow(fileid,filename,imagethumbnail));
+                            $('#'+ $('#handler').val()).append(attachment.creatAttachmentRow(fileid,filename,imagethumbnail));
                         });
 						$("#popup").dialog( "close" );
 					},
