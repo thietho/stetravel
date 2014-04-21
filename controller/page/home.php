@@ -45,7 +45,7 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-			$where = " AND khuyenmai > 0";
+			$where = " AND khuyenmai > 0 Order by id desc limit 0, 8";
 			$data_tour = $this->model_ste_tour->getList($where);
 			
 			$arr = array("Tour khuyến mãi",$data_tour,$template);
@@ -59,7 +59,7 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-			$where = " AND trangthai = 'noibat' Order by id desc limit 0, 2";
+			$where = " AND trangthai = 'noibat' Order by id desc limit 0, 8";
 			$data_tour = $this->model_ste_tour->getList($where);
 			
 			$arr = array("Tour nổi bật",$data_tour,$template);
