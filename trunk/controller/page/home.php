@@ -24,19 +24,19 @@ class ControllerPageHome extends Controller
 		
 			$arr = array("bannerhome",0,"",$template);
 			$this->data['bannerhome'] = $this->loadModule('module/block','getList',$arr);
-			/*//Tin nóng
+			//Tin nóng
 			$template = array(
 						  'template' => "home/news_list.tpl",
-						  'width' => 514,
-						  'height' =>514,
+						  'width' => 125,
+						  'height' =>0,
 						  
 						  );
 			
-			$medias = $this->getHomeMedias('module/news');
+			//$medias = $this->getHomeMedias('module/news');
 			
-			$arr = array("",13,"",$template,$medias);
-			$this->data['newshome'] = $this->loadModule('module/productlist','index',$arr);
-			
+			$arr = array("bang-tin",6,"",$template);
+			$this->data['newshome'] = $this->loadModule('module/pagelist','index',$arr);
+			/*
 			//San pham moi
 			$template = array(
 						  'template' => "module/product_list.tpl",

@@ -598,7 +598,7 @@ display:block;
 	
 	padding-left:13px;
 	padding-top:5px;
-	font-size:2em;
+	font-size:1.2em;
 }
 .ben-section-title .title
 {
@@ -614,9 +614,22 @@ display:block;
 	font: 1.2em sans-serif;
 	font-weight:bold;
 }
-#ben-maincontent .ben-section-title {margin-bottom: 8px;}
-
-
+#ben-maincontent .ben-section-title 
+{
+	margin-bottom: 8px;
+	border-bottom:2px solid red;
+	text-transform:uppercase;
+	color:red;
+	font-weight:bold;
+	margin-top:22px;
+}
+#ben-maincontent .ben-section-title div
+{
+	position:absolute;
+	background:#FFF;
+	margin-top:-21px;
+	padding:0 15px;
+}
 
 
 

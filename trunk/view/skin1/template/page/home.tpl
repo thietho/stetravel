@@ -12,9 +12,7 @@
     	
     	
     	<div class="ben-section">
-        	<div class="ben-section-title">
-            	<?php echo $text_home?> 
-            </div>
+        	<div class="ben-section-title"><div>Tin tức</div></div>
             <div class="ben-section-content">
         		<?php echo $home?>
             </div>
