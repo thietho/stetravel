@@ -4,11 +4,13 @@ class ModelSteTour extends Model
 	private $arr_col = array(
 							
 							'tentour',
+							'loaitour',
 							'thoigian',
 							'giatour',
 							'chuongtrinh',
-							'chitiet',
+							'dieukhoan',
 							'thongtin',
+							'banggia',
 							'trangthai',
 							'khuyenmai',
 							'images'

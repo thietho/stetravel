@@ -18,7 +18,10 @@ class ControllerSteTour extends Controller
 		$this->load->helper('image');
 		$this->load->model("ste/tour");
 		$this->load->model("core/file");
-		
+		$this->load->model("core/sitemap");
+		$siteid = $this->user->getSiteId();
+		$where = " AND moduleid = 'module/tour'";
+		$this->data['data_loaitour'] = $this->model_core_sitemap->getList($siteid, $where);
 		
 		
    	}

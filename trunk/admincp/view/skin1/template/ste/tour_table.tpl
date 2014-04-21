@@ -11,6 +11,7 @@
                         <?php } ?>
                         <th>STT</th>
                         <th>Tên tour</th>
+                        <th>Loại tour</th>
                         <th>Thời gian</th>
                         <th>Giá</th>
                         <th>Khuyến mãi</th>
@@ -34,9 +35,10 @@
                         <?php } ?>
                         <td><?php echo $key+1 ?></td>
                         <td><?php echo $item['tentour']?></td>
+                        <td><?php echo $this->document->getSiteMap($item['loaitour'])?></td>
 						<td><?php echo $item['thoigian']?></td>
                         <td class="number"><?php echo $this->string->numberFormate($item['giatour'])?></td>      
-                        <td class="number"><?php echo $this->string->numberFormate($item['khuyenmai'])?></td>                        
+                        <td class="number"><?php echo $this->string->numberFormate($item['khuyenmai'])?>%</td>                        
                         <td><img src="<?php echo $item['imagethumbnail']?>"></td>
         				
                        	
