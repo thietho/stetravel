@@ -13,7 +13,9 @@ class ModelSteTour extends Model
 							'banggia',
 							'trangthai',
 							'khuyenmai',
-							'images'
+							'images',
+							'phuongtien',
+							'khoihanh'
 							);
 	public function getItem($id)
 	{
