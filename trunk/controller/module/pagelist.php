@@ -8,6 +8,7 @@ class ControllerModulePagelist extends Controller
 		$this->load->helper('image');
 		if($sitemapid == "")
 			$sitemapid = $this->document->sitemapid;
+		echo $sitemapid;
 		$siteid = $this->member->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
 		
@@ -37,10 +38,9 @@ class ControllerModulePagelist extends Controller
 				$link = $this->document->createLink($sitemapid,$media['alias']);
 				
 				$imagethumbnail = "";
-				if($media['imagepath'] != "" && $template['width'] >0 )
-				{
-					$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
-				}
+				
+				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
+				
 	
 				$media['summary'.$this->language->getLang()] = html_entity_decode($media['summary'.$this->language->getLang()]);
 				

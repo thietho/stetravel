@@ -14,7 +14,7 @@
     	<div class="ben-section">
         	<div class="ben-section-title"><div>Tin tức</div></div>
             <div class="ben-section-content">
-        		<?php echo $home?>
+        		<?php echo $newshome?>
             </div>
         	
         </div>
