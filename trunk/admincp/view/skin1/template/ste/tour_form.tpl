@@ -121,12 +121,12 @@ $(document).ready(function(e) {
 	$('#khuyenmai').keyup();
     <?php
 	if(count($item['arrimage']))
-		foreach($item['arrimage'] as $key => $item)
+		foreach($item['arrimage'] as $key => $fileid)
 		{
 			if(count($item))
 			{
 	?>
-					arratt[<?php echo $key?>] = "<?php echo $item['fileid']?>";
+					arratt[<?php echo $key?>] = "<?php echo $fileid?>";
 				
 	<?php
 				}

@@ -532,7 +532,7 @@ display:block;
 {
 	border-radius:5px;
 	border:thin solid #c8c4bd;
-	margin-top:10px;	
+	margin:10px 0;	
 	background:#fff;
 	padding:10px 12px;
 	
@@ -625,9 +625,9 @@ display:block;
 /*---------- FOOTER AREA ------------*/
 #ben-footer {
 	
-	color: #777;
+	
 	padding:0px 20px;
-	background:#58595b;
+	
 	
 }
 #ben-footer img
@@ -648,14 +648,14 @@ display:block;
 #ben-footer a:hover {color: #000;}
 #ben-footer .companyname
 {
-	color:#1287af;
-	font-size:3em;
+	font-weight:bold;
+	font-size:1.5em;
 	
 }
 #ben-footer .companyinfo
 {
-	color:#FFF;	
-	font-size:1.5em;	
+	
+	font-size:1.2em;	
 }
 .ben-page
 {
