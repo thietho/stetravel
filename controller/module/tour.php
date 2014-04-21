@@ -1,10 +1,14 @@
 <?php
 class ControllerModuleTour extends Controller
 {
-	public function listTour($title,$data_tour,$template)
+	function __construct() 
 	{
 		$this->load->model("core/file");
 		$this->load->helper('image');
+   	}
+	public function listTour($title,$data_tour,$template)
+	{
+		
 		foreach($data_tour as $key => $tour)
 		{
 			$arr_fileid = $this->string->referSiteMapToArray($data_tour[$key]['images']);
@@ -65,7 +69,7 @@ class ControllerModuleTour extends Controller
 			$arr_imagethumbnail[] = HelperImage::resizePNG($file['filepath'], $template['width'], $template['height']);
 		}
 		$tour['arrthumbnail'] = $arr_imagethumbnail;
-		
+		print_r($tour['arrthumbnail']);
 		$this->id="content";
 		$this->template = $template['template'];
 		$this->render();
