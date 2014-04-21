@@ -36,41 +36,34 @@ class ControllerPageHome extends Controller
 			
 			$arr = array("bang-tin",10,"",$template);
 			$this->data['newshome'] = $this->loadModule('module/pagelist','getList',$arr);
-			/*
-			//San pham moi
+			
+			//Tour khuyen mai
+			$this->load->model("ste/tour");
 			$template = array(
-						  'template' => "module/product_list.tpl",
-						  'width' => 170,
-						  'height' =>170,
-						  'widthpreview' => 450,
-						  'heightpreview' =>450,
-						  'paging' => false,
-						  'sorting' =>false
+						  'template' => "module/tour_list.tpl",
+						  'width' => 123,
+						  'height' =>0,
+						  
 						  );
+			$where = " AND khuyenmai > 0";
+			$data_tour = $this->model_ste_tour->getList($where);
 			
-			$medias = $this->getHomeMedias('module/product');
+			$arr = array("Tour khuyến mãi",$data_tour,$template);
+			$this->data['tourkhuyenmai'] = $this->loadModule('module/tour','listTour',$arr);
 			
-			$arr = array("",20,"",$template,$medias);
-			$this->data['producthome'] = $this->loadModule('module/productlist','index',$arr);
-			
-			//San pham noi bat
+			//Tour noi bat
+			$this->load->model("ste/tour");
 			$template = array(
-						  'template' => "home/product.tpl",
-						  'width' => 170,
-						  'height' =>170,
-						  'widthpreview' => 450,
-						  'heightpreview' =>450,
-						  'paging' => false,
-						  'sorting' =>false
+						  'template' => "module/tour_list.tpl",
+						  'width' => 123,
+						  'height' =>0,
+						  
 						  );
+			$where = " AND trangthai = 'noibat' Order by id desc limit 0, 2";
+			$data_tour = $this->model_ste_tour->getList($where);
 			
-			$medias = $this->getProduct('sanphamhot');
-			//print_r($medias);
-			$arr = array("",100000,"",$template,$medias);
-			$this->data['producthot'] = $this->loadModule('module/productlist','index',$arr);*/
-			$arr = array("home");
-			$this->data['home'] = $this->loadModule('module/information','index',$arr);
-			//
+			$arr = array("Tour nổi bật",$data_tour,$template);
+			$this->data['tournoibat'] = $this->loadModule('module/tour','listTour',$arr);
 			
 			$this->loadSiteBar();
 			$this->document->title = $this->document->setup['Title'] ." - ". $this->document->setup['Slogan'];

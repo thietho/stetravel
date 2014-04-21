@@ -69,6 +69,11 @@
                             
                         </p>
                         <p>
+                            <label>Thông tin vắn tắc</label><br />
+                            
+                            <textarea class="text" id="thongtinvantac" name="thongtinvantac"><?php echo $item['thongtinvantac']?></textarea>
+                        </p>
+                        <p>
                             <label>Thông tin</label><br />
                             <input type="button" class="button" value="<?php echo $entry_photo ?>" onclick="browserFile('thongtin','editor')"/>
                             <input type="button" class="button" value="Chọn video" onclick="browserFile('thongtin','video')"/>

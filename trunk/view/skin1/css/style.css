@@ -65,7 +65,7 @@ a {
 	text-decoration: none;
 	cursor:pointer;
 }
-a:focus,a:hover {color: #039; text-decoration: underline; cursor:pointer;}
+a:focus,a:hover { cursor:pointer;}
 
 a.ben-other {
 	color: #999;
@@ -889,4 +889,31 @@ ul#menu li ul li div:hover {
 #ben-header-search
 {
 	margin-top:15px;	
+}
+.ste-touritem td
+{
+	vertical-align:top !important;
+	padding:3px;
+}
+.ste_tentour a
+{
+	color:red;
+	font-weight:bold;
+}
+.ste-tourprice
+{
+	padding:5px 0;	
+}
+.ste-button-order
+{
+	background:#7d7b7b;
+	padding:3px 10px;
+	border-radius:5px;
+	margin-right:50px;
+	color:#fff;
+}
+.ste-button-order:hover
+{
+	text-decoration:none;
+	background:red;
 }
