@@ -27,15 +27,15 @@ class ControllerPageHome extends Controller
 			//Tin nóng
 			$template = array(
 						  'template' => "home/news_list.tpl",
-						  'width' => 125,
+						  'width' => 450,
 						  'height' =>0,
 						  
 						  );
 			
 			//$medias = $this->getHomeMedias('module/news');
 			
-			$arr = array("bang-tin",6,"",$template);
-			$this->data['newshome'] = $this->loadModule('module/pagelist','index',$arr);
+			$arr = array("bang-tin",10,"",$template);
+			$this->data['newshome'] = $this->loadModule('module/pagelist','getList',$arr);
 			/*
 			//San pham moi
 			$template = array(
