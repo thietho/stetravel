@@ -176,7 +176,9 @@ class ControllerPageDetail extends Controller
 										  'template' => "module/tour_list.tpl",
 										  'width' => 123,
 										  'height' =>0,
-										  
+										  'paging' => true,
+										  'itemofpage' => 2,
+										  'sorting' =>true
 										  );
 							$where = " AND loaitour like '".$sitemap['sitemapid']."' Order by id desc ";
 							$data_tour = $this->model_ste_tour->getList($where);
@@ -187,13 +189,21 @@ class ControllerPageDetail extends Controller
 						}
 						else
 						{
+							$alias = $this->request->get['id'];
+							$arr = split('-',$alias);
+							$tour = $this->model_ste_tour->getItem($arr[0]);
+							
 							$template = array(
-										  'template' => "module/product_detail.tpl",
-										  'width' => 250,
-										  'height' =>250
+										  'template' => "module/tour_detail.tpl",
+										  'width' => 170,
+										  'height' =>170,
+										  'widthpreview' => 450,
+										  'heightpreview' =>450,
+										  'paging' => true,
+										  'sorting' =>true
 										  );
-							$arr = array($this->document->sitemapid,12,$template);
-							$this->data['module'] = $this->loadModule('module/pagedetail','getFormProduct',$arr);
+							$arr = array($tour,$template);
+							$this->data['module'] = $this->loadModule('module/tour','detail',$arr);
 						}
 						break;
 					case "module/product":
