@@ -7,11 +7,6 @@
     
 	<div class="ben-left" id="ben-maincontent">
     	<div class="ben-section">
-            <div class="ben-section-title">
-                <?php echo $this->document->breadcrumb?>
-            </div>
-        
-        	
             
             <div class="ben-section-content">
             

@@ -1,4 +1,9 @@
-<div class="ben-section-title"><div class="title"><?php echo $title?></div></div>
+
+<div class="ben-section-title">
+	<div class="title"><?php echo $title?></div>
+</div>
+<div class="ben-right viewall"><a>&raquo; Xem tất cả</a></div>
+<div class="clearer"></div>
 <div class="ben-section-content">
     <table class="ste-touritem">
     	<?php for($i=0;$i<count($data_tour);){ ?>

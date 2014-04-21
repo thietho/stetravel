@@ -623,7 +623,7 @@ display:block;
 	font-weight:bold;
 	margin-top:22px;
 }
-#ben-maincontent .ben-section-title div
+#ben-maincontent .ben-section-title .title
 {
 	position:absolute;
 	background:#FFF;
@@ -916,4 +916,9 @@ ul#menu li ul li div:hover {
 {
 	text-decoration:none;
 	background:red;
+}
+.viewall
+{
+	margin-top:-30px;
+	margin-right:12px;	
 }

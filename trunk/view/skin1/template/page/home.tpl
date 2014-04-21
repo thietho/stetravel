@@ -12,7 +12,12 @@
     	
     	
     	<div class="ben-section">
-        	<div class="ben-section-title"><div>Tin tức</div></div>
+        	
+        	<div class="ben-section-title">
+            	<div class="title">Tin tức</div>    
+            </div>
+            <div class="ben-right viewall"><a>&raquo; Xem tất cả</a></div>
+            <div class="clearer"></div>
             <div class="ben-section-content">
         		<?php echo $newshome?>
             </div>
