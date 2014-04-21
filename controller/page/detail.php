@@ -195,12 +195,11 @@ class ControllerPageDetail extends Controller
 							
 							$template = array(
 										  'template' => "module/tour_detail.tpl",
-										  'width' => 170,
-										  'height' =>170,
-										  'widthpreview' => 450,
-										  'heightpreview' =>450,
-										  'paging' => true,
-										  'sorting' =>true
+										  'width' => 280,
+										  'height' =>280,
+										  'widthpreview' => 800,
+										  'heightpreview' =>800,
+										  
 										  );
 							$arr = array($tour,$template);
 							$this->data['module'] = $this->loadModule('module/tour','detail',$arr);
