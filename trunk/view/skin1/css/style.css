@@ -566,8 +566,8 @@ display:block;
 .ben-post-date a {color: #444;}
 
 .ben-post-body {font-size: 1.1em;}
-.ben-post-body a {color: #039;}
-.ben-post-body a:hover {color: #039;}
+.ben-post-body a {}
+.ben-post-body a:hover {}
 
 .ben-post-pagination {
 	color: #777;

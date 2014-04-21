@@ -63,13 +63,21 @@ class ControllerModuleTour extends Controller
 	{
 		$arr_fileid = $this->string->referSiteMapToArray($tour['images']);
 		$arr_imagethumbnail =array();
+		$arr_icon =array();
+		$arr_imagepreview =array();
 		foreach($arr_fileid as $fileid)
 		{
 			$file = $this->model_core_file->getFile($fileid);
+			$arr_icon[] = HelperImage::resizePNG($file['filepath'], 0, 60);
 			$arr_imagethumbnail[] = HelperImage::resizePNG($file['filepath'], $template['width'], $template['height']);
+			$arr_imagepreview[] = HelperImage::resizePNG($file['filepath'], $template['widthpreview'], $template['widthpreview']);
+			
 		}
-		$tour['arrthumbnail'] = $arr_imagethumbnail;
-		print_r($tour['arrthumbnail']);
+		$tour['arr_icon'] = $arr_icon;
+		$tour['arr_imagethumbnail'] = $arr_imagethumbnail;
+		$tour['arr_imagepreview'] = $arr_imagepreview;
+		
+		$this->data['tour'] = $tour;
 		$this->id="content";
 		$this->template = $template['template'];
 		$this->render();
