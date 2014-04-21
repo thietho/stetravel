@@ -245,10 +245,11 @@ class ControllerPageDetail extends Controller
 	
 	private function loadSiteBar()
 	{
-		$arr = array('home');
+		$arr = array('danh-muc');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
-		$this->data['leftsitebar']['myaccount'] = $this->loadModule('sitebar/myaccount');
-		$this->data['leftsitebar']['trackingorder'] = $this->loadModule('sitebar/trackingorder');
+		$this->data['leftsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
+		$this->data['leftsitebar']['dknhantinh'] = $this->loadModule('sitebar/dangkynhantin');
+		$this->data['leftsitebar']['banner'] = $this->loadModule('sitebar/banner');
 	}
 	function getProduct($status)
 	{

@@ -142,7 +142,7 @@ final class Document {
 		fclose($fp);
 	}
 	
-	public function getSiteMap($sitemapid,$siteid,$name="sitemapname")
+	public function getSiteMap($sitemapid,$siteid=SITEID,$name="sitemapname")
 	{
 		$query = $this->db->query("Select `sitemap`.* 
 									from `sitemap` 

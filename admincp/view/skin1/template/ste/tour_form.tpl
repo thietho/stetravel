@@ -19,8 +19,8 @@
             	<ul>
                     <li class="tabs-selected"><a href="#fragment-tourinfo" ><span>Thông tin tour</span></a></li>
                     <li><a href="#fragment-chuongtrinh"><span>Chương trình</span></a></li>
-                    <li><a href="#fragment-detail"><span>Chi tiết</span></a></li>
-                    
+                    <li><a href="#fragment-dieukhoan"><span>Điều khoản</span></a></li>
+                    <li><a href="#fragment-banggia"><span>Bảng Giá</span></a></li>
                     
                 </ul>
                 <div id="fragment-tourinfo">
@@ -31,6 +31,14 @@
                             
                         </p>
                         <p>
+                            <label>Loại tour</label><br />
+                            <select id="loaitour" name="loaitour">
+                            	<?php foreach($data_loaitour as $loaitour){ ?>
+                                <option value="<?php echo $loaitour['sitemapid']?>"><?php echo $loaitour['sitemapname']?></option>
+                                <?php }?>
+                            </select>
+                        </p>
+                        <p>
                             <label>Thời gian</label><br />
                             <input type="text" id="thoigian" name="thoigian" value="<?php echo $item['thoigian']?>" class="text" size=60/>
                             
@@ -38,6 +46,16 @@
                         <p>
                             <label>Giá tour</label><br />
                             <input type="text" id="giatour" name="giatour" value="<?php echo $item['giatour']?>" class="text number short"/>
+                            
+                        </p>
+                        <p>
+                            <label>Phương tiện</label><br />
+                            <input type="text" id="phuongtien" name="phuongtien" value="<?php echo $item['phuongtien']?>" class="text" size=60/>
+                            
+                        </p>
+                        <p>
+                            <label>Khởi hành</label><br />
+                            <input type="text" id="khoihanh" name="khoihanh" value="<?php echo $item['khoihanh']?>" class="text" size=60/>
                             
                         </p>
                         <p>
@@ -75,11 +93,17 @@
                     <br />
                 	<textarea class="text" id="chuongtrinh" name="chuongtrinh"><?php echo $item['chuongtrinh']?></textarea>
                 </div>
-                <div id="fragment-detail">
-                	<input type="button" class="button" value="<?php echo $entry_photo ?>" onclick="browserFile('chitiet','editor')"/>
-                    <input type="button" class="button" value="Chọn video" onclick="browserFile('chitiet','video')"/>
+                <div id="fragment-dieukhoan">
+                	<input type="button" class="button" value="<?php echo $entry_photo ?>" onclick="browserFile('dieukhoan','editor')"/>
+                    <input type="button" class="button" value="Chọn video" onclick="browserFile('dieukhoan','video')"/>
                     <br />
-                	<textarea class="text" id="chitiet" name="chitiet"><?php echo $item['chitiet']?></textarea>
+                	<textarea class="text" id="dieukhoan" name="dieukhoan"><?php echo $item['dieukhoan']?></textarea>
+                </div>
+                <div id="fragment-banggia">
+                	<input type="button" class="button" value="<?php echo $entry_photo ?>" onclick="browserFile('banggia','editor')"/>
+                    <input type="button" class="button" value="Chọn video" onclick="browserFile('banggia','video')"/>
+                    <br />
+                	<textarea class="text" id="banggia" name="banggia"><?php echo $item['banggia']?></textarea>
                 </div>
                 
             </div>
@@ -92,14 +116,17 @@
 <script type="text/javascript" charset="utf-8">
 var arratt = new Array();
 $(document).ready(function(e) {
+	$('#loaitour').val("<?php echo $item['loaitour']?>");
 	$("#images").sortable();
+	$('#khuyenmai').keyup();
     <?php
+	if(count($item['arrimage']))
 		foreach($item['arrimage'] as $key => $item)
 		{
 			if(count($item))
 			{
 	?>
-					arratt[<?php echo $key?>] = <?php echo $item['fileid']?>;
+					arratt[<?php echo $key?>] = "<?php echo $item['fileid']?>";
 				
 	<?php
 				}
@@ -116,7 +143,7 @@ $('#khuyenmai').keyup(function(e) {
 });
 function callAtt(pos)
 {
-	if(arratt[pos]!= undefined)
+	if(arratt[pos]!= undefined && arratt[pos]!="")
 	{
 		$.getJSON("?route=core/file/getFile&fileid="+ arratt[pos] +"&width=100", 
 		function(file) 
@@ -138,11 +165,13 @@ function save()
 	var pageValue = oEditor.getData();
 	$('textarea#chuongtrinh').val(pageValue);
 	
-	var oEditor = CKEDITOR.instances['chitiet'] ;
+	var oEditor = CKEDITOR.instances['dieukhoan'] ;
 	var pageValue = oEditor.getData();
-	$('textarea#chitiet').val(pageValue);
+	$('textarea#dieukhoan').val(pageValue);
 	
-	
+	var oEditor = CKEDITOR.instances['banggia'] ;
+	var pageValue = oEditor.getData();
+	$('textarea#banggia').val(pageValue);
 	
 	$.post("?route=ste/tour/save",$('#frm_tour_form').serialize(),
 		function(data){
@@ -166,7 +195,8 @@ function save()
 $(document).ready(function() { 
 	setCKEditorType('thongtin',2);
 	setCKEditorType('chuongtrinh',2);
-	setCKEditorType('chitiet',2);
+	setCKEditorType('dieukhoan',2);
+	setCKEditorType('banggia',2);
 	
 	$('#container').tabs({ fxSlide: true, fxFade: true, fxSpeed: 'slow' });
 	

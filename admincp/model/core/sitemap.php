@@ -7,6 +7,7 @@ class ModelCoreSitemap extends Model
 							'module/information' => 'Information Page',
 							'module/register' => 'Register Page',
 							'module/news'=>'News',
+							'module/tour'=>'Tour',
 							//'module/event' => 'Event',
 							'module/banner'=>'Banner',
 							//'module/album'=>'Album',

@@ -4,7 +4,7 @@
     
     <div class="section-content">
     	
-        <form action="" method="post" id="frm_movie">
+        <form action="" method="post" id="frm_tour_list">
         	<div id="ben-search">
             	<label>Tên tour</label>
                 <input type="text" id="moviename" name="moviename" class="text" value="" />
@@ -50,7 +50,7 @@ function deleteitem()
 	if (answer)
 	{
 		$.post("?route=ste/tour/delete", 
-				$("#frm_nhacungcap").serialize(), 
+				$("#frm_tour_list").serialize(), 
 				function(data)
 				{
 					if(data!="")
