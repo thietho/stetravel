@@ -9,7 +9,6 @@ class ModelSteTour extends Model
 							'giatour',
 							'chuongtrinh',
 							'dieukhoan',
-							'thongtinvantac',
 							'thongtin',
 							'banggia',
 							'trangthai',

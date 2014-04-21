@@ -144,9 +144,7 @@ class ControllerSteTour extends Controller
 		{
       		$this->data['item'] = $this->model_ste_tour->getItem($this->request->get['id']);
 			
-			//$arr = $this->string->referSiteMapToArray($this->data['item']['images']);
-			//$file = $this->model_core_file->getFile($this->data['item']['image']);
-			//$this->data['item']['imagethumbnail'] = HelperImage::resizePNG($file['filepath'], 100, 0);	
+			
 			$this->data['item']['arrimage'] = $this->string->referSiteMapToArray($this->data['item']['images']);
 			
     	}

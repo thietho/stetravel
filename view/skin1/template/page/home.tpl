@@ -16,7 +16,8 @@
             <div class="ben-section-content">
         		<?php echo $newshome?>
             </div>
-        	
+        	<?php echo $tourkhuyenmai?>
+            <?php echo $tournoibat?>
         </div>
     </div>
     
