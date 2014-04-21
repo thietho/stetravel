@@ -30,6 +30,7 @@ class ControllerPageDetail extends Controller
 				$sitemap = $this->model_core_sitemap->getItem($this->document->sitemapid, $siteid);
 				$this->data['sitemap'] = $sitemap;
 				$this->document->breadcrumb =  $sitemap['sitemapname'.$this->language->getLang()];
+				
 				switch($sitemap['moduleid'])
 				{
 					case "":
@@ -167,6 +168,34 @@ class ControllerPageDetail extends Controller
 							$this->data['module'] = $this->loadModule('module/pagedetail','getForm',$arr);
 						}
 					break;
+					case "module/tour":
+						$this->load->model("ste/tour");
+						if($id == "")
+						{
+							$template = array(
+										  'template' => "module/tour_list.tpl",
+										  'width' => 123,
+										  'height' =>0,
+										  
+										  );
+							$where = " AND loaitour like '".$sitemap['sitemapid']."' Order by id desc ";
+							$data_tour = $this->model_ste_tour->getList($where);
+							
+							$arr = array($sitemap['sitemapname'],$data_tour,$template);
+							$this->data['module'] = $this->loadModule('module/tour','listTour',$arr);
+	
+						}
+						else
+						{
+							$template = array(
+										  'template' => "module/product_detail.tpl",
+										  'width' => 250,
+										  'height' =>250
+										  );
+							$arr = array($this->document->sitemapid,12,$template);
+							$this->data['module'] = $this->loadModule('module/pagedetail','getFormProduct',$arr);
+						}
+						break;
 					case "module/product":
 						if($id == "")
 						{

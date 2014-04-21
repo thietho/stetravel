@@ -40,7 +40,7 @@ class ControllerPageHome extends Controller
 			//Tour khuyen mai
 			$this->load->model("ste/tour");
 			$template = array(
-						  'template' => "module/tour_list.tpl",
+						  'template' => "home/tour_list.tpl",
 						  'width' => 123,
 						  'height' =>0,
 						  
@@ -54,7 +54,7 @@ class ControllerPageHome extends Controller
 			//Tour noi bat
 			$this->load->model("ste/tour");
 			$template = array(
-						  'template' => "module/tour_list.tpl",
+						  'template' => "home/tour_list.tpl",
 						  'width' => 123,
 						  'height' =>0,
 						  
