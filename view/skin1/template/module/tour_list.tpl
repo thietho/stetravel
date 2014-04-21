@@ -11,10 +11,10 @@
                 <table >
                 	<tr>
                     	<td>
-                        	<a class="islink" href="" title="<?php echo $tour['tentour']?>"><img src="<?php echo $tour['arrthumbnail'][0]?>" class='ben-center' alt="<?php echo $tour['tentour']?>" title="<?php echo $tour['tentour']?>"/></a>
+                        	<a class="islink" href="<?php echo $tour['link']?>" title="<?php echo $tour['tentour']?>"><img src="<?php echo $tour['arrthumbnail'][0]?>" class='ben-center' alt="<?php echo $tour['tentour']?>" title="<?php echo $tour['tentour']?>"/></a>
                         </td>
                         <td>
-                        	<div class="ste_tentour"><a href="#"><?php echo $tour['tentour']?></a></div>
+                        	<div class="ste_tentour"><a href="<?php echo $tour['link']?>"><?php echo $tour['tentour']?></a></div>
                             <div><?php echo $tour['thongtinvantac']?></div>
                             <div class="ste-tourprice">
                             	Giá: <strong><?php echo $this->string->numberFormate($tour[giatour])?></strong>
@@ -28,4 +28,5 @@
             <?php } ?>
         <?php } ?>
     </table>
+    <?php echo $pager?>
 </div>
