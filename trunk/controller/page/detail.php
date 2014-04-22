@@ -8,9 +8,11 @@ class ControllerPageDetail extends Controller
 		foreach($_GET as $key => $val)
 			$arr[] = $key."=".$val;
 	 	$this->name ="Pagedetail_".implode("_",$arr);
+		
    	}
 	public function index()
 	{
+		
 		if($this->cachehtml->iscacht($this->name) == false)
 		{
 			$arr = array('menu-chinh');
@@ -256,6 +258,7 @@ class ControllerPageDetail extends Controller
 						}
 					break;
 					case "module/contact":
+						
 						$this->data['module'] = $this->loadModule('module/contact');
 					break;
 				}
