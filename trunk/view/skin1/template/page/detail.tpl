@@ -8,11 +8,11 @@
 	<div class="ben-left" id="ben-maincontent">
     	<div class="ben-section">
             
-            <div class="ben-section-content">
             
-            	<?php echo $module?>
             
-            </div>
+            <?php echo $module?>
+            
+            
             
         
         </div>
