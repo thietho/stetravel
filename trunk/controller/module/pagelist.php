@@ -8,7 +8,7 @@ class ControllerModulePagelist extends Controller
 		$this->load->helper('image');
 		if($sitemapid == "")
 			$sitemapid = $this->document->sitemapid;
-		echo $sitemapid;
+		
 		$siteid = $this->member->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
 		
