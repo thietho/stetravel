@@ -33,7 +33,10 @@
         	<table class="ben-form" style="width:100%">
             	<tr>
                 	<td>Tên tour</td>
-                    <td><?php echo $tour['tentour']?></td>
+                    <td>
+                    	<?php echo $tour['tentour']?>
+                        <input type="hidden" name="tentour" value="<?php echo $tour['tentour']?>"/>
+                    </td>
                 </tr>
                 <tr>
                 	<td>Số khách</td>
@@ -42,7 +45,7 @@
                 <tr>
                 	<td colspan="2">
                         Yêu cầu riêng<br>
-                        <textarea></textarea>
+                        <textarea id="requirements" name="requirements"></textarea>
                     </td>
                     
                 </tr>
@@ -63,7 +66,7 @@ $("#btnBooking").click(function(){
 		function(data){
 			if(data == "true")
 			{
-				$('#error').html("Bạn đã đăng ký thành công!").show('slow');
+				$('#error').html("Bạn đã đặt tour thành công!").show('slow');
 				$("#frmbooking").hide();
 			}
 			else

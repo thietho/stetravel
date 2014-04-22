@@ -30,42 +30,40 @@ class ControllerAddonBooking extends Controller
 		else
 		{
 			
-			$this->load->model("core/media");
-			$sitemapid = $data['sitemapid'];
-			$media = $this->model_core_media->getItem($this->member->getSiteId().$sitemapid);
-			/*$email1 = $this->model_core_media->getInformation($this->member->getSiteId().$data['sitemapid'], "email1");
-			$email2 = $this->model_core_media->getInformation($this->member->getSiteId().$data['sitemapid'], "email2");
-			$email3 = $this->model_core_media->getInformation($this->member->getSiteId().$data['sitemapid'], "email3");*/
-			$email = $this->model_core_media->getInformation("setting", 'EmailContact');
-			$email1 = $email;
-			$arrmail = array();
-			if($email1)
-				$arrmail[] = $email1;
-			if($email2)
-				$arrmail[] = $email2;
-			if($email3)
-				$arrmail[] = $email3;
+			
+			$email = $this->document->setup['EmailContact'];
 			$this->load->model("core/message");
-			$message['to']="admin," .implode(",",$arrmail) ;
+			$message['to']="admin" ;
 			$message['from']='"'.$data['fullname'].'" '.$data['email'];
-			$message['title'] = $media['title'];
+			$message['title'] = "Thông tin đặt tour";
 			$message['description']="Họ tên: ".$data['fullname']."<br>";
 			$message['description'].="Email: ".$data['email']."<br>";
 			$message['description'].="Địa chỉ: ".$data['address']."<br>";
 			$message['description'].="Điện thoại: ".$data['phone']."<br>";
-			$message['description'].="Nội dung: ".$data['description']."<br>";
+			$message['description'].="Tên tour: ".$data['tentour']."<br>";
+			$message['description'].="Số khách: ".$data['numcostomer']."<br>";
+			$message['description'].="Yêu cầu riêng: ".$data['requirements']."<br>";
 			$message['folder']="inbox";
 			$this->model_core_message->insert($message);
-			
+			//Gui mail den quan tri
 			$mail['from'] = $data['email'];
 			$mail['FromName'] = $data['fullname'];
-			$mail['to'] = implode(",",$arrmail);
+			$mail['to'] = $email;
 			$mail['name'] = "Admin";
 			$mail['subject'] =  $message['title'];
 			$arr = array($message['description']);
 			$mail['body'] = $this->loadModule('module/contact','createEmailTemplate',$arr);
 			$this->mailsmtp->sendMail($mail);
-			
+			//Gui mail den khach hang
+			$mail['from'] = $data['email'];
+			$mail['FromName'] = $this->document->setup['Title'];
+			$mail['to'] = $data['email'];
+			$mail['name'] = $data['customername'];
+			$mail['subject'] =  $message['title'];
+			$arr = array($message['description']);
+			$mail['body'] = "<p>".$this->document->setup['Title']." đã nhận được đơn hàng của bạn. Chúng tôi sẻ liên hệ với bạn trong vòng 24h</p>"; 
+			$mail['body'] .= $this->loadModule('module/contact','createEmailTemplate',$arr);
+			$this->mailsmtp->sendMail($mail);
 			$this->data['output'] = "true";
 		}
 		$this->id="content";
@@ -88,6 +86,8 @@ class ControllerAddonBooking extends Controller
 			$err["address"] = $this->data['war_addressnotnull'];
 		if($data['phone'] == "")
 			$err["phone"] = $this->data['war_phonenotnull'];
+		if($data['numcostomer'] == "")
+			$err["numcostomer"] = "Bạn chưa nhập số khách";
 		
 		return $err;
 	}
