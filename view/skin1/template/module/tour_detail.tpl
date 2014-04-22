@@ -1,7 +1,7 @@
 <div class="ben-section-title"><div class="title"><?php echo $this->document->getSiteMap($tour['loaitour'])?></div></div>
 
 
-<div class="ben-post">
+<div class="ben-section-content" >
 	<h2><?php echo $tour['tentour']?></h2>
 	<div class="ben-left product-left">
     	
