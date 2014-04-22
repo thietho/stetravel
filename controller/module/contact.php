@@ -3,6 +3,7 @@ class ControllerModuleContact extends Controller
 {
 	public function index()
 	{
+		
 		$this->load->model("core/media");
 		
 		$sitemapid = $this->document->sitemapid;

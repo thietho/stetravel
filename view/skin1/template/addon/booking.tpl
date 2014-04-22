@@ -1,13 +1,13 @@
 <div class="ben-section-title">
-	<div class="title">Đặt tour</div>
+	<div class="title"><?php echo $this->document->breadcrumb?></div>
 </div>
 <div class="ben-section-content">
 	
     <div id="error" class="ben-error" style="display:none"></div>
 	<form id="frmbooking" method="post">
-    	<div class="ben-left">
+    	<div class="ben-left" style="width:50%">
         	<h3>Thông tin liên hệ</h3>
-       		<table class="ben-form">
+       		<table class="ben-form" style="width:100%">
             	
                 <tr>
                     <td><label>Họ và tên</label></td>
@@ -28,36 +28,43 @@
             </table>
 
         </div>
-        <div class="ben-right">
-        	<table class="ben-form">
+        <div class="ben-right" style="width:50%">
+        	<h3>Thông tin tour</h3>
+        	<table class="ben-form" style="width:100%">
             	<tr>
                 	<td>Tên tour</td>
-                    <td></td>
+                    <td><?php echo $tour['tentour']?></td>
                 </tr>
                 <tr>
-                	<td>Tên tour</td>
-                    <td></td>
+                	<td>Số khách</td>
+                    <td><input type="text" id="numcostomer" name="numcostomer" class="ben-textbox" size="40"></td>
                 </tr>
                 <tr>
-                	<td>Tên tour</td>
-                    <td></td>
+                	<td colspan="2">
+                        Yêu cầu riêng<br>
+                        <textarea></textarea>
+                    </td>
+                    
                 </tr>
             </table>
         </div>
         <div class="clearer"></div>
+        <center>
+        	<input type="button" id="btnBooking" class="ben-button" value="Đặt tour">
+        </center>
     </form>
 </div>
 <div class="clearer">&nbsp;</div>
 <script language="javascript">
-$("#btnRegister").click(function(){
+$("#btnBooking").click(function(){
 	$.blockUI({ message: "<h1>Please wait...</h1>" }); 
 	
-	$.post("<?php echo HTTP_SERVER?>?route=addon/register/save", $("#frmRegister").serialize(),
+	$.post("<?php echo HTTP_SERVER?>?route=addon/booking/order", $("#frmbooking").serialize(),
 		function(data){
 			if(data == "true")
 			{
-				$('#error').html("Bạn đã đăng ký thành công! Mã kích hoạt tài khoản đã đươc gửi tới email của bạn! <a href='<?php echo $this->document->createLink('active')?>'>Kích hoạt tài khoản click vào đây</a>").show('slow');
-				$("#frmRegister").hide();
+				$('#error').html("Bạn đã đăng ký thành công!").show('slow');
+				$("#frmbooking").hide();
 			}
 			else
 			{
