@@ -179,7 +179,7 @@ class ControllerPageDetail extends Controller
 										  'width' => 123,
 										  'height' =>0,
 										  'paging' => true,
-										  'itemofpage' => 2,
+										  'itemofpage' => 20,
 										  'sorting' =>true
 										  );
 							$where = " AND loaitour like '".$sitemap['sitemapid']."' Order by id desc ";
@@ -286,6 +286,7 @@ class ControllerPageDetail extends Controller
 	
 	private function loadSiteBar()
 	{
+		$this->data['leftsitebar']['searchtour'] = $this->loadModule('sitebar/searchtour');
 		$arr = array('danh-muc');
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');

@@ -1,4 +1,6 @@
+<?php if($title){ ?>
 <div class="ben-section-title"><div class="title"><?php echo $title?></div></div>
+<?php }?>
 <div class="ben-section-content">
     <table class="ste-touritem">
     	<?php for($i=0;$i<count($data_tour);){ ?>

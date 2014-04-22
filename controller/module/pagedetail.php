@@ -4,6 +4,7 @@ class ControllerModulePagedetail extends Controller
 	public function getForm($sitemapid="",$count=8, $template = array(),$media=array())
 	{
 		$this->load->model("core/media");
+		$this->load->model("core/sitemap");
 		$this->load->helper('image');
 		
 		if($sitemapid == "")
@@ -12,7 +13,7 @@ class ControllerModulePagedetail extends Controller
 		$id = $this->request->get['id'];
 		$mediaid = $id;
 		$siteid = $this->member->getSiteId();
-		
+		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
 		$this->data['post'] = $this->model_core_media->getByAlias($mediaid);
 		$this->document->title = $this->document->setup['Title']." - ".$this->data['post']['title'];
 		

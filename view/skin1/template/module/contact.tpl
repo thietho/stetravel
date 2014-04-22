@@ -35,54 +35,57 @@ function sendMessage()
 	);
 }
 </script>
-
-<div class="ben-post">
-<h3>Thông tin liên hệ</h3>
-<p>
-    <?php echo $post['description']?>
-</p>
-
-<div class="clearer">&nbsp;</div>
-<div class="ben-error ben-hidden"></div>
-<form method="post" action="" id="contractForm" name="contractForm">
-<div>
-    <input type="hidden" name="sitemapid" value="<?php echo $this->document->sitemapid;?>" />
-    <div class="ben-left contact-left">
-        <p>
-            <label for="input-1"><?php echo $text_fullname?></label><br/>
-            <input type="text" name="fullname" id="fullname" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
-        </p>
-        
-        <p>
-            <label for="input-1"><?php echo $text_email?></label><br/>
-            <input type="text" name="email" id="email" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
-        </p>
+<div class="ben-section-title"><div class="title"><?php echo $post['title']?></div></div>
+<div class="ben-section-content">
+    <div class="ben-post">
     
         <p>
-            <label for="input-1"><?php echo $text_address?></label><br/>
-            <input type="text" name="address" id="address" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
+            <?php echo $post['description']?>
         </p>
-        
-        <p>
-            <label for="input-1"><?php echo $text_phone?></label><br/>
-            <input type="text" name="phone" id="phone" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
-        </p>
-    
-        
+       
+    	<div class="clearer">&nbsp;</div>
+        <h3>Thông tin liên hệ</h3>
+    	<div class="ben-error ben-hidden"></div>
+        <form method="post" action="" id="contractForm" name="contractForm">
+            <div>
+                <input type="hidden" name="sitemapid" value="<?php echo $this->document->sitemapid;?>" />
+                <div class="ben-left contact-left">
+                    <p>
+                        <label for="input-1"><?php echo $text_fullname?></label><br/>
+                        <input type="text" name="fullname" id="fullname" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
+                    </p>
+                    
+                    <p>
+                        <label for="input-1"><?php echo $text_email?></label><br/>
+                        <input type="text" name="email" id="email" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
+                    </p>
+                
+                    <p>
+                        <label for="input-1"><?php echo $text_address?></label><br/>
+                        <input type="text" name="address" id="address" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
+                    </p>
+                    
+                    <p>
+                        <label for="input-1"><?php echo $text_phone?></label><br/>
+                        <input type="text" name="phone" id="phone" class="ben-textbox" size="40" onkeypress='GetKey(event)'/>
+                    </p>
+                
+                    
+                </div>
+                <div class="ben-left">
+                    <p>
+                        <label for="input-3"><?php echo $text_note?></label><br/>
+                        <textarea name="description" id="description" class="ben-textbox" cols="65"></textarea>
+                    </p>
+                    
+                </div>
+                <div class="clearer">&nbsp;</div>
+                <p>
+                    <input type="button" class="ben-button" value="<?php echo $button_send?>" onclick="sendMessage()"/>
+                    <input type="reset" class="ben-button" value="<?php echo $button_reset?>"/>
+                </p>
+            </div>			
+        </form>
     </div>
-    <div class="ben-left">
-    	<p>
-            <label for="input-3"><?php echo $text_note?></label><br/>
-            <textarea name="description" id="description" class="ben-textbox" cols="65"></textarea>
-        </p>
-        
-    </div>
-    <div class="clearer">&nbsp;</div>
-    <p>
-        <input type="button" class="ben-button" value="<?php echo $button_send?>" onclick="sendMessage()"/>
-        <input type="reset" class="ben-button" value="<?php echo $button_reset?>"/>
-    </p>
-</div>			
-</form>
+	<?php echo $sododuongdi?>
 </div>
-<?php echo $sododuongdi?>
