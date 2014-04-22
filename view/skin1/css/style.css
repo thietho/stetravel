@@ -937,5 +937,20 @@ ul#menu li ul li div:hover {
 }
 .ste-sitebar-searchtour
 {
-	background:#f8e9e9	
+	background:#f8e9e9;
+	border-radius:5px;
+}
+.ben-text-searchtour
+{
+	border:thin solid #f8e9e9;
+	border-radius:5px 0 0 5px;
+	padding:5px;
+	width:180px;
+	font-style:italic;
+	background:#fdfbfb;
+	color:#b89797;
+}
+#btnSearch
+{
+	cursor:pointer;	
 }
