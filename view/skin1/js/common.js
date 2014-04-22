@@ -301,7 +301,8 @@ function numberMod()
 	});
 }
 $(document).ready(function(){
-	numberMod()		   
+	numberMod()
+	
 });
 
 function printObject(o) {
