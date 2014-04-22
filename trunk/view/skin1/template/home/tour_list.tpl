@@ -16,14 +16,20 @@
                 <table >
                 	<tr>
                     	<td>
-                        	<a class="islink" href="" title="<?php echo $tour['tentour']?>"><img src="<?php echo $tour['arrthumbnail'][0]?>" class='ben-center' alt="<?php echo $tour['tentour']?>" title="<?php echo $tour['tentour']?>"/></a>
+                        	
+                        	<a class="islink" href="<?php echo $tour['link']?>" title="<?php echo $tour['tentour']?>">
+                            	<?php if($tour['khuyenmai']){ ?>
+                                <div class="ste-khuyenmai"><?php echo $tour['khuyenmai']?>%</div>
+                                <?php } ?>
+                            	<img src="<?php echo $tour['arrthumbnail'][0]?>" class='ben-center' alt="<?php echo $tour['tentour']?>" title="<?php echo $tour['tentour']?>"/>
+                        	</a>
                         </td>
                         <td>
-                        	<div class="ste_tentour"><a href="#"><?php echo $tour['tentour']?></a></div>
+                        	<div class="ste_tentour"><a href="<?php echo $tour['link']?>"><?php echo $tour['tentour']?></a></div>
                             <div><?php echo $tour['thongtinvantac']?></div>
                             <div class="ste-tourprice">
                             	Giá: <strong><?php echo $this->string->numberFormate($tour[giatour])?></strong>
-                                <a class="ste-button-order ben-right">Đặt tour</a>
+                                <a class="ste-button-order ben-right" href="<?php echo $tour['linkorder']?>">Đặt tour</a>
                                 <div class="clearer"></div>
                             </div>
                         </td>

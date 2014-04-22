@@ -130,11 +130,28 @@ $("#ben-next").click(function(){
             	<strong>Thời gian:</strong>
                 <?php echo $tour['thoigian']?>
             </p>
+            
             <p>
             	<strong>Giá tour:</strong>
                 <span class="ste_tourprice"><?php echo $this->string->numberFormate($tour['giatour'])?> <?php echo $this->document->setup['Currency']?></span>
-                <a class="ste-button-order">Đặt tour</a>
+                
+                <?php if(!$tour['khuyenmai']){ ?>
+                <a class="ste-button-order" href="<?php echo $tour['linkorder']?>">Đặt tour</a>
+                <?php } ?>
             </p>
+            <?php if($tour['khuyenmai']){ ?>
+            <p>
+            	<strong>Khuyến mãi:</strong>
+                <?php echo $tour['khuyenmai']?>%
+            </p>
+            <p>
+            	<strong>Giá còn:</strong>
+                <span class="ste_tourprice"><?php echo $this->string->numberFormate($tour['giatour']*(1-$tour['khuyenmai']/100))?> <?php echo $this->document->setup['Currency']?></span>
+                
+                
+                <a class="ste-button-order" href="<?php echo $tour['linkorder']?>">Đặt tour</a>
+            </p>
+            <?php }?>
             <p>
             	<strong>Phương tiện:</strong>
                 <?php echo $tour['phuongtien']?>

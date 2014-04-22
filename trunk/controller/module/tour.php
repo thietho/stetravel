@@ -24,7 +24,9 @@ class ControllerModuleTour extends Controller
 			$str = strtolower(str_replace(" ",'-',$str));
 			$alias = $tour['id']."-".$str;
 			$link = $this->document->createLink($tour['loaitour'],$alias);
+			$linkorder = $this->document->createLink('booking',$alias);
 			$data_tour[$key]['link'] = $link;
+			$data_tour[$key]['linkorder'] = $linkorder;
 		}
 		$this->data['title'] = $title;
 		$this->data['data_tour'] = array();
@@ -77,7 +79,17 @@ class ControllerModuleTour extends Controller
 		$tour['arr_imagethumbnail'] = $arr_imagethumbnail;
 		$tour['arr_imagepreview'] = $arr_imagepreview;
 		
+		$str = $this->string->chuyenvekodau(trim($tour['tentour']));
+		$str = $this->string->removeKtdatbiet(trim($tour['tentour']));
+		$str = strtolower(str_replace(" ",'-',$str));
+		$alias = $tour['id']."-".$str;
+		$link = $this->document->createLink($tour['loaitour'],$alias);
+		$linkorder = $this->document->createLink('booking',$alias);
+		$tour['link'] = $link;
+		$tour['linkorder'] = $linkorder;
+		
 		$this->data['tour'] = $tour;
+		
 		$this->id="content";
 		$this->template = $template['template'];
 		$this->render();
