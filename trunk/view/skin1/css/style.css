@@ -239,7 +239,7 @@ ul.ben-tab-list li {float: left;}
 
 
 /* Tables */
-table {margin-bottom: 0.5em; width: 100%;}
+table {margin-bottom: 0.5em; }
 th {font-weight: bold;}
 thead th {text-align:center}
 th,td,caption {/*padding: 4px 10px 4px 5px;*/}
