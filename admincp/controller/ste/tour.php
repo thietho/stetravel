@@ -19,9 +19,13 @@ class ControllerSteTour extends Controller
 		$this->load->model("ste/tour");
 		$this->load->model("core/file");
 		$this->load->model("core/sitemap");
+		$this->load->model("core/category");
 		$siteid = $this->user->getSiteId();
 		$where = " AND moduleid = 'module/tour'";
 		$this->data['data_loaitour'] = $this->model_core_sitemap->getList($siteid, $where);
+		$this->data['location'] = array();
+		$this->model_core_category->getTree("location",$this->data['location']);
+		unset($this->data['location'][0]);
 		
 		
    	}
@@ -143,8 +147,17 @@ class ControllerSteTour extends Controller
 		if($sanphamid) 
 		{
       		$this->data['item'] = $this->model_ste_tour->getItem($this->request->get['id']);
-			
-			
+			$diemdentext = "";
+			$arrdiemden = $this->string->referSiteMapToArray($this->data['item']['diemden']);
+			foreach($arrdiemden as $diemden)
+			{
+				if($diemdentext == "")
+					$diemdentext .= $this->document->getCategory($diemden);
+				else
+					$diemdentext .= "-".$this->document->getCategory($diemden);
+				
+			}
+			$this->data['item']['diemdentext'] = $diemdentext;
 			$this->data['item']['arrimage'] = $this->string->referSiteMapToArray($this->data['item']['images']);
 			
     	}
