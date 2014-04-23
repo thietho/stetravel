@@ -2,17 +2,18 @@
 	<div class="ste-sitebar-searchtouradvant">
     	<div class="clearer">&nbsp;</div>
     	<div class="ste-sitebar-searchtouradvant-title">Tìm tour</div>
+        <form id="frmAdvsearch" method="get" action="<?php echo $this->document->createLink('searchtour')?>">
         <table style="margin:0 auto">
         	<tr>
-            	<td><input type="radio" id="loaitour" name="loaitour" value="tour-nuoc-ngoai" /></td>
+            	<td><input type="radio" id="tour-nuoc-ngoai" class="loaitour" name="loaitour" value="tour-nuoc-ngoai" /></td>
                 <td>Tour nước ngoài</td>
             </tr>
             <tr>
-            	<td><input type="radio" id="loaitour" name="loaitour" value="tour-trong-nuoc" /></td>
+            	<td><input type="radio" id="tour-trong-nuoc" class="loaitour" name="loaitour" value="tour-trong-nuoc" /></td>
                 <td>Tour trong nước</td>
             </tr>
             <tr>
-            	<td><input type="radio" id="loaitour" name="loaitour" value="honeymoon-tour" /></td>
+            	<td><input type="radio" id="honeymoon-tour" class="loaitour" name="loaitour" value="honeymoon-tour" /></td>
                 <td>Honeymoon tour</td>
             </tr>
         </table>
@@ -45,7 +46,7 @@
                 	<select id="gia" name="gia" class="gia">
                         <option value=""></option>
                         <?php foreach($gia as $it){ ?>
-                        <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
+                        <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $it['categoryname']?></option>                        
                         <?php } ?>
                     </select>
                     <?php echo $this->document->setup['Currency']?>
@@ -54,8 +55,10 @@
             
         </table>
         <center>
-        	<input type="button" id="btnAdvSearch" class="button" value="Tìm kiếm" />
+        	<input type="submit" id="btnAdvSearch" class="button" value="Tìm kiếm" />
         </center>
+        </form>
+        
     </div>
 </div>
 <div class="ben-section">
@@ -70,9 +73,10 @@
     </div>
 </div>
 <script language="javascript">
-$('#btnAdvSearch').click(function(e) {
-    
-});
+$("#<?php echo $para['loaitour']?>").attr('checked','checked');
+$('#diemdi').val("<?php echo $para['diemdi']?>");
+$('#diemden').val("<?php echo $para['diemden']?>");
+$('#gia').val("<?php echo $para['gia']?>");
 $('#btnSearch').click(function(e) {
 	if($('#txt_search').val()!='Tour du lịch, điểm đến du lịch...')
     	window.location = "<?php echo $this->document->createLink('searchtour')?>?keyword="+ $('#txt_search').val();

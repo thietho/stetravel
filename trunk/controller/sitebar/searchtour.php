@@ -12,6 +12,8 @@ class ControllerSitebarSearchtour extends Controller
 		$this->model_core_category->getTree("gia",$this->data['gia']);
 		unset($this->data['gia'][0]);
 		
+		$this->data['para'] = $this->request->get;
+		
 		$this->id="content";
 		$this->template="sitebar/searchtour.tpl";
 		$this->render();

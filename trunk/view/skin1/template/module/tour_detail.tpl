@@ -160,6 +160,14 @@ $("#ben-next").click(function(){
             	<strong>Khởi hành:</strong>
                 <?php echo $tour['khoihanh']?>
             </p>
+            <p>
+            	<strong>Đi từ:</strong>
+                <?php echo $this->document->getCategory($tour['diemdi'])?>
+            </p>
+            <p>
+            	<strong>Đến:</strong>
+                <?php echo $tour['diemdentext']?>
+            </p>
             <p class="short_intro">
             	<?php echo html_entity_decode($tour['thongtin'])?>
                 
