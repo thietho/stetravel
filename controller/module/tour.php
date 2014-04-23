@@ -88,6 +88,18 @@ class ControllerModuleTour extends Controller
 		$tour['link'] = $link;
 		$tour['linkorder'] = $linkorder;
 		
+		$diemdentext = "";
+		$arrdiemden = $this->string->referSiteMapToArray($tour['diemden']);
+		foreach($arrdiemden as $diemden)
+		{
+			if($diemdentext == "")
+				$diemdentext .= $this->document->getCategory($diemden);
+			else
+				$diemdentext .= " - ".$this->document->getCategory($diemden);
+			
+		}
+		$tour['diemdentext'] = $diemdentext;
+		
 		$this->data['tour'] = $tour;
 		
 		$this->id="content";

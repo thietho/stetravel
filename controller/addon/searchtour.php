@@ -6,9 +6,13 @@ class ControllerAddonSearchtour extends Controller
 	{
 		$this->load->model("ste/tour");
 		$keyword = urldecode($this->request->get['keyword']);
+		$loaitour = urldecode($this->request->get['loaitour']);
+		$diemdi = urldecode($this->request->get['diemdi']);
+		$diemden = urldecode($this->request->get['diemden']);
+		$gia = urldecode($this->request->get['gia']);
 		
 		$this->document->breadcrumb = "Tìm kiếm tour";
-		$this->data['title'] ="Kết quả tìm kiếm với từ khóa: '$keyword'";
+		
 		
 		
 		$template = array(
@@ -19,18 +23,42 @@ class ControllerAddonSearchtour extends Controller
 					  'itemofpage' => 20,
 					  'sorting' =>true
 					  );
+		$where = "";
 		if($keyword)
 		{
+			$this->data['title'] ="Kết quả tìm kiếm với từ khóa: '$keyword'";
 			$arrkey = split(' ', $keyword);
 			foreach($arrkey as $key)
 			{
 				$arr[] = "tentour like '%".$key."%'";
 			}
 			$where .= " AND (
-								(". implode(" AND ",$arr). ")) Order by id desc";
+								(". implode(" AND ",$arr). "))";
 			
-			$data_tour = $this->model_ste_tour->getList($where);
+			
 		}
+		if($loaitour)
+		{
+			$where.= " AND loaitour like '".$loaitour."'";
+		}
+		if($diemdi)
+		{
+			$where.= " AND diemdi like '".$diemdi."'";
+		}
+		if($diemden)
+		{
+			$where.= " AND diemden like '%[".$diemden."]%'";
+		}
+		if($gia)
+		{
+			$arrgia = split("-",$gia);
+			if($arrgia[0])
+				$where .= " AND giatour >= ".$arrgia[0];
+			if($arrgia[1])
+				$where .= " AND giatour <= ".$arrgia[1];
+		}
+		echo $where .=" Order by id desc";
+		$data_tour = $this->model_ste_tour->getList($where);
 		if(count($data_tour))
 		{
 			$arr = array('',$data_tour,$template);
