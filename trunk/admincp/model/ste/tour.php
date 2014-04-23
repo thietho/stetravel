@@ -16,7 +16,9 @@ class ModelSteTour extends Model
 							'khuyenmai',
 							'images',
 							'phuongtien',
-							'khoihanh'
+							'khoihanh',
+							'diemdi',
+							'diemden'
 							);
 	public function getItem($id)
 	{

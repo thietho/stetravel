@@ -44,6 +44,22 @@
                             
                         </p>
                         <p>
+                            <label>Nơi khởi hành</label><br />
+                            <select id="diemdi" name="diemdi">
+                                <option value=""></option>
+                                <?php foreach($location as $it){ ?>
+                                <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
+                                <?php } ?>
+                            </select>
+                            
+                        </p>
+                        <p>
+                            <label>Nơi đến</label><br />
+                            <input type="hidden" id="diemden" name="diemden" value="<?php echo $item['diemden']?>"/>
+                            <span id="diemdentext"><?php echo $item['diemdentext']?></span><br />
+                            <input type="button" class="button" id="btnAddDiemden" value="Thêm điểm đến"/>
+                        </p>
+                        <p>
                             <label>Giá tour</label><br />
                             <input type="text" id="giatour" name="giatour" value="<?php echo $item['giatour']?>" class="text number short"/>
                             
@@ -120,10 +136,58 @@
 </div>
 <script type="text/javascript" charset="utf-8">
 var arratt = new Array();
+function showLocation()
+{
+	var eid = "fromlocation";
+	$('body').append('<div id="'+eid+'" style="display:none"></div>');
+	
+	$("#"+eid).attr('title','Thông tin file');
+		$("#"+eid).dialog({
+			autoOpen: false,
+			show: "blind",
+			hide: "explode",
+			width: 300,
+			height: 150,
+			modal: true,
+			close:function()
+				{
+					$("#"+eid).remove();
+				},
+			buttons: {
+				
+				
+				
+				'Chon':function()
+				{
+					var diemden = $('#diemden').val();
+					diemden +="["+ $('#selectlocation').val() +"]"
+					$('#diemden').val(diemden);
+					if($('#diemdentext').html() == "")
+						$('#diemdentext').append($('.'+$('#selectlocation').val()).attr('ref'));
+					else
+						$('#diemdentext').append("-"+$('.'+$('#selectlocation').val()).attr('ref'));
+					$("#"+eid).dialog( "close" );
+				},
+				'Đóng': function() 
+				{
+					
+					$("#"+eid).dialog( "close" );
+					
+				},
+			}
+		});
+	
+		$("#"+eid).dialog("open");
+		$("#"+eid).html("<select id='selectlocation'>"+$('#diemdi').html()+"</select>");
+}
 $(document).ready(function(e) {
 	$('#loaitour').val("<?php echo $item['loaitour']?>");
+	$('#diemdi').val("<?php echo $item['diemdi']?>");
 	$("#images").sortable();
 	$('#khuyenmai').keyup();
+	$('#btnAddDiemden').click(function(e) {
+        showLocation();
+    });
     <?php
 	if(count($item['arrimage']))
 		foreach($item['arrimage'] as $key => $fileid)
