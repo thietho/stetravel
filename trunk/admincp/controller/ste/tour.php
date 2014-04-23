@@ -86,7 +86,8 @@ class ControllerSteTour extends Controller
 		$loaitour = urldecode($this->request->get['loaitour']);
 		$diemdi = urldecode($this->request->get['diemdi']);
 		$diemden = urldecode($this->request->get['diemden']);
-		
+		$trangthai = urldecode($this->request->get['trangthai']);
+		$khuyenmai = urldecode($this->request->get['khuyenmai']);
 		if($tentour)
 		{
 			$arrkey = split(' ', $tentour);
@@ -108,7 +109,18 @@ class ControllerSteTour extends Controller
 		{
 			$where .= " AND diemden like '%[".$diemden."]%'";	
 		}
-		
+		if($diemdi)
+		{
+			$where .= " AND diemdi like '".$diemdi."'";	
+		}
+		if($trangthai)
+		{
+			$where .= " AND trangthai like '".$trangthai."'";	
+		}
+		if($khuyenmai)
+		{
+			$where .= " AND khuyenmai > 0";	
+		}
 		
 		$where .= " Order by id desc";
 		$rows = $this->model_ste_tour->getList($where);
