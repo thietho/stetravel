@@ -135,17 +135,18 @@ zxcCrawler.prototype={
  }
 
 }
-
-new zxcCrawler({
-  ID:'tst',           // the unique ID name of the parent DIV.                      (string)
-  Mode:'Vertical',    //(optional) the type of display, 'Horizontal' or 'Vertical'. (string, default = 'Horizontal')
-  MaxScroll:-5,        //(optional) the maximum scroll speed.                        (number, default = 5)
-  MinScroll:-2,        //(optional) the mouseout scroll speed.                       (number, default = 0)
-  Edge:50,            //(optional) distance from the edges to activate scrolling.   (number, default = 50)
-  ReverseEdges:false, //(optional) reverse the edge scroll direction.               (boolean, default = false)
-  SaveDirection:true  //(optional)  remember the current scroll direction.          (boolean, default = false)
- }
-);
-
-
+function runWeblink()
+{
+	new zxcCrawler({
+	  ID:'tst',           // the unique ID name of the parent DIV.                      (string)
+	  Mode:'Vertical',    //(optional) the type of display, 'Horizontal' or 'Vertical'. (string, default = 'Horizontal')
+	  MaxScroll:-5,        //(optional) the maximum scroll speed.                        (number, default = 5)
+	  MinScroll:-2,        //(optional) the mouseout scroll speed.                       (number, default = 0)
+	  Edge:50,            //(optional) distance from the edges to activate scrolling.   (number, default = 50)
+	  ReverseEdges:false, //(optional) reverse the edge scroll direction.               (boolean, default = false)
+	  SaveDirection:true  //(optional)  remember the current scroll direction.          (boolean, default = false)
+	 }
+	);
+}
+setTimeout('runWeblink()',1000);
 </script>
