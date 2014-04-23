@@ -954,3 +954,46 @@ ul#menu li ul li div:hover {
 {
 	cursor:pointer;	
 }
+.ste-sitebar-searchtouradvant
+{
+	width:232px;
+	height:266px;
+	background:url(../image/bg-search-tour.png) no-repeat;
+	font-size:0.9em;
+}
+.ste-sitebar-searchtouradvant .button
+{
+	background:#646060;
+	color:#fff;
+	border-radius:5px;
+	padding:3px 10px;
+	cursor:pointer;
+}
+.ste-sitebar-searchtouradvant td
+{
+	padding-bottom:7px;	
+}
+.ste-sitebar-searchtouradvant select
+{
+	
+	height:auto;
+	padding:2px 5px;
+}
+.ste-sitebar-searchtouradvant .location
+{
+	width:140px;
+}
+.ste-sitebar-searchtouradvant .gia
+{
+	width:100px;
+}
+.ste-sitebar-searchtouradvant-title
+{
+	background:red;
+	color:#fff;
+	text-align:center;
+	border-radius:18px;
+	margin:20px 20px 5px;
+	font-weight:bold;
+	padding:8px;
+}

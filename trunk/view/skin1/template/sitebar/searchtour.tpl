@@ -1,4 +1,64 @@
 <div class="ben-section">
+	<div class="ste-sitebar-searchtouradvant">
+    	<div class="clearer">&nbsp;</div>
+    	<div class="ste-sitebar-searchtouradvant-title">Tìm tour</div>
+        <table style="margin:0 auto">
+        	<tr>
+            	<td><input type="radio" id="loaitour" name="loaitour" value="tour-nuoc-ngoai" /></td>
+                <td>Tour nước ngoài</td>
+            </tr>
+            <tr>
+            	<td><input type="radio" id="loaitour" name="loaitour" value="tour-trong-nuoc" /></td>
+                <td>Tour trong nước</td>
+            </tr>
+            <tr>
+            	<td><input type="radio" id="loaitour" name="loaitour" value="honeymoon-tour" /></td>
+                <td>Honeymoon tour</td>
+            </tr>
+        </table>
+        <table style="margin:0 auto">
+        	<tr>
+            	<td>Nơi khởi hành</td>
+                <td>
+                	<select id="diemdi" name="diemdi" class="location">
+                        <option value=""></option>
+                        <?php foreach($location as $it){ ?>
+                        <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
+                        <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            	<td>Nơi đến</td>
+                <td>
+                	<select id="diemden" name="diemden" class="location">
+                        <option value=""></option>
+                        <?php foreach($location as $it){ ?>
+                        <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
+                        <?php } ?>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+            	<td>Giá</td>
+                <td>
+                	<select id="gia" name="gia" class="gia">
+                        <option value=""></option>
+                        <?php foreach($gia as $it){ ?>
+                        <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
+                        <?php } ?>
+                    </select>
+                    <?php echo $this->document->setup['Currency']?>
+                </td>
+            </tr>
+            
+        </table>
+        <center>
+        	<input type="button" id="btnAdvSearch" class="button" value="Tìm kiếm" />
+        </center>
+    </div>
+</div>
+<div class="ben-section">
     <div class="ste-sitebar-searchtour">
     	<table style="width:100%">
         	<tr>
@@ -10,7 +70,9 @@
     </div>
 </div>
 <script language="javascript">
-
+$('#btnAdvSearch').click(function(e) {
+    
+});
 $('#btnSearch').click(function(e) {
 	if($('#txt_search').val()!='Tour du lịch, điểm đến du lịch...')
     	window.location = "<?php echo $this->document->createLink('searchtour')?>?keyword="+ $('#txt_search').val();
