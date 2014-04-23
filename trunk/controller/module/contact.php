@@ -15,7 +15,7 @@ class ControllerModuleContact extends Controller
 			$this->data['post']['description'] = "Updating...";
 		}
 		
-		$this->data['post']['description'] = html_entity_decode($this->data['post']['description']);
+		$this->data['post']['description'.$this->language->getLang()] = html_entity_decode($this->data['post']['description'.$this->language->getLang()]);
 		$this->document->title .= " - ".$this->data['post']['title'];
 		$arr = array("sododuongdi");
 						

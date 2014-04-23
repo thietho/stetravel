@@ -382,7 +382,7 @@ input.ben-button:active {border-style: inset;}
 	margin-top:136px;
 	position:absolute;
 	width:1000px;
-	z-index:1000;
+	
 }
 #ben-header label
 {
@@ -456,7 +456,9 @@ z-index:100;
 	background:#737171;
 	
 	border-radius:10px 10px 0 0;
-	border:thin solid #fff;
+	border-top:thin solid #fff;
+	border-left:thin solid #fff;
+	border-right:thin solid #fff;
 }
 #ben-main-nav li:last-child
 {
@@ -472,7 +474,7 @@ z-index:100;
 position:absolute;
 display:none;
 
-top:1.5em;
+
 background:#000;
 }
 
