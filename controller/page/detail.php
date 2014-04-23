@@ -291,7 +291,7 @@ class ControllerPageDetail extends Controller
 		$this->data['leftsitebar']['produtcategory'] = $this->loadModule('sitebar/catalogue','index',$arr);
 		$this->data['leftsitebar']['supportonline'] = $this->loadModule('sitebar/supportonline');
 		$this->data['leftsitebar']['dknhantinh'] = $this->loadModule('sitebar/dangkynhantin');
-		$this->data['leftsitebar']['banner'] = $this->loadModule('sitebar/banner');
+		$this->data['leftsitebar']['banner'] = $this->loadModule('sitebar/weblink');
 	}
 	function getProduct($status)
 	{
