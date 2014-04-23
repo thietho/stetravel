@@ -82,19 +82,33 @@ class ControllerSteTour extends Controller
 		$this->data['datas'] = array();
 		$where = "";
 		
-		$datasearchlike['tentour'] = urldecode($this->request->get['tentour']);
+		$tentour = urldecode($this->request->get['tentour']);
+		$loaitour = urldecode($this->request->get['loaitour']);
+		$diemdi = urldecode($this->request->get['diemdi']);
+		$diemden = urldecode($this->request->get['diemden']);
 		
-		
-		$arr = array();
-		foreach($datasearchlike as $key => $item)
+		if($tentour)
 		{
-			if($item !="")
-				$arr[] = " AND " . $key ." like '".$item."%'";
+			$arrkey = split(' ', $tentour);
+			foreach($arrkey as $key)
+			{
+				$arr[] = "tentour like '%".$key."%'";
+			}
+			$where .= " AND ((". implode(" AND ",$arr). "))";
+		}
+		if($loaitour)
+		{
+			$where .= " AND loaitour like '".$loaitour."'";	
+		}
+		if($diemdi)
+		{
+			$where .= " AND diemdi like '".$diemdi."'";	
+		}
+		if($diemden)
+		{
+			$where .= " AND diemden like '%[".$diemden."]%'";	
 		}
 		
-		
-		
-		$where = implode("",$arr);
 		
 		$where .= " Order by id desc";
 		$rows = $this->model_ste_tour->getList($where);
