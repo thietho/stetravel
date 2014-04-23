@@ -473,26 +473,31 @@ z-index:100;
 #ben-main-nav ul {
 position:absolute;
 display:none;
+border-radius:0 0 10px 10px;
 
-
-background:#000;
+background:red;
 }
 
 #ben-main-nav ul li{
 	margin-left:0px;
-	border-bottom: thin solid #CCCCCC;
-}
-#ben-main-nav ul li:last-child{
+	border:none;
+	background:none;
+	border-radius:0;
 	
-	border-bottom: none;
 }
+
 #ben-main-nav li ul a{
-width:17em;
+width:12em;
 height:auto;
 float:left;
 padding:3px 10px;
+text-align:left;
 }
-
+#ben-main-nav li ul a:hover
+{
+	color:#000;
+	border-radius:0 0 10px 10px;
+}
 #ben-main-nav ul ul{
 top:auto;
 }	
