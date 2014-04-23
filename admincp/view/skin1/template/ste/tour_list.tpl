@@ -30,8 +30,8 @@
                     <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
                     <?php } ?>
                 </select>
-                <input type="checkbox" id="trangthai" name="trangthai" value="noibat" <?php echo ($item['trangthai']=='noibat')?'checked="checked"':''?>/> Tour nổi bật
-        		<input type="checkbox" id="trangthai" name="trangthai" value="noibat" <?php echo ($item['trangthai']=='noibat')?'checked="checked"':''?>/> Tour nổi bật        
+                <input type="checkbox" class="search" id="trangthai" name="trangthai" value="noibat"/> Tour nổi bật
+        		<input type="checkbox" class="search" id="khuyenmai" name="khuyenmai" value="khuyenmai"/> Tour khuyến mãi
                 <br />
                 <input type="button" class="button" name="btnSearch" value="Tìm" onclick="searchForm()"/>
                 <input type="button" class="button" name="btnSearch" value="Xem tất cả" onclick="viewAll()"/>
@@ -87,7 +87,9 @@ function deleteitem()
 $(document).ready(function(e) {
     viewAll();
 });
-
+$('.search').click(function(e) {
+    searchForm();
+});
 $('.text').keyup(function(e) {
     searchForm();
 });
@@ -116,8 +118,10 @@ function searchForm()
 		url += "&diemdi=" + encodeURI($("#frm_tour_list #diemdi").val());
 	if($("#frm_tour_list #diemden").val() != "")
 		url += "&diemden=" + encodeURI($("#frm_tour_list #diemden").val());	
-	
-	
+	if(document.getElementById("trangthai").checked == true)
+		url += "&trangthai=" + encodeURI($("#frm_tour_list #trangthai").val());	
+	if(document.getElementById("khuyenmai").checked == true)
+		url += "&khuyenmai=" + encodeURI($("#frm_tour_list #khuyenmai").val());	
 	
 
 	
