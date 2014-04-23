@@ -4,6 +4,7 @@ class ControllerModuleTour extends Controller
 	function __construct() 
 	{
 		$this->load->model("core/file");
+		
 		$this->load->helper('image');
    	}
 	public function listTour($title,$data_tour,$template)

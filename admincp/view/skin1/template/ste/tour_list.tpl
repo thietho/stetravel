@@ -7,9 +7,31 @@
         <form action="" method="post" id="frm_tour_list">
         	<div id="ben-search">
             	<label>Tên tour</label>
-                <input type="text" id="moviename" name="moviename" class="text" value="" />
+                <input type="text" id="tentour" name="tentour" class="text" value="" />
+                <label>Loại tour</label>
+                <select id="loaitour" name="loaitour">
+                	<option value=""></option>
+                    <?php foreach($data_loaitour as $loaitour){ ?>
+                    <option value="<?php echo $loaitour['sitemapid']?>"><?php echo $loaitour['sitemapname']?></option>
+                    <?php }?>
+                </select>
                 
-                
+                <label>Nơi khởi hành</label>
+                <select id="diemdi" name="diemdi">
+                    <option value=""></option>
+                    <?php foreach($location as $it){ ?>
+                    <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
+                    <?php } ?>
+                </select>
+                <label>Nơi đến</label>
+                <select id="diemden" name="diemden">
+                    <option value=""></option>
+                    <?php foreach($location as $it){ ?>
+                    <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
+                    <?php } ?>
+                </select>
+                <input type="checkbox" id="trangthai" name="trangthai" value="noibat" <?php echo ($item['trangthai']=='noibat')?'checked="checked"':''?>/> Tour nổi bật
+        		<input type="checkbox" id="trangthai" name="trangthai" value="noibat" <?php echo ($item['trangthai']=='noibat')?'checked="checked"':''?>/> Tour nổi bật        
                 <br />
                 <input type="button" class="button" name="btnSearch" value="Tìm" onclick="searchForm()"/>
                 <input type="button" class="button" name="btnSearch" value="Xem tất cả" onclick="viewAll()"/>
@@ -32,7 +54,7 @@
             </div>
             <div class="clearer">^&nbsp;</div>
             
-            <div id="listmovie" class="sitemap treeindex">
+            <div id="listtour" class="sitemap treeindex">
                 
             </div>
         	
@@ -79,15 +101,22 @@ function viewAll()
 	{
 		url += "&opendialog=true";
 	}
-	$('#listmovie').html(loading);
-	$('#listmovie').load(url);
+	$('#listtour').html(loading);
+	$('#listtour').load(url);
 }
 
 function searchForm()
 {
 	var url =  "";
-	if($("#frm_movie #moviename").val() != "")
-		url += "&moviename=" + encodeURI($("#frm_movie #moviename").val());
+	if($("#frm_tour_list #tentour").val() != "")
+		url += "&tentour=" + encodeURI($("#frm_tour_list #tentour").val());
+	if($("#frm_tour_list #loaitour").val() != "")
+		url += "&loaitour=" + encodeURI($("#frm_tour_list #loaitour").val());
+	if($("#frm_tour_list #diemdi").val() != "")
+		url += "&diemdi=" + encodeURI($("#frm_tour_list #diemdi").val());
+	if($("#frm_tour_list #diemden").val() != "")
+		url += "&diemden=" + encodeURI($("#frm_tour_list #diemden").val());	
+	
 	
 	
 
@@ -96,8 +125,8 @@ function searchForm()
 	{
 		url += "&opendialog=true";
 	}
-	$('#listmovie').html(loading);
-	$('#listmovie').load("?route=ste/tour/getList"+url);
+	$('#listtour').html(loading);
+	$('#listtour').load("?route=ste/tour/getList"+url);
 }
 
 function moveto(url,eid)
