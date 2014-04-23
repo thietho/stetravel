@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 23, 2014 at 07:28 AM
+-- Generation Time: Apr 23, 2014 at 07:38 AM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.11
 
@@ -1234,24 +1234,24 @@ INSERT INTO `sitemap` (`id`, `sitemapid`, `siteid`, `sitemapparent`, `sitemapnam
 
 CREATE TABLE IF NOT EXISTS `ste_tour` (
   `id` bigint(20) NOT NULL AUTO_INCREMENT,
-  `tentour` text NOT NULL,
-  `loaitour` varchar(50) NOT NULL,
-  `thoigian` text NOT NULL,
+  `tentour` text COLLATE utf8_unicode_ci NOT NULL,
+  `loaitour` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `thoigian` text COLLATE utf8_unicode_ci NOT NULL,
   `giatour` double NOT NULL,
-  `thongtinvantac` text NOT NULL,
-  `chuongtrinh` text NOT NULL,
-  `dieukhoan` text NOT NULL,
-  `thongtin` text NOT NULL,
-  `banggia` text NOT NULL,
-  `trangthai` text NOT NULL,
+  `thongtinvantac` text COLLATE utf8_unicode_ci NOT NULL,
+  `chuongtrinh` text COLLATE utf8_unicode_ci NOT NULL,
+  `dieukhoan` text COLLATE utf8_unicode_ci NOT NULL,
+  `thongtin` text COLLATE utf8_unicode_ci NOT NULL,
+  `banggia` text COLLATE utf8_unicode_ci NOT NULL,
+  `trangthai` text COLLATE utf8_unicode_ci NOT NULL,
   `khuyenmai` double NOT NULL,
-  `images` text NOT NULL,
-  `phuongtien` text NOT NULL,
-  `khoihanh` text NOT NULL,
-  `diemdi` varchar(50) NOT NULL,
-  `diemden` text NOT NULL,
+  `images` text COLLATE utf8_unicode_ci NOT NULL,
+  `phuongtien` text COLLATE utf8_unicode_ci NOT NULL,
+  `khoihanh` text COLLATE utf8_unicode_ci NOT NULL,
+  `diemdi` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `diemden` text COLLATE utf8_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8mb4 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=6 ;
 
 --
 -- Dumping data for table `ste_tour`
