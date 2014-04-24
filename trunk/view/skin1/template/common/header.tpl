@@ -7,7 +7,7 @@
         
         
     	
-        <div class="ben-right" id="ben-hotline">HOT LINE: 0909 556 054</div>
+        <div class="ben-right" id="ben-hotline">HOT LINE: <span>0909 556 054</span></div>
         <div class="ben-navigation ben-right">
         
             <ul id="ben-main-nav">
@@ -28,12 +28,12 @@
 
 <script src="<?php echo HTTP_SERVER.DIR_JS?>menu.js" language="javascript"></script>
 <script language="javascript">
-var arrcolor = new Array('#6e4709',"#0F0","#fb0303","#ecfb03");
+var arrcolor = new Array('#6e4709',"#de3f01","#fb0303","#ecfb03");
 var incolor = 0;
 function runChangeColor()
 {
 	//alert(incolor)
-	$('#ben-hotline').css('color',arrcolor[incolor]);
+	$('#ben-hotline span').css('color',arrcolor[incolor]);
 	incolor++;
 	
 	if(incolor>=arrcolor.length)
