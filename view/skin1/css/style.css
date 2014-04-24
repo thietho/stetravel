@@ -414,13 +414,13 @@ input.ben-button:active {border-style: inset;}
 
 #ben-hotline
 {
-	font-size:1.8em;
+	font-size:1.6em;
 	font-weight:bold;
 	text-shadow: 1px 1px #666;
 	position:absolute;
 	color:red;
 	padding-top:58px;
-	padding-left:682px;
+	padding-left:715px;
 }
 #ben-hotline span
 {
