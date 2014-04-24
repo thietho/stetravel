@@ -412,7 +412,16 @@ input.ben-button:active {border-style: inset;}
 #ben-splash {padding-top: 32px;}
 
 
-
+#ben-hotline
+{
+	font-size:1.6em;
+	font-weight:bold;
+	text-shadow: 1px 1px #666;
+	position:absolute;
+	color:red;
+	padding-top:68px;
+	padding-left:756px;
+}
 /* Main Menu */
 /* Main Level 1 */
 #ben-main-nav, #ben-main-nav ul{

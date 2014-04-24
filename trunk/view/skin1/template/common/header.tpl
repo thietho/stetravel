@@ -7,7 +7,7 @@
         
         
     	
-        
+        <div class="ben-right" id="ben-hotline">HOT LINE: 0909 556 054</div>
         <div class="ben-navigation ben-right">
         
             <ul id="ben-main-nav">
@@ -28,6 +28,23 @@
 
 <script src="<?php echo HTTP_SERVER.DIR_JS?>menu.js" language="javascript"></script>
 <script language="javascript">
+var arrcolor = new Array('#6e4709',"#0F0","#fb0303","#ecfb03");
+var incolor = 0;
+function runChangeColor()
+{
+	//alert(incolor)
+	$('#ben-hotline').css('color',arrcolor[incolor]);
+	incolor++;
+	
+	if(incolor>=arrcolor.length)
+	{
+		incolor = 0;
+	}
+	setTimeout('runChangeColor();',500);
+}
+$(document).ready(function(e) {
+    runChangeColor();
+});
 $('.lang').click(function(e) {
     $.get("<?php echo HTTP_SERVER?>?lang="+this.id,function(){
 		$.blockUI({ message: "<h1>Please wait!!!</h1>" }); 
