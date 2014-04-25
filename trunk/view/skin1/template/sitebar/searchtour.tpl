@@ -32,10 +32,7 @@
             	<td>Nơi đến</td>
                 <td>
                 	<select id="diemden" name="diemden" class="location">
-                        <option value=""></option>
-                        <?php foreach($location as $it){ ?>
-                        <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
-                        <?php } ?>
+                        <option value="">---Tất cả---</option>
                     </select>
                 </td>
             </tr>
