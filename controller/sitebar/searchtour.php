@@ -26,6 +26,14 @@ class ControllerSitebarSearchtour extends Controller
 		switch($loaitour)
 		{
 			case "tour-nuoc-ngoai":
+				$location = array();
+				$this->model_core_category->getTree("location",$location,-1, "", "","vietnam");
+				unset($location[0]);
+				foreach($location as $it)
+				{
+					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$it['categoryname']."</option>";
+					
+                }
 				break;
 			case "tour-trong-nuoc":
 				$location = array();
@@ -34,7 +42,8 @@ class ControllerSitebarSearchtour extends Controller
 				foreach($location as $it)
 				{
 					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$it['categoryname']."</option>";
-					
+				
+                        
                 }
 				break;
 			case "honeymoon-tour":
@@ -43,7 +52,7 @@ class ControllerSitebarSearchtour extends Controller
 				unset($location[0]);
 				foreach($location as $it)
 				{
-					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$it['categoryname']."</option>";
+					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']).$it['categoryname']."</option>";
 					
                 }
 				break;

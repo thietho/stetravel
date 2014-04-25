@@ -168,8 +168,15 @@ class ModelCoreCategory extends Model
 	}
 	
 	//Tree
-	function getTree($id, &$data, $level=-1, $path="", $parentpath="")
+	function getTree($id, &$data, $level=-1, $path="", $parentpath="",$notid="-1")
 	{
+		
+		if($id == $notid)
+		{
+		
+			return;
+		}
+		
 		$arr=$this->getItem($id);
 		
 		$rows = $this->getChild($id);
@@ -179,7 +186,7 @@ class ModelCoreCategory extends Model
 		if($arr['parent'] != "") 
 			$parentpath .= "-".$arr['parent'];
 		
-		if($id!="" )
+		if($id!="")
 		{
 			$level += 1;
 			$path .= "-".$id;
@@ -195,7 +202,7 @@ class ModelCoreCategory extends Model
 		if(count($rows))
 			foreach($rows as $row)
 			{
-				$this->getTree($row['categoryid'], $data, $level, $path, $parentpath);
+				$this->getTree($row['categoryid'], $data, $level, $path, $parentpath,$notid);
 			}
 	}
 	
