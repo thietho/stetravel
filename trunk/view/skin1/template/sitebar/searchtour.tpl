@@ -33,6 +33,7 @@
                 <td>
                 	<select id="diemden" name="diemden" class="location">
                         <option value="">---Tất cả---</option>
+                        
                     </select>
                 </td>
             </tr>
@@ -40,7 +41,7 @@
             	<td>Giá</td>
                 <td>
                 	<select id="gia" name="gia" class="gia">
-                        <option value=""></option>
+                        <option value="">---</option>
                         <?php foreach($gia as $it){ ?>
                         <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $it['categoryname']?></option>                        
                         <?php } ?>
@@ -82,5 +83,15 @@ $('#btnSearch').click(function(e) {
 $('#txt_search').keyup(function(e) {
     if(e.keyCode == 13)
 		$('#btnSearch').click();
+});
+$('.loaitour').click(function(e) {
+    $.get("?route=sitebar/searchtour/getDiemDen&loaitour="+ this.value,function(html){
+			$('#diemden').html(html);
+		})
+});
+$(document).ready(function(e) {
+	$.get("?route=sitebar/searchtour/getDiemDen&loaitour=honeymoon-tour",function(html){
+			$('#diemden').html(html);
+		})  
 });
 </script>
