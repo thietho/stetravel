@@ -22,18 +22,33 @@ class ControllerSitebarSearchtour extends Controller
 	{
 		$loaitour = $this->request->get['loaitour'];
 		$this->load->model("core/category");
+		$this->data['output'] = "<option value=''>---Tất cả---</option>";
 		switch($loaitour)
 		{
 			case "tour-nuoc-ngoai":
 				break;
-			case "tour-nuoc-ngoai":
+			case "tour-trong-nuoc":
+				$location = array();
+				$this->model_core_category->getTree("vietnam",$location);
+				unset($location[0]);
+				foreach($location as $it)
+				{
+					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$it['categoryname']."</option>";
+					
+                }
 				break;
 			case "honeymoon-tour":
+				$location = array();
+				$this->model_core_category->getTree("location",$location);
+				unset($location[0]);
+				foreach($location as $it)
+				{
+					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$it['categoryname']."</option>";
+					
+                }
 				break;
 		}
-		$this->data['location'] = array();
-		$this->model_core_category->getTree("location",$this->data['location']);
-		unset($this->data['location'][0]);
+		
 		
 		$this->id="content";
 		$this->template="common/output.tpl";
