@@ -65,7 +65,7 @@ a {
 	text-decoration: none;
 	cursor:pointer;
 }
-a:focus,a:hover { cursor:pointer;}
+a:focus,a:hover { cursor:pointer;color:blue}
 
 a.ben-other {
 	color: #999;
@@ -682,13 +682,12 @@ display:block;
 #ben-footer .companyname
 {
 	font-weight:bold;
-	font-size:1.5em;
+	font-size:1.2em;
 	
 }
 #ben-footer .companyinfo
 {
 	
-	font-size:1.2em;	
 }
 .ben-page
 {

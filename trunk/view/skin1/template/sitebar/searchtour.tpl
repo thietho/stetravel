@@ -22,10 +22,9 @@
             	<td>Nơi khởi hành</td>
                 <td>
                 	<select id="diemdi" name="diemdi" class="location">
-                        <option value=""></option>
-                        <?php foreach($location as $it){ ?>
-                        <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
-                        <?php } ?>
+                        <option class="hochiminh" ref="Hồ Chí Minh" value="hochiminh">Hồ Chí Minh</option>
+                        <option class="hanoi" ref="Hà Nội" value="hanoi">Hà Nội</option>
+                        
                     </select>
                 </td>
             </tr>
