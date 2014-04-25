@@ -4,16 +4,13 @@
     
     <div class="ben-left" id="ben-footer-left">
     	<p class="companyname">
-    	Công ty TNHH DV Du Lịch & Sự Kiện STE
+    	CÔNG TY TNHH DỊCH VỤ DU LỊCH & SỰ KIỆN STE ( STE Travel )
         </p>
         <p class="companyinfo">
-        	Địa chỉ: Lê Lợi, Bến Thành, Hồ Chí Minh<br />
-			Tel:(+84) 8 6681 0833
-			
+        	Trụ sở:  217/69 Trần Văn Đang, Phường 11, Quận3, TP, HCM<br />
+			Điện thoại: 66 737 350 - Fax: 62 907 800<br />
+            Email: dulich@stetravel.com - Website: http://stetravel.com
         </p>
-        <div class="ben-other">
-        	Website Design by <a href="http://holansolutions.com/">Ho Lan Solutions</a>
-       	</div>
         
         <div class="clearer">&nbsp;</div>
 
