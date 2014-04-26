@@ -130,7 +130,7 @@ class ControllerSteTour extends Controller
 		$limit = 20;
 		$total = count($rows); 
 		// work out the pager values 
-		$this->data['pager']  = $this->pager->pageLayoutAjax($total, $limit, $page,"#listmovie");
+		$this->data['pager']  = $this->pager->pageLayoutAjax($total, $limit, $page,"#listtour");
 		
 		$pager  = $this->pager->getPagerData($total, $limit, $page); 
 		$offset = $pager->offset; 
