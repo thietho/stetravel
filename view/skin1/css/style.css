@@ -441,21 +441,21 @@ z-index:100;
 .ben-navigation 
 {
 	
-	margin-top:97px;
+	margin-top:101px;
 	
 	
 }
 #ben-main-nav a{
 	
-	display:block;
-	padding:10px 0px;
-	color:#fff;
-	text-decoration:none;
-	text-transform:uppercase;
-	font-size:1.2em;
-	font-weight:bold;
-	width:112px;
-	text-align:center;
+	display: block;
+	padding: 8px 0px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 1.1em;
+	font-weight: bold;
+	width: 105px;
+	text-align: center;
 }
 
 #ben-main-nav a:hover{
@@ -500,7 +500,7 @@ background:red;
 }
 
 #ben-main-nav li ul a{
-width:12em;
+width:10em;
 height:auto;
 float:left;
 padding:3px 10px;
