@@ -152,12 +152,12 @@ class ControllerAddonRegister extends Controller
 			$this->model_addon_nhantin->insert($data);
 			
 			//Gui thong bao vo mail
-			$mail['from'] = "info@halinhsport.com";
-			$mail['FromName'] = "Ha Linh Sport";
+			//$mail['from'] = "info@halinhsport.com";
+			$mail['FromName'] = $this->document->setup['Title'];
 			$mail['to'] = $data['email'];
 			$mail['name'] = $data['hoten'];
 			$mail['subject'] =  "Thong bao nhan tin";
-			$mail['body'] = "Ban da dang ky nhan tin tu halinhsport.com thanh cong";
+			$mail['body'] = "Ban da dang ky nhan tin tu ".$this->document->setup['Title']." thanh cong";
 			$this->mailsmtp->sendMail($mail);
 			
 			$this->data['output'] = "true";
