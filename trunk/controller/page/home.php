@@ -59,7 +59,7 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-			$where = " AND trangthai = 'noibat' Order by id desc limit 0, 8";
+			$where = " AND trangthai = 'noibat' Order by id desc limit 0, 10000";
 			$data_tour = $this->model_ste_tour->getList($where);
 			
 			$arr = array("Tour nổi bật",$data_tour,$template);

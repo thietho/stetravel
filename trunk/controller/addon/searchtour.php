@@ -57,7 +57,7 @@ class ControllerAddonSearchtour extends Controller
 			if($arrgia[1])
 				$where .= " AND giatour <= ".$arrgia[1];
 		}
-		echo $where .=" Order by id desc";
+		$where .=" Order by id desc";
 		$data_tour = $this->model_ste_tour->getList($where);
 		if(count($data_tour))
 		{
