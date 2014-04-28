@@ -31,7 +31,7 @@ class ControllerSitebarSearchtour extends Controller
 				unset($location[0]);
 				foreach($location as $it)
 				{
-					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$it['categoryname']."</option>";
+					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']).$it['categoryname']."</option>";
 					
                 }
 				break;
@@ -41,7 +41,7 @@ class ControllerSitebarSearchtour extends Controller
 				unset($location[0]);
 				foreach($location as $it)
 				{
-					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$it['categoryname']."</option>";
+					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']).$it['categoryname']."</option>";
 				
                         
                 }
@@ -52,7 +52,11 @@ class ControllerSitebarSearchtour extends Controller
 				unset($location[0]);
 				foreach($location as $it)
 				{
-					$this->data['output'] .= "<option class='".$it['categoryid']."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']).$it['categoryname']."</option>";
+					$cls = '';
+					$child = $this->model_core_category->getChild($it['categoryid']);
+					if(count($child))
+						$cls = "ste-group";
+					$this->data['output'] .= "<option class='".$it['categoryid']." ".$cls."' value='".$it['categoryid']."' ref='".$it['categoryname']."'>".$this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']).$it['categoryname']."</option>";
 					
                 }
 				break;

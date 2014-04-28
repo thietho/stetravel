@@ -1016,3 +1016,7 @@ ul#menu li ul li div:hover {
 	font-weight:bold;
 	padding:8px;
 }
+.ste-group
+{
+	font-weight:bold !important;	
+}
