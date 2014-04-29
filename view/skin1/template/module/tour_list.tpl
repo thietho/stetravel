@@ -23,6 +23,10 @@
                                 <a class="ste-button-order ben-right" href="<?php echo $tour['linkorder']?>">Đặt tour</a>
                                 <div class="clearer"></div>
                             </div>
+                            <div>
+                            	Khởi hành:
+                				<?php echo $tour['khoihanh']?>
+                            </div>
                         </td>
                     </tr>
                 </table>
