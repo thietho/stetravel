@@ -25,7 +25,7 @@
                             </div>
                             <div>
                             	Khởi hành:
-                				<?php echo $tour['khoihanh']?>
+                				<strong><?php echo $tour['khoihanh']?></strong>
                             </div>
                         </td>
                     </tr>
