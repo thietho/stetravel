@@ -81,8 +81,8 @@
                         </p>
                         <p>
                             
-                            <input type="checkbox" id="trangthai" name="trangthai" value="noibat" <?php echo ($item['trangthai']=='noibat')?'checked="checked"':''?>/> Tour nổi bật
-                            
+                            <input type="checkbox" id="trangthai" name="trangthai[]" value="noibat" <?php echo (in_array('noibat',$item['trangthai']))?'checked="checked"':''?>/> Tour nổi bật
+                            <input type="checkbox" id="trangthai" name="trangthai[]" value="hot" <?php echo (in_array('hot',$item['trangthai']))?'checked="checked"':''?>/> Tour hot
                         </p>
                         <p>
                             <label>Thông tin vắn tắc</label><br />

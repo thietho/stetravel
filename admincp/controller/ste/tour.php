@@ -86,7 +86,8 @@ class ControllerSteTour extends Controller
 		$loaitour = urldecode($this->request->get['loaitour']);
 		$diemdi = urldecode($this->request->get['diemdi']);
 		$diemden = urldecode($this->request->get['diemden']);
-		$trangthai = urldecode($this->request->get['trangthai']);
+		$noibat = urldecode($this->request->get['noibat']);
+		$hot = urldecode($this->request->get['hot']);
 		$khuyenmai = urldecode($this->request->get['khuyenmai']);
 		if($tentour)
 		{
@@ -113,9 +114,13 @@ class ControllerSteTour extends Controller
 		{
 			$where .= " AND diemdi like '".$diemdi."'";	
 		}
-		if($trangthai)
+		if($noibat)
 		{
-			$where .= " AND trangthai like '".$trangthai."'";	
+			$where .= " AND trangthai like '%[".$noibat."]%'";	
+		}
+		if($hot)
+		{
+			$where .= " AND trangthai like '%[".$hot."]%'";	
 		}
 		if($khuyenmai)
 		{
@@ -183,6 +188,7 @@ class ControllerSteTour extends Controller
 					$diemdentext .= "-".$this->document->getCategory($diemden);
 				
 			}
+			$this->data['item']['trangthai'] = $this->string->referSiteMapToArray($this->data['item']['trangthai']);
 			$this->data['item']['diemdentext'] = $diemdentext;
 			$this->data['item']['arrimage'] = $this->string->referSiteMapToArray($this->data['item']['images']);
 			
@@ -198,8 +204,11 @@ class ControllerSteTour extends Controller
 	public function save()
 	{
 		$data = $this->request->post;
-		if($data['trangthai'] == "")
+		if(count($data['trangthai']) == 0)
 			$data['trangthai'] = "";
+		else
+			$data['trangthai'] = $this->string->arrayToString($data['trangthai']);
+		
 		$data['giatour'] = $this->string->toNumber($data['giatour']);
 		$data['khuyenmai'] = $this->string->toNumber($data['khuyenmai']);
 		$arr_fileid = $data['attimageid'];

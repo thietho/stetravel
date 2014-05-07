@@ -32,18 +32,25 @@
         	<h3>Thông tin tour</h3>
         	<table class="ben-form" style="width:100%">
             	<tr>
-                	<td>Tên tour</td>
-                    <td>
-                    	<?php echo $tour['tentour']?>
+                	<td>
+                    	Tên tour: <?php echo $tour['tentour']?>
                         <input type="hidden" name="tentour" value="<?php echo $tour['tentour']?>"/>
+                    </td>
+                   
+                </tr>
+                <tr>
+                	<td>Tổng số khách: <span id="numcostomerview"></span> <input type="hidden" id="numcostomer" name="numcostomer" class="ben-textbox" size="40"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                	<td>
+                    	Người lớn(Từ 12 tuổi trở lên): <input type="text" id="nguoilon" name="nguoilon" class="ben-textbox number sokhach" size="3"><br />
+                        Trẻ em (Từ 2 tuổi đến dưới 12 tuổi): <input type="text" id="treem" name="treem" class="ben-textbox number sokhach" size="3"><br />
+                        Trẻ nhỏ(Dưới 2 tuổi): <input type="text" id="trenho" name="trenho" class="ben-textbox number sokhach" size="3">
                     </td>
                 </tr>
                 <tr>
-                	<td>Số khách</td>
-                    <td><input type="text" id="numcostomer" name="numcostomer" class="ben-textbox" size="40"></td>
-                </tr>
-                <tr>
-                	<td colspan="2">
+                	<td>
                         Yêu cầu riêng<br>
                         <textarea id="requirements" name="requirements"></textarea>
                     </td>
@@ -79,5 +86,13 @@ $("#btnBooking").click(function(){
 			$.unblockUI();
 		}
 	);					   
+});
+$('.sokhach').keyup(function(e) {
+	var total = 0;
+    $('.sokhach').each(function(index, element) {
+        total += Number(stringtoNumber(this.value));
+    });
+	$('#numcostomerview').html(numberView(total));
+	$('#numcostomer').val(numberView(total));
 });
 </script>
