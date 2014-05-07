@@ -1020,3 +1020,9 @@ ul#menu li ul li div:hover {
 {
 	font-weight:bold !important;	
 }
+.ste-tour-hot
+{
+	position:absolute;
+	margin-top:-5px;
+	margin-left:-10px;
+}

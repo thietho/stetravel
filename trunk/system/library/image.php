@@ -31,11 +31,11 @@ final class Image {
 		$mime = $this->info['mime'];
 		
 		if ($mime == 'image/gif') {
-			return imagecreatefromgif($image);
+			return @imagecreatefromgif($image);
 		} elseif ($mime == 'image/png') {
-			return imagecreatefrompng($image);
+			return @imagecreatefrompng($image);
 		} elseif ($mime == 'image/jpeg') {
-			return imagecreatefromjpeg($image);
+			return @imagecreatefromjpeg($image);
 		}
 		
 		

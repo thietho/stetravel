@@ -41,7 +41,10 @@ class ControllerAddonBooking extends Controller
 			$message['description'].="Địa chỉ: ".$data['address']."<br>";
 			$message['description'].="Điện thoại: ".$data['phone']."<br>";
 			$message['description'].="Tên tour: ".$data['tentour']."<br>";
-			$message['description'].="Số khách: ".$data['numcostomer']."<br>";
+			$message['description'].="Tổng số khách: ".$data['numcostomer']."<br>";
+			$message['description'].="Người lớn: ".$data['nguoilon']."<br>";
+			$message['description'].="Trẻ em: ".$data['treem']."<br>";
+			$message['description'].="Trẻ nhỏ: ".$data['trenho']."<br>";
 			$message['description'].="Yêu cầu riêng: ".$data['requirements']."<br>";
 			$message['folder']="inbox";
 			$this->model_core_message->insert($message);

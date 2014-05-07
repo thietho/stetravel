@@ -13,7 +13,13 @@
                 <table >
                 	<tr>
                     	<td>
-                        	<a class="islink" href="<?php echo $tour['link']?>" title="<?php echo $tour['tentour']?>"><img src="<?php echo $tour['arrthumbnail'][0]?>" class='ben-center' alt="<?php echo $tour['tentour']?>" title="<?php echo $tour['tentour']?>"/></a>
+                        	<a class="islink" href="<?php echo $tour['link']?>" title="<?php echo $tour['tentour']?>">
+                        	<?php if(in_array('hot',$tour['trangthai'])){?>
+                        	<div class="ste-tour-hot">
+                            	<img src="<?php echo HTTP_SERVER.DIR_IMAGE?>hot-icon.gif" />
+                            </div>
+                            <?php } ?>
+                        	<img src="<?php echo $tour['arrthumbnail'][0]?>" class='ben-center' alt="<?php echo $tour['tentour']?>" title="<?php echo $tour['tentour']?>"/></a>
                         </td>
                         <td>
                         	<div class="ste_tentour"><a href="<?php echo $tour['link']?>"><?php echo $tour['tentour']?></a></div>

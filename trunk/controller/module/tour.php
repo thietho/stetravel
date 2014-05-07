@@ -28,6 +28,7 @@ class ControllerModuleTour extends Controller
 			$linkorder = $this->document->createLink('booking',$alias);
 			$data_tour[$key]['link'] = $link;
 			$data_tour[$key]['linkorder'] = $linkorder;
+			$data_tour[$key]['trangthai'] = $this->string->referSiteMapToArray($tour['trangthai']);
 		}
 		$this->data['title'] = $title;
 		$this->data['data_tour'] = array();
