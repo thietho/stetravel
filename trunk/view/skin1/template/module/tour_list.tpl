@@ -14,11 +14,7 @@
                 	<tr>
                     	<td>
                         	<a class="islink" href="<?php echo $tour['link']?>" title="<?php echo $tour['tentour']?>">
-                        	<?php if(in_array('hot',$tour['trangthai'])){?>
-                        	<div class="ste-tour-hot">
-                            	<img src="<?php echo HTTP_SERVER.DIR_IMAGE?>hot-icon.gif" />
-                            </div>
-                            <?php } ?>
+                        	
                         	<img src="<?php echo $tour['arrthumbnail'][0]?>" class='ben-center' alt="<?php echo $tour['tentour']?>" title="<?php echo $tour['tentour']?>"/></a>
                         </td>
                         <td>
@@ -26,8 +22,17 @@
                             <div><?php echo $tour['thongtinvantac']?></div>
                             <div class="ste-tourprice">
                             	Giá: <strong><?php echo $this->string->numberFormate($tour[giatour])?></strong>
-                                <a class="ste-button-order ben-right" href="<?php echo $tour['linkorder']?>">Đặt tour</a>
+                                
+                                <a class="ste-button-order ben-right" href="<?php echo $tour['linkorder']?>">
+                                	Đặt tour
+                                    <?php if(in_array('hot',$tour['trangthai'])){?>
+                                    <div class="ste-tour-hot">
+                                        <img src="<?php echo HTTP_SERVER.DIR_IMAGE?>hot-icon.gif" />
+                                    </div>
+                                    <?php } ?>
+                                </a>
                                 <div class="clearer"></div>
+                                
                             </div>
                             <div>
                             	Khởi hành:
