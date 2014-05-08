@@ -1,21 +1,9 @@
 <?php
 final class Cache { 
-	private $expire = 3600;
+	private $expire = 84600;
 
   	public function __construct() {
-		$files = glob(DIR_CACHE . '*');
 		
-    	if(count($files)>0)
-		{
-			foreach ($files as $file) 
-			{
-				$time = filemtime($file);
-				
-				if (time() - $time > $this->expire) {
-					@unlink($file);
-				}
-			}	
-		}
   	}
 
 	public function get($key) {
@@ -31,7 +19,8 @@ final class Cache {
 
   	public function set($key, $value) {
     	$this->delete($key);
-		
+		if (!is_dir(DIR_CACHE))
+			mkdir( DIR_CACHE , 0777 );
 		$file = DIR_CACHE . 'cache.' . $key . '.' . (time() + $this->expire);
     	
 		$handle = fopen($file, 'w');
@@ -54,5 +43,21 @@ final class Cache {
 			}	
 		}
   	}
+	public function clear()
+	{
+		$files = glob(DIR_CACHE . '*');
+		
+    	if(count($files)>0)
+		{
+			foreach ($files as $file) 
+			{
+				$time = filemtime($file);
+				
+				if (time() - $time > $this->expire) {
+					@unlink($file);
+				}
+			}	
+		}
+	}
 }
 ?>
