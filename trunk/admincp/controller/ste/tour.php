@@ -27,6 +27,10 @@ class ControllerSteTour extends Controller
 		$this->model_core_category->getTree("location",$this->data['location']);
 		unset($this->data['location'][0]);
 		
+		$this->data['trangthaitour'] = array();
+		$this->model_core_category->getTree("trangthaitour",$this->data['trangthaitour']);
+		unset($this->data['trangthaitour'][0]);
+		
 		
    	}
 	public function index()
@@ -114,14 +118,16 @@ class ControllerSteTour extends Controller
 		{
 			$where .= " AND diemdi like '".$diemdi."'";	
 		}
-		if($noibat)
+		foreach($this->data['trangthaitour'] as $cat)
 		{
-			$where .= " AND trangthai like '%[".$noibat."]%'";	
+			$trangthai = "";
+			$trangthai = urldecode($this->request->get[$cat['categoryid']]);
+			if($trangthai)
+			{
+				$where .= " AND trangthai like '%[".$trangthai."]%'";	
+			}
 		}
-		if($hot)
-		{
-			$where .= " AND trangthai like '%[".$hot."]%'";	
-		}
+		
 		if($khuyenmai)
 		{
 			$where .= " AND khuyenmai > 0";	

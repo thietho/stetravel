@@ -13,8 +13,9 @@
     	
     	<div class="ben-section">
         	
-        	<?php echo $tournoibat?>
-        	<?php echo $tourkhuyenmai?>
+        	<?php echo $noibat?>
+        	<?php echo $tourhangngay?>
+            <?php echo $honeymoontour?>
             
             <div class="ben-section-title">
             	<div class="title">Tin tức</div>    

@@ -80,9 +80,11 @@
                             <label>Giá đã giảm: <span id="giadagiam"></span></label>
                         </p>
                         <p>
+                            <?php foreach($trangthaitour as $it){ ?>
+                            <input type="checkbox" id="trangthai" name="trangthai[]" value="<?php echo $it['categoryid']?>" <?php echo (in_array($it['categoryid'],$item['trangthai']))?'checked="checked"':''?>/> <?php echo $it['categoryname']?>
+                            <?php }?>
                             
-                            <input type="checkbox" id="trangthai" name="trangthai[]" value="noibat" <?php echo (in_array('noibat',$item['trangthai']))?'checked="checked"':''?>/> Tour nổi bật
-                            <input type="checkbox" id="trangthai" name="trangthai[]" value="hot" <?php echo (in_array('hot',$item['trangthai']))?'checked="checked"':''?>/> Tour hot
+                            
                         </p>
                         <p>
                             <label>Thông tin vắn tắc</label><br />
