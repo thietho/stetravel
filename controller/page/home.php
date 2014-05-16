@@ -37,8 +37,52 @@ class ControllerPageHome extends Controller
 			$arr = array("bang-tin",10,"",$template);
 			$this->data['newshome'] = $this->loadModule('module/pagelist','getList',$arr);
 			
-			//Tour khuyen mai
+			
+			
+			//Tour noi bat
 			$this->load->model("ste/tour");
+			$template = array(
+						  'template' => "module/tour_list.tpl",
+						  'width' => 123,
+						  'height' =>0,
+						  
+						  );
+			$where = " AND trangthai like '%[noibat]%' Order by id desc limit 0, 6";
+			$data_tour = $this->model_ste_tour->getList($where);
+			
+			$arr = array($this->document->getCategory('noibat'),$data_tour,$template);
+			$this->data['noibat'] = $this->loadModule('module/tour','listTour',$arr);
+			
+			//Tour hàng ngày
+			$this->load->model("ste/tour");
+			$template = array(
+						  'template' => "module/tour_list.tpl",
+						  'width' => 123,
+						  'height' =>0,
+						  
+						  );
+			$where = " AND trangthai like '%[tourhangngay]%' Order by id desc limit 0, 6";
+			$data_tour = $this->model_ste_tour->getList($where);
+			
+			$arr = array($this->document->getCategory('tourhangngay'),$data_tour,$template);
+			$this->data['tourhangngay'] = $this->loadModule('module/tour','listTour',$arr);
+			
+			//TOUR HONEYMOON 
+			$this->load->model("ste/tour");
+			$template = array(
+						  'template' => "module/tour_list.tpl",
+						  'width' => 123,
+						  'height' =>0,
+						  
+						  );
+			$where = " AND loaitour like 'honeymoon-tour' Order by id desc limit 0, 6";
+			$data_tour = $this->model_ste_tour->getList($where);
+			
+			$arr = array($this->document->getSitemap("honeymoon-tour"),$data_tour,$template);
+			$this->data['honeymoontour'] = $this->loadModule('module/tour','listTour',$arr);
+			
+			//Tour khuyen mai
+			/*$this->load->model("ste/tour");
 			$template = array(
 						  'template' => "module/tour_list.tpl",
 						  'width' => 123,
@@ -49,22 +93,7 @@ class ControllerPageHome extends Controller
 			$data_tour = $this->model_ste_tour->getList($where);
 			
 			$arr = array("Tour khuyến mãi",$data_tour,$template);
-			$this->data['tourkhuyenmai'] = $this->loadModule('module/tour','listTour',$arr);
-			
-			//Tour noi bat
-			$this->load->model("ste/tour");
-			$template = array(
-						  'template' => "module/tour_list.tpl",
-						  'width' => 123,
-						  'height' =>0,
-						  
-						  );
-			$where = " AND trangthai like '%[noibat]%' Order by id desc";
-			$data_tour = $this->model_ste_tour->getList($where);
-			
-			$arr = array("Tour nổi bật",$data_tour,$template);
-			$this->data['tournoibat'] = $this->loadModule('module/tour','listTour',$arr);
-			
+			$this->data['tourkhuyenmai'] = $this->loadModule('module/tour','listTour',$arr);*/
 			$this->loadSiteBar();
 			$this->document->title = $this->document->setup['Title'] ." - ". $this->document->setup['Slogan'];
 			//print_r($this->data['leftsitebar']);

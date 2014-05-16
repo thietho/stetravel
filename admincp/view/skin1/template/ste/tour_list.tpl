@@ -30,8 +30,10 @@
                     <option class="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>" ref="<?php echo $it['categoryname']?>"><?php echo $this->string->getPrefix("&nbsp;&nbsp;&nbsp;&nbsp;",$it['level']) ?><?php echo $it['categoryname']?></option>                        
                     <?php } ?>
                 </select>
-                <input type="checkbox" class="search" id="noibat" name="noibat" value="noibat"/> Tour nổi bật
-                <input type="checkbox" class="search" id="hot" name="hot" value="hot"/> Tour hot
+                <?php foreach($trangthaitour as $it){ ?>
+                <input type="checkbox" class="search" id="<?php echo $it['categoryid']?>" name="<?php echo $it['categoryid']?>" value="<?php echo $it['categoryid']?>"/> <?php echo $it['categoryname']?>
+                <?php }?>
+                
         		<input type="checkbox" class="search" id="khuyenmai" name="khuyenmai" value="khuyenmai"/> Tour khuyến mãi
                 <br />
                 <input type="button" class="button" name="btnSearch" value="Tìm" onclick="searchForm()"/>
@@ -119,10 +121,11 @@ function searchForm()
 		url += "&diemdi=" + encodeURI($("#frm_tour_list #diemdi").val());
 	if($("#frm_tour_list #diemden").val() != "")
 		url += "&diemden=" + encodeURI($("#frm_tour_list #diemden").val());	
-	if(document.getElementById("noibat").checked == true)
-		url += "&noibat=" + encodeURI($("#frm_tour_list #noibat").val());
-	if(document.getElementById("hot").checked == true)
-		url += "&hot=" + encodeURI($("#frm_tour_list #hot").val());	
+	<?php foreach($trangthaitour as $it){ ?>
+	if(document.getElementById("<?php echo $it['categoryid']?>").checked == true)
+		url += "&<?php echo $it['categoryid']?>=" + encodeURI($("#frm_tour_list #<?php echo $it['categoryid']?>").val());
+	<?php }?>
+	
 	if(document.getElementById("khuyenmai").checked == true)
 		url += "&khuyenmai=" + encodeURI($("#frm_tour_list #khuyenmai").val());	
 	
