@@ -45,21 +45,9 @@
                 </p>
             </div>
             <div>
-            	
-                
-                <?php for($i=1;$i<=4;$i++){?>
-            	<p>
-                    <label>Quảng cáo <?php echo $i?></label>
-                    <input type="hidden" id="qc<?php echo $i?>_fileid" name="qc<?php echo $i?>_fileid" value="<?php echo $qc[$i]['fileid']?>"/><br />
-                    	(250px x 250px)
-                        <img id="qc<?php echo $i?>_preview" src="<?php echo $qc[$i]['imagethumbnail']?>"/>
-                        <input type="button" class="button" value="<?php echo $entry_photo ?>" onclick="browserFile('qc<?php echo $i?>','single')"/>
-                        (1045px x 540px)
-                        <input type="hidden" id="qcbanner<?php echo $i?>_fileid" name="qcbanner<?php echo $i?>_fileid" value="<?php echo $qc[$i]['fileid']?>"/>
-                        <img id="qcbanner<?php echo $i?>_preview" src="<?php echo $qcbanner[$i]['imagethumbnail']?>"/>
-                        <input type="button" class="button" value="<?php echo $entry_photo ?>" onclick="browserFile('qcbanner<?php echo $i?>','single')"/>
-                </p>
-                <?php }?>
+            	<label>Tour nổi bật</label><br />
+                <input type="button" class="button" id="btnAddTourNoiBat" value="Chọn tour" onclick="selectTour('listtournoibat','add')"/>
+                <div id="listtournoibat"></div>
             </div>
         </form>
     
@@ -96,5 +84,32 @@ function addRow(obj)
 	$('#listfilm').append(str);
 	index++;
 }
-
+function selectTour(eid,type)
+{
+    $('#handler').val(eid);
+	$('#outputtype').val(type);
+	$('body').append('<div id="tourform" style="display:none"></div>');
+	var eid = "#tourform";
+	$(eid).attr('title','Chọn tour');
+		$( eid ).dialog({
+			autoOpen: false,
+			show: "blind",
+			hide: "explode",
+			width: $(document).width()-100,
+			height: window.innerHeight,
+			modal: true,
+			close:function()
+				{
+					$(eid).remove();
+				},
+			
+		});
+	
+		$(eid).dialog("open");
+		$(eid).html(loading);
+		$(eid).load("?route=ste/tour&opendialog=true",function(){
+			
+		});
+		
+}
 </script>
