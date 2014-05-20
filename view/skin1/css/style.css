@@ -919,6 +919,11 @@ ul#menu li ul li div:hover {
 	color:red;
 	font-weight:bold;
 }
+.ste_tentour a:hover
+{
+	color:#0000FF;
+	
+}
 .ste-tourprice
 {
 	padding:5px 0;	
