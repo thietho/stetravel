@@ -46,7 +46,7 @@
             </div>
             <div>
             	<label>Tour nổi bật</label><br />
-                <input type="button" class="button" id="btnAddTourNoiBat" value="Chọn tour" onclick="selectTour('listtournoibat','add')"/>
+                <input type="button" class="button" id="btnAddTourNoiBat" value="Thêm tour" onclick="selectTour('listtournoibat','add')"/>
                 <table>
                 	<tr>
                     	<th>Tên tour</th>
@@ -59,7 +59,7 @@
             </div>
             <div>
             	<label>Tour hàng ngày</label><br />
-                <input type="button" class="button" id="btnAddTourNoiBat" value="Chọn tour" onclick="selectTour('listtourhangngay','add')"/>
+                <input type="button" class="button" id="btnAddTourNoiBat" value="Thêm tour" onclick="selectTour('listtourhangngay','add')"/>
                 <table>
                 	<tr>
                     	<th>Tên tour</th>
