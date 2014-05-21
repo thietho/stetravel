@@ -29,7 +29,7 @@
             foreach($datas as $key => $item)
             {
         ?>
-                    <tr class="item" id="<?php echo $item['id']?>" tentour="<?php echo $item['tentour']?>" icone="<?php echo $item['iconethumbnail']?>" banner="<?php echo $item['bannerthumbnail']?>" image="<?php echo $item['imagethumbnail']?>">
+                    <tr class="item" id="<?php echo $item['id']?>" tentour="<?php echo $item['tentour']?>" image="<?php echo $item['imagethumbnail']?>">
                     	<?php if($dialog!=true){ ?>
                         <td class="check-column"><input class="inputchk" type="checkbox" name="delete[<?php echo $item['id']?>]" value="<?php echo $item['id']?>" ></td>
                         <?php } ?>
@@ -63,6 +63,6 @@
 
 <?php if($dialog){ ?>
 <script language="javascript">
-	intSelectMovie()
+	intSelectTour()
 </script>
 <?php } ?>

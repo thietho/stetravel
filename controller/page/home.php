@@ -47,9 +47,22 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-			$where = " AND trangthai like '%[noibat]%' Order by id desc limit 0, 6";
-			$data_tour = $this->model_ste_tour->getList($where);
-			
+			$listtournoibat = $this->document->setup['listtournoibat'];
+			if($listtournoibat)
+			{
+				
+				$arr_tourid = split(',',$listtournoibat);
+				foreach($arr_tourid as $tourid)
+				{
+					$tour = $this->model_ste_tour->getItem($tourid);
+					$data_tour[] = $tour;
+				}
+			}
+			else
+			{
+				$where = " AND trangthai like '%[noibat]%' Order by id desc limit 0, 6";
+				$data_tour = $this->model_ste_tour->getList($where);
+			}
 			$arr = array($this->document->getCategory('noibat'),$data_tour,$template);
 			$this->data['noibat'] = $this->loadModule('module/tour','listTour',$arr);
 			

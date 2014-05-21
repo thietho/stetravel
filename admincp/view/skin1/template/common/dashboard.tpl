@@ -47,7 +47,28 @@
             <div>
             	<label>Tour nổi bật</label><br />
                 <input type="button" class="button" id="btnAddTourNoiBat" value="Chọn tour" onclick="selectTour('listtournoibat','add')"/>
-                <div id="listtournoibat"></div>
+                <table>
+                	<tr>
+                    	<th>Tên tour</th>
+                        <th>Hình</th>
+                        <th></th>
+                    </tr>
+                    <tbody id="listtournoibat">
+                    </tbody>
+                </table>
+            </div>
+            <div>
+            	<label>Tour hàng ngày</label><br />
+                <input type="button" class="button" id="btnAddTourNoiBat" value="Chọn tour" onclick="selectTour('listtourhangngay','add')"/>
+                <table>
+                	<tr>
+                    	<th>Tên tour</th>
+                        <th>Hình</th>
+                        <th></th>
+                    </tr>
+                    <tbody id="listtourhangngay">
+                    </tbody>
+                </table>
             </div>
         </form>
     
@@ -74,16 +95,7 @@ function save()
 	);
 }
 var index = 0;
-function addRow(obj)
-{
-	var str ='<tr id="row'+index+'">';
-	str += '<td><input type="hidden" id="film'+index+'" name="film['+index+']" value="'+obj.id+'"/><span id="film'+index+'_name">'+obj.moviename+'</span></td>';
-	str += '<td><img id="film'+index+'_icon" src="'+obj.icone+'"/></td>';
-	str += '<td><input type="button" class="button" value="Chọn film" onclick="selectFilm(\'film'+index+'\',\'edit\')"/><input type="button" class="button" value="X" onclick="$(\'#row'+index+'\').remove()"/></td>';
-	str += '</tr>';
-	$('#listfilm').append(str);
-	index++;
-}
+
 function selectTour(eid,type)
 {
     $('#handler').val(eid);
@@ -112,4 +124,69 @@ function selectTour(eid,type)
 		});
 		
 }
+function intSelectTour()
+{
+	switch($('#outputtype').val())
+	{
+		case "add":
+			$('.item').click(function(e) {
+				var obj = new Object();
+				obj.id = $(this).attr('id');
+				obj.tentour = $(this).attr('tentour');
+				obj.image = $(this).attr('image');
+				addRow(obj,$('#handler').val());
+				$("#tourform").dialog( "close" );
+    		});
+			break;
+		case "edit":
+			$('.item').click(function(e) {
+				var eid = $('#handler').val();
+				$('#'+eid).val($(this).attr('id'));
+				$('#'+eid+'_name').html($(this).attr('tentour'));
+				$('#'+eid+'_image').attr('src',$(this).attr('image'));
+				
+				$("#tourform").dialog( "close" );
+    		});
+			break;
+	}
+	
+}
+function addRow(obj,eid)
+{
+	var str ='<tr class="touritem" id="row'+index+'">';
+	str += '<td><input type="hidden" id="'+eid+index+'" name="'+eid+'['+index+']" value="'+obj.id+'"/><span id="'+eid+index+'_name">'+obj.tentour+'</span></td>';
+	str += '<td><img id="'+eid+index+'_image" src="'+obj.image+'"/></td>';
+	str += '<td><input type="button" class="button" value="Chọn tour" onclick="selectTour(\''+eid+index+'\',\'edit\')"/><input type="button" class="button" value="X" onclick="$(\'#row'+index+'\').remove()"/></td>';
+	str += '</tr>';
+	$('#'+ eid).append(str);
+	index++;
+}
+$(document).ready(function(e) {
+    $("#listtournoibat").sortable();
+	$("#listtournoibat").disableSelection();
+	$("#listtourhangngay").sortable();
+	$("#listtourhangngay").disableSelection();
+});
 </script>
+<?php if(count($listtournoibat)){ ?>
+<?php foreach($listtournoibat as $tour){ ?>
+<script language="javascript">
+	var obj = new Object();
+	obj.id = "<?php echo $tour['id']?>";
+	obj.tentour = "<?php echo $tour['tentour']?>";
+	obj.image = "<?php echo $tour['imagethumbnail']?>";
+	addRow(obj,"listtournoibat");
+</script>
+<?php } ?>
+<?php } ?>
+<?php if(count($listtourhangngay)){ ?>
+<?php foreach($listtourhangngay as $tour){ ?>
+<script language="javascript">
+	var obj = new Object();
+	obj.id = "<?php echo $tour['id']?>";
+	obj.tentour = "<?php echo $tour['tentour']?>";
+	obj.image = "<?php echo $tour['imagethumbnail']?>";
+	addRow(obj,"listtourhangngay");
+</script>
+<?php } ?>
+<?php } ?>
