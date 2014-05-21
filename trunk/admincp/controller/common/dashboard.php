@@ -104,12 +104,16 @@ class ControllerCommonDashboard extends Controller
 			$listtour = implode(',',$data['listtournoibat']);
 			$this->model_core_media->saveInformation($data['mediaid'],"listtournoibat",$listtour);
 		}
+		else
+			$this->model_core_media->saveInformation($data['mediaid'],"listtournoibat","");
 		
 		if(count($data['listtourhangngay']))
 		{
 			$listtour = implode(',',$data['listtourhangngay']);
 			$this->model_core_media->saveInformation($data['mediaid'],"listtourhangngay",$listtour);
 		}
+		else
+			$this->model_core_media->saveInformation($data['mediaid'],"listtourhangngay","");
 		$this->data['output'] = "true";
 		
 		$this->id='content';

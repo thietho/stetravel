@@ -47,6 +47,7 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
+			$data_tour = array();
 			$listtournoibat = $this->document->setup['listtournoibat'];
 			if($listtournoibat)
 			{
@@ -67,6 +68,7 @@ class ControllerPageHome extends Controller
 			$this->data['noibat'] = $this->loadModule('module/tour','listTour',$arr);
 			
 			//Tour hàng ngày
+			$data_tour = array();
 			$this->load->model("ste/tour");
 			$template = array(
 						  'template' => "module/tour_list.tpl",
@@ -74,8 +76,22 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-			$where = " AND trangthai like '%[tourhangngay]%' Order by id desc limit 0, 6";
-			$data_tour = $this->model_ste_tour->getList($where);
+			$listtourhangngay = $this->document->setup['listtourhangngay'];
+			if($listtourhangngay)
+			{
+				
+				$arr_tourid = split(',',$listtourhangngay);
+				foreach($arr_tourid as $tourid)
+				{
+					$tour = $this->model_ste_tour->getItem($tourid);
+					$data_tour[] = $tour;
+				}
+			}
+			else
+			{
+				$where = " AND trangthai like '%[tourhangngay]%' Order by id desc limit 0, 6";
+				$data_tour = $this->model_ste_tour->getList($where);
+			}
 			
 			$arr = array($this->document->getCategory('tourhangngay'),$data_tour,$template);
 			$this->data['tourhangngay'] = $this->loadModule('module/tour','listTour',$arr);
