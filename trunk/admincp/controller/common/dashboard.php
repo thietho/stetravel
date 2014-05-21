@@ -20,6 +20,7 @@ class ControllerCommonDashboard extends Controller
 		
 		$this->load->model("core/media");
 		$this->load->model("core/category");
+		$this->load->model("ste/tour");
 		
 		$this->data['item']['mediaid'] = "setting";
 		$this->data['item']['Title'] = $this->model_core_media->getInformation($this->data['item']['mediaid'], 'Title');
@@ -32,13 +33,40 @@ class ControllerCommonDashboard extends Controller
 		
 		$this->data['item']['brochure'] = $this->model_core_media->getInformation($this->data['item']['mediaid'], 'brochure');
 		$this->data['item']['background'] = $this->model_core_media->getInformation($this->data['item']['mediaid'], 'background');
-		$listfilm = $this->model_core_media->getInformation($this->data['item']['mediaid'], 'listfilm');
-		$arr_filmid = split(',',$listfilm);
+		
+		$listtournoibat = $this->model_core_media->getInformation($this->data['item']['mediaid'], 'listtournoibat');
+		if($listtournoibat)
+		{
+			
+			$arr_tourid = split(',',$listtournoibat);
+			$this->data['listtournoibat'] = array();
+			foreach($arr_tourid as $tourid)
+			{
+				$tour = $this->model_ste_tour->getItem($tourid);
+				$arr = $this->string->referSiteMapToArray($tour['images']);
+				$file = $this->model_core_file->getFile($arr[0]);
+				$tour['imagethumbnail'] = HelperImage::resizePNG($file['filepath'], 100, 0);
+				$this->data['listtournoibat'][] = $tour;
+			}
+		}
+		//listtourhangngay
+		$listtourhangngay = $this->model_core_media->getInformation($this->data['item']['mediaid'], 'listtourhangngay');
+		if($listtourhangngay)
+		{
+			$arr_tourid = split(',',$listtourhangngay);
+			$this->data['listtourhangngay'] = array();
+			foreach($arr_tourid as $tourid)
+			{
+				$tour = $this->model_ste_tour->getItem($tourid);
+				$arr = $this->string->referSiteMapToArray($tour['images']);
+				$file = $this->model_core_file->getFile($arr[0]);
+				$tour['imagethumbnail'] = HelperImage::resizePNG($file['filepath'], 100, 0);
+				$this->data['listtourhangngay'][] = $tour;
+			}
+		}
 		
 		
-		
-		
-		for($i=1;$i<=4;$i++)
+		/*for($i=1;$i<=4;$i++)
 		{	
 			$fileid = $this->model_core_media->getInformation($this->data['item']['mediaid'], 'qc'.$i);	
 			$this->data['qc'][$i] = $this->model_core_file->getFile($fileid);
@@ -47,7 +75,7 @@ class ControllerCommonDashboard extends Controller
 			$this->data['qcbanner'][$i] = $this->model_core_file->getFile($fileid);
 			$this->data['qcbanner'][$i]['imagethumbnail'] = HelperImage::resizePNG($this->data['qcbanner'][$i]['filepath'], 100, 0);
 			
-		}
+		}*/
 	}
 	
 	public function save()
@@ -66,12 +94,22 @@ class ControllerCommonDashboard extends Controller
 		$this->model_core_media->saveInformation($data['mediaid'],"brochure",$data['brochure']);
 		$this->model_core_media->saveInformation($data['mediaid'],"background",$data['background']);
 		
-		for($i=1;$i<=4;$i++)
+		/*for($i=1;$i<=4;$i++)
 		{
 			$this->model_core_media->saveInformation($data['mediaid'],"qc".$i,$data['qc'.$i.'_fileid']);
 			$this->model_core_media->saveInformation($data['mediaid'],"qcbanner".$i,$data['qcbanner'.$i.'_fileid']);
+		}*/
+		if(count($data['listtournoibat']))
+		{
+			$listtour = implode(',',$data['listtournoibat']);
+			$this->model_core_media->saveInformation($data['mediaid'],"listtournoibat",$listtour);
 		}
 		
+		if(count($data['listtourhangngay']))
+		{
+			$listtour = implode(',',$data['listtourhangngay']);
+			$this->model_core_media->saveInformation($data['mediaid'],"listtourhangngay",$listtour);
+		}
 		$this->data['output'] = "true";
 		
 		$this->id='content';
