@@ -95,9 +95,36 @@ class ControllerPageHome extends Controller
 			
 			$arr = array($this->document->getCategory('tourhangngay'),$data_tour,$template);
 			$this->data['tourhangngay'] = $this->loadModule('module/tour','listTour',$arr);
-			
-			//TOUR HONEYMOON 
+			//Tour hàng tuan
+			$data_tour = array();
 			$this->load->model("ste/tour");
+			$template = array(
+						  'template' => "module/tour_list.tpl",
+						  'width' => 123,
+						  'height' =>0,
+						  
+						  );
+			$listtourhangtuan = $this->document->setup['listtourhangtuan'];
+			if($listtourhangtuan)
+			{
+				
+				$arr_tourid = split(',',$listtourhangtuan);
+				foreach($arr_tourid as $tourid)
+				{
+					$tour = $this->model_ste_tour->getItem($tourid);
+					$data_tour[] = $tour;
+				}
+			}
+			else
+			{
+				$where = " AND trangthai like '%[tuorhangtuan]%' Order by id desc limit 0, 6";
+				$data_tour = $this->model_ste_tour->getList($where);
+			}
+			
+			$arr = array($this->document->getCategory('tuorhangtuan'),$data_tour,$template);
+			$this->data['tuorhangtuan'] = $this->loadModule('module/tour','listTour',$arr);
+			//TOUR HONEYMOON 
+			/*$this->load->model("ste/tour");
 			$template = array(
 						  'template' => "module/tour_list.tpl",
 						  'width' => 123,
@@ -108,7 +135,7 @@ class ControllerPageHome extends Controller
 			$data_tour = $this->model_ste_tour->getList($where);
 			
 			$arr = array($this->document->getSitemap("honeymoon-tour"),$data_tour,$template);
-			$this->data['honeymoontour'] = $this->loadModule('module/tour','listTour',$arr);
+			$this->data['honeymoontour'] = $this->loadModule('module/tour','listTour',$arr);*/
 			
 			//Tour khuyen mai
 			/*$this->load->model("ste/tour");
