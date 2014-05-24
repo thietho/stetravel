@@ -15,7 +15,7 @@
         	
         	<?php echo $noibat?>
         	<?php echo $tourhangngay?>
-            <?php echo $honeymoontour?>
+            <?php echo $tuorhangtuan?>
             
             <div class="ben-section-title">
             	<div class="title">Tin tức</div>    
