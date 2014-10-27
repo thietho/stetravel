@@ -684,8 +684,8 @@ display:block;
 #ben-footer .companyname
 {
 	font-weight:bold;
-	font-size:1em;
-	
+	font-size:3em;
+	color:#F00;
 }
 #ben-footer .companyinfo
 {
