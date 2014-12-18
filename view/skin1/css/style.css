@@ -938,6 +938,7 @@ ul#menu li ul li div:hover {
 	margin-right:42px;
 	color:#fff;
 	font-weight:bold;
+	white-space:nowrap;
 }
 .ste-button-order:hover
 {
