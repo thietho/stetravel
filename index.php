@@ -1,5 +1,5 @@
 <?php
-	session_start();
+	@session_start();
 	include('system/config/directory.php');
 	$fdenial = false;
 	/*$ip = $_SERVER['REMOTE_ADDR'];
