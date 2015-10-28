@@ -1,12 +1,22 @@
+<style>
+#showLink
+{
+	height:218px;	
+}
+</style>
+
 <div class="ben-section">
 
 	
     <div class="ben-section-title"><?php echo $sitemap['sitemapname']?></div>
     <div class="ben-section-content">
-    	<div id="showLink">
+    	<table>
+        	<tr>
+    			<td id="showLink">
             
-    	</div>
-    	
+    			</td>
+        	</tr>
+    	</table>
     </div>
 </div>
 <div style="display:none">           
@@ -42,6 +52,7 @@ function WebLink()
 	}
 }
 var w = new WebLink();
+//w.show(3);
 w.run();
 
 </script>
