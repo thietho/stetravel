@@ -37,7 +37,7 @@
     function Pager()
     {
         this.index = 1;
-        this.numitem = 4;
+        this.numitem = 10;
         this.data = new Object();
         this.show = function(page)
         {

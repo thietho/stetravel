@@ -54,7 +54,7 @@ class ControllerPageHome extends Controller
 			if($listtournoibat)
 			{
 				
-				$arr_tourid = split(',',$listtournoibat);
+				$arr_tourid = explode(',',$listtournoibat);
 				foreach($arr_tourid as $tourid)
 				{
 					$tour = $this->model_ste_tour->getItem($tourid);
@@ -84,7 +84,7 @@ class ControllerPageHome extends Controller
 			if($listtourhangngay)
 			{
 				
-				$arr_tourid = split(',',$listtourhangngay);
+				$arr_tourid = explode(',',$listtourhangngay);
 				foreach($arr_tourid as $tourid)
 				{
 					$tour = $this->model_ste_tour->getItem($tourid);

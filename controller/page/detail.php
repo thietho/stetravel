@@ -21,8 +21,17 @@ class ControllerPageDetail extends Controller
 			$this->load->model("core/sitemap");
 			$this->document->sitemapid = $this->request->get['sitemapid'];
 			$siteid = $this->member->getSiteId();
-			
-			
+
+            //Banner home
+            $template = array(
+                'template' => "home/bannerhome.tpl",
+                'width' => 1000,
+                'height' =>1000,
+            );
+
+            $arr = array("bannerhome",0,"",$template);
+            $this->data['bannerhome'] = $this->loadModule('module/block','getList',$arr);
+
 			@$id = $this->request->get['id'];
 			
 			$this->document->breadcrumb = $this->model_core_sitemap->getBreadcrumb($this->document->sitemapid, $siteid, -1);

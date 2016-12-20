@@ -1,3 +1,6 @@
+<div>
+    <?php echo $bannerhome?>
+</div>
 <div class="ben-two-columns">
 	<div class="ben-sidebar ben-left">
     	<?php foreach($leftsitebar as $item){ ?>
