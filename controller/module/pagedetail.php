@@ -37,7 +37,7 @@ class ControllerModulePagedetail extends Controller
 		$listfile = $this->model_core_media->getInformation($this->data['post']['mediaid'], "attachment");
 		$listfileid=array();
 		if($listfile)
-			$listfileid=split(",",$listfile);
+			$listfileid=explode(",",$listfile);
 			
 		
 		
@@ -242,5 +242,28 @@ class ControllerModulePagedetail extends Controller
 		$this->template=$template['template'];
 		$this->render();
 	}
+
+    public function getOtherNews()
+    {
+        $mediaid = $this->request->get['mediaid'];
+        $this->load->model("core/media");
+        $media =  $this->model_core_media->getByAlias($mediaid);
+        $where = " AND mediatype = 'module/news' AND refersitemap like '".$media['refersitemap']."' AND statusdate < '".$media['statusdate']."'";
+        $medias = $this->model_core_media->getList($where);
+        for($i=0;$i<count($medias);$i++)
+        {
+            $arr = $this->string->referSiteMapToArray($medias[$i]['refersitemap']);
+            $sitemapid = $arr[0];
+            $link = $this->document->createLink($sitemapid,$medias[$i]['alias']);
+            $medias[$i]['link'] = $link;
+            $medias[$i]['statusdate']= $this->date->formatMySQLDate($medias[$i]['statusdate'], 'longdate', "/");
+        }
+
+        $this->data['output'] = json_encode($medias);
+
+        $this->id="news";
+        $this->template="common/output.tpl";
+        $this->render();
+    }
 }
 ?>

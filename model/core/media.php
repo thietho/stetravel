@@ -151,8 +151,14 @@ class ModelCoreMedia extends ModelCoreFile
 		//All Options
 		$mediaparent = $options['mediaparent'];
 		$mediatype = $options['mediatype'];
-		$day = $options['day'];
-		$month = $options['month'];
+        $day = '';
+        if(isset($options['day']))
+		    $day = $options['day'];
+        $month = '';
+        if(isset($options['month']))
+		    $month = $options['month'];
+        $year = '';
+            if(isset($options['year']))
 		$year = $options['year'];
 		$date = $options['date'];
 		$refersitemap = $options['refersitemap'];
@@ -422,7 +428,9 @@ class ModelCoreMedia extends ModelCoreFile
 		$sql = "Select * from media_information where mediaid = '".$mediaid."' and fieldname = '".$fieldname."'";
 		$query = $this->db->query($sql);
 		$info = $query->row;
-		return $info['fieldvalue'];
+        if(isset($info['fieldvalue']))
+		    return $info['fieldvalue'];
+        return '';
 	}
 	
 	public function saveInformation($mediaid, $fieldname, $fieldvalue)
@@ -514,8 +522,8 @@ class ModelCoreMedia extends ModelCoreFile
 			$newerlist = $this->model_core_media->getPaginationList($queryoptions, $newstep, $to);
 			$olderlist = $this->model_core_media->getPaginationList($queryoptions, $oldstep, $to);
 			
-			@$newerid = (float)$medias[0]['id'];
-			@$olderid = (float)$medias[$index]['id'];
+			//@$newerid = (float)$medias[0]['id'];
+			//@$olderid = (float)$medias[$index]['id'];
 			
 			if(count($newerlist) > 0 && $newstep >= 0)
 			{

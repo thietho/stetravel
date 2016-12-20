@@ -192,7 +192,7 @@ class ControllerPageDetail extends Controller
 						else
 						{
 							$alias = $this->request->get['id'];
-							$arr = split('-',$alias);
+							$arr = explode('-',$alias);
 							$tour = $this->model_ste_tour->getItem($arr[0]);
 							
 							$template = array(

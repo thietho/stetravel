@@ -155,7 +155,10 @@ final class Document {
 		$query = $this->db->query("Select `category`.* 
 									from `category` 
 									where categoryid ='".$categoryid."' ");
-		return $query->row[$name];	
+        $value = "";
+        if(isset($query->row[$name]))
+            $value = $query->row[$name];
+		return $value;
 	}
 	
 	public function getMedia($mediaid,$name="title")

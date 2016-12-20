@@ -48,7 +48,9 @@ class ControllerPageHome extends Controller
 						  
 						  );
 			$data_tour = array();
-			$listtournoibat = $this->document->setup['listtournoibat'];
+            $listtournoibat = '';
+            if(isset($this->document->setup['listtournoibat']))
+			    $listtournoibat = $this->document->setup['listtournoibat'];
 			if($listtournoibat)
 			{
 				
@@ -76,7 +78,9 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-			$listtourhangngay = $this->document->setup['listtourhangngay'];
+            $listtourhangngay = '';
+            if(isset($this->document->setup['listtourhangngay']))
+			    $listtourhangngay = $this->document->setup['listtourhangngay'];
 			if($listtourhangngay)
 			{
 				
@@ -104,7 +108,9 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-			$listtourhangtuan = $this->document->setup['listtourhangtuan'];
+            $listtourhangtuan = '';
+            if(isset($this->document->setup['listtourhangtuan']))
+			    $listtourhangtuan = $this->document->setup['listtourhangtuan'];
 			if($listtourhangtuan)
 			{
 				

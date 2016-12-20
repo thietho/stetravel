@@ -58,7 +58,7 @@ $('#txtsearch').keyup(function(e) {
 	}
 });
 <?php
-	if($_GET['keyword'])
+	if(@$_GET['keyword'])
 	{
 ?>
 $(document).ready(function(e) {

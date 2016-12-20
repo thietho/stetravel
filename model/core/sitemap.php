@@ -142,10 +142,11 @@ class ModelCoreSitemap extends Model
 		for($i=count($data)-1;$i>$end;$i--)
 		{
 			$link = "".$data[$i]['sitemapname']."";
-			if($data[$i]['modulepath'] != "")
-			{
-				$link = "<a class='ben-smaller' href='index.php?route=page/detail&sitemapid=".$data[$i]['sitemapid']."'>".$data[$i]['sitemapname']."</a>";
-			}
+            if(isset($data[$i]['modulepath']))
+                if($data[$i]['modulepath'] != "")
+                {
+                    $link = "<a class='ben-smaller' href='index.php?route=page/detail&sitemapid=".$data[$i]['sitemapid']."'>".$data[$i]['sitemapname']."</a>";
+                }
 			$strBreadcrumb .= " &#187; ".$link; 
 		}
 		return $strBreadcrumb;

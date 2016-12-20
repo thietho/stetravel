@@ -11,8 +11,9 @@ class ControllerModulePagelist extends Controller
 		
 		$siteid = $this->member->getSiteId();
 		$this->data['sitemap'] = $this->model_core_sitemap->getItem($sitemapid, $siteid);
-		
-		$step = (int)$this->request->get['step'];
+        $step = 0;
+		if(isset($this->request->get['step']))
+		    $step = (int)$this->request->get['step'];
 		$to = $count;
 		
 		//Get list
@@ -21,64 +22,66 @@ class ControllerModulePagelist extends Controller
 		$queryoptions['mediatype'] = '%';
 		$queryoptions['refersitemap'] = $sitemapid;
 		
-		if($mediaid == "")
-		{
-			$medias = $this->model_core_media->getPaginationList($queryoptions, $step, $to);
+
+        $medias = $this->model_core_media->getPaginationList($queryoptions, $step, $to);
+
+
+
+        $this->data['medias'] = array();
+
+
+        $index = -1;
+        foreach($medias as $media)
+        {
+            $index += 1;
+
+            $link = $this->document->createLink($sitemapid,$media['alias']);
+
+            $imagethumbnail = "";
+
+            $imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
+
+
+            $media['summary'.$this->language->getLang()] = html_entity_decode($media['summary'.$this->language->getLang()]);
+
+            $media['link']= $link;
+
+            $media['imagethumbnail']= $imagethumbnail;
+
+            $media['statusdate']= $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/");
+
+            $this->data['medias'][] = $media;
+            /*$this->data['medias'][] = array(
+                'mediaid' => $media['mediaid'],
+                'title' => $media['title'],
+                'summary' => $media['summary'],
+                'imagethumbnail' => $imagethumbnail,
+                'statusdate' => $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/"),
+                'link' => $link
+            );*/
+
+        }
+
+        $querystring = "?route=page/detail&sitemapid=".$sitemapid;
+
+        $pagelinks = $this->model_core_media->getPaginationLinks($index, $queryoptions, $querystring, $step, $to);
+        $this->data['nextlink'] = "";
+        $this->data['prevlink'] = "";
+        if(isset($pagelinks['nextlink']))
+            $this->data['nextlink'] = $pagelinks['nextlink'];
+        if(isset($pagelinks['prevlink']))
+            $this->data['prevlink'] = $pagelinks['prevlink'];
+
+        //Other news
+        $this->data['othernews'] = $this->model_core_media->getPaginationList($queryoptions, $step+1, $to);
+        for($i=0;$i<count($this->data['othernews']);$i++)
+        {
+            $this->data['othernews'][$i]['statusdate'] = $this->date->formatMySQLDate($this->data['othernews'][$i]['statusdate'], 'longdate', "/");
+            $link = $this->document->createLink($sitemapid,$this->data['othernews'][$i]['alias']);
+            $this->data['othernews'][$i]['link'] = $link;
+        }
 			
-			
-			
-			$this->data['medias'] = array();
-			
-		
-			$index = -1;
-			foreach($medias as $media)
-			{
-				$index += 1;
-				
-				$link = $this->document->createLink($sitemapid,$media['alias']);
-				
-				$imagethumbnail = "";
-				
-				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
-				
-	
-				$media['summary'.$this->language->getLang()] = html_entity_decode($media['summary'.$this->language->getLang()]);
-				
-				$media['link']= $link;
-				$media['properties']= $properties;
-				$media['imagethumbnail']= $imagethumbnail;
-				$media['imagetpreview']= $imagetpreview;
-				$media['statusdate']= $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/");
-			
-				$this->data['medias'][] = $media;
-				/*$this->data['medias'][] = array(
-					'mediaid' => $media['mediaid'],
-					'title' => $media['title'],
-					'summary' => $media['summary'],
-					'imagethumbnail' => $imagethumbnail,
-					'statusdate' => $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/"),
-					'link' => $link
-				);*/
-				
-			}
-			
-			$querystring = "?route=page/detail&sitemapid=".$sitemapid;
-			
-			$pagelinks = $this->model_core_media->getPaginationLinks($index, $queryoptions, $querystring, $step, $to);
-			
-			$this->data['nextlink'] = $pagelinks['nextlink'];
-			$this->data['prevlink'] = $pagelinks['prevlink'];
-			
-			//Other news
-			$this->data['othernews'] = $this->model_core_media->getPaginationList($queryoptions, $step+1, $to);
-			for($i=0;$i<count($this->data['othernews']);$i++)
-			{
-				$this->data['othernews'][$i]['statusdate'] = $this->date->formatMySQLDate($this->data['othernews'][$i]['statusdate'], 'longdate', "/");
-				$link = $this->document->createLink($sitemapid,$this->data['othernews'][$i]['alias']);
-				$this->data['othernews'][$i]['link'] = $link;
-			}
-			
-		}
+
 		
 		$this->id="news";
 		$this->template=$template['template'];

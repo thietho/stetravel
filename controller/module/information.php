@@ -15,7 +15,8 @@ class ControllerModuleInformation extends Controller
 		
 		
 		$this->data['media'] = $this->model_core_media->getItem($this->member->getSiteId().$sitemapid);
-		$this->document->title .= " - ".$this->data['media']['title'];
+        if(isset($this->data['media']['title']))
+		    $this->document->title .= " - ".$this->data['media']['title'];
 		if(count($this->data['media']) == 0)
 		{
 			$this->data['media']['description'] = "Updating...";

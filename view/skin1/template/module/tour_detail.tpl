@@ -9,7 +9,7 @@
         <div class="product-mainimage">
         	<table>
             	<tr valign="middle">
-                	<td id="product-preview" height="250px" align="center"><a class="zoom" href="<?php echo $tour['arr_imagepreview'][0]?>"><img  src="<?php echo $tour['arr_imagethumbnail'][0]?>" /></a></td>
+                	<td id="product-preview" align="center"><a class="zoom" href="<?php echo $tour['arr_imagepreview'][0]?>"><img  src="<?php echo $tour['arr_imagethumbnail'][0]?>" /></a></td>
                 </tr>
             </table>
 	        
@@ -172,7 +172,7 @@ $("#ben-next").click(function(){
             	<?php echo html_entity_decode($tour['thongtin'])?>
                 
             </p>
-            <?php if(count($data_samplecode)>1){ ?>
+            <?php if(isset($data_samplecode)) if(count($data_samplecode)>1){ ?>
             <p>
             	<?php foreach($data_samplecode as $key => $item){?>
                 <a href="<?php echo $this->document->createLink($this->document->sitemapid,$item['alias'])?>" title="<?php echo $item['color']?>"><img src="<?php echo $item['icon']?>" /></a>

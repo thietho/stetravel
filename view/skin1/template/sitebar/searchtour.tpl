@@ -70,10 +70,10 @@
     </div>
 </div>
 <script language="javascript">
-$("#<?php echo $para['loaitour']?>").attr('checked','checked');
-$('#diemdi').val("<?php echo $para['diemdi']?>");
-$('#diemden').val("<?php echo $para['diemden']?>");
-$('#gia').val("<?php echo $para['gia']?>");
+$("#<?php echo @$para['loaitour']?>").attr('checked','checked');
+$('#diemdi').val("<?php echo @$para['diemdi']?>");
+$('#diemden').val("<?php echo @$para['diemden']?>");
+$('#gia').val("<?php echo @$para['gia']?>");
 $('#btnSearch').click(function(e) {
 	if($('#txt_search').val()!='Tour du lịch, điểm đến du lịch...')
     	window.location = "<?php echo $this->document->createLink('searchtour')?>?keyword="+ $('#txt_search').val();

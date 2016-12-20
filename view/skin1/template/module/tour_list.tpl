@@ -21,7 +21,7 @@
                         	<div class="ste_tentour"><a href="<?php echo $tour['link']?>"><?php echo $tour['tentour']?></a></div>
                             <div><?php echo $tour['thongtinvantac']?></div>
                             <div class="ste-tourprice">
-                            	Giá: <strong><?php echo $this->string->numberFormate($tour[giatour])?></strong>
+                            	Giá: <strong><?php echo $this->string->numberFormate($tour['giatour'])?></strong>
                                 
                                 <a class="ste-button-order ben-right" href="<?php echo $tour['linkorder']?>">
                                 	Đặt tour
@@ -45,5 +45,5 @@
             <?php } ?>
         <?php } ?>
     </table>
-    <?php echo $pager?>
+    <?php if(isset($pager)) echo $pager?>
 </div>
