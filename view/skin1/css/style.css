@@ -610,7 +610,7 @@ display:block;
 #ben-maincontent .ben-section{}
 
 .ben-section-content{}
-.ben-sidebar .ben-section-content{border:thin solid #c9c2c2;padding:5px;}
+.ben-sidebar .ben-section-content{border:thin solid red;padding:5px;}
 #ben-maincontent .ben-section-content{}
 
 .ben-section-title {
@@ -627,9 +627,9 @@ display:block;
 }
 .ben-sidebar .ben-section-title 
 {
-	
+	border-radius: 10px 10px 0 0;
 	padding:8px 15px;
-	background:url(../image/bg-sitebar-title.png) no-repeat;
+	background:red;
 	color: #FFF;
 	font: 1.2em sans-serif;
 	font-weight:bold;
