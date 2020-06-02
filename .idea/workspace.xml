@@ -3,8 +3,171 @@
   <component name="ChangeListManager">
     <list default="true" id="9f26d74c-f66f-41ad-a8e4-a9df46c6b73d" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/skin1/image/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/image/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/album.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/album.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/blockui.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/blockui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/ie_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/ie_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/jquery-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/jquery.ad-gallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/jquery.ad-gallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/jquery.fancybox-1.3.4.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/jquery.fancybox-1.3.4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/jquery.tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/jquery.tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/niceform.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/niceform.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/nivo-slider.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/nivo-slider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/objectpack1.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/objectpack1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/preview.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/preview.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/product.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/product.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/stickytooltip.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/stickytooltip.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/css/wt-rotator.css" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/css/wt-rotator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/ajaxupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/ajaxupload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/control.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/control.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/hoaroi.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/hoaroi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/ie_png.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/ie_png.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/java.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/java.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery-tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery-tooltip.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ad-gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ad-gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.bgiframe-2.1.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.bgiframe-2.1.2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.blockUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.blockUI.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.carouFredSel-6.2.1.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.carouFredSel-6.2.1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.effects.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.effects.core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.fancybox-1.3.4.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.fancybox-1.3.4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.mousewheel-3.0.4.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.mousewheel-3.0.4.pack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.nivo.slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.nivo.slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.tabs.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.tabs.pack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.button.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.draggable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.mouse.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.mouse.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.position.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.position.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.resizable.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.resizable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/jquery.ui.widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/jquery.ui.widget.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/maxheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/maxheight.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/menu-collapsed.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/menu-collapsed.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/preview.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/preview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/product.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/product.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/snowstorm.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/snowstorm.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/ui.datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/ui.datepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/uploadattament.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/uploadattament.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/uploadfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/uploadfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/uploadpreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/uploadpreview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/uploadvideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/uploadvideo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/js/wishlist.js" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/js/wishlist.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/active.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/active.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/activelink.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/activelink.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/booking.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/booking.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/cart.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/cart.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/cart_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/cart_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/changepass.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/changepass.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/checkout.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/checkout.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/checkoutcomplete.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/checkoutcomplete.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/emailactive.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/emailactive.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/googsearch.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/googsearch.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/historyorder.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/historyorder.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/login.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/media.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/media.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/member.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/member.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/memberinfor.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/memberinfor.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/message_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/message_form.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/message_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/message_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/message_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/message_view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/register.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/register.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/search.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/search.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/searchtour.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/searchtour.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/sitemap.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/sitemap.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/wishlist.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/wishlist.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/addon/wishlist_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/addon/wishlist_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/brand.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/common/brand.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/email.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/common/email.tpl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/skin1/template/common/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/common/footer.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/goldrate.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/common/goldrate.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/common/header.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/tygia.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/common/tygia.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/banner.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/banner.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/bannerhome.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/bannerhome.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/chuongtrinh_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/chuongtrinh_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/content.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/content.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/doitackhachhang_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/doitackhachhang_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/news_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/news_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/product.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/product.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/tour_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/tour_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/home/video.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/home/video.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/layout/home.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/layout/home.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/album_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/album_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/album_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/album_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/banner_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/banner_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/category_brand.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/category_brand.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/comment_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/comment_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/contact.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/contact.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/content_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/content_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/doitac_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/doitac_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/download_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/download_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/event_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/event_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/event_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/event_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/giangvien_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/giangvien_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/information.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/information.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/location.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/location.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/news_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/news_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/news_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/news_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/product_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/product_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/product_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/product_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/project_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/project_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/register_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/register_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/tour_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/tour_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/tour_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/tour_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/traning_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/traning_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/traning_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/traning_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/video_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/video_detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/video_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/video_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/module/video_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/module/video_view.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/page/detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/page/detail.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/page/home.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/page/home.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/leftsidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/leftsidebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/singlecolumn.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/singlecolumn.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/styledemo.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/styledemo.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/pagesample/threecolumn.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/pagesample/threecolumn.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sample/blanklist.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sample/blanklist.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sample/defaultlist.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sample/defaultlist.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sample/nicelist.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sample/nicelist.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/abc.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/abc.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/banner.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/banner.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/cart.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/cart.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/cart_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/cart_list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/catalogue.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/catalogue.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/dangkynhantin.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/dangkynhantin.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/danhgianuochoa.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/danhgianuochoa.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/exchange.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/exchange.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/facebook.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/facebook.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/faq.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/faq.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/flogin.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/flogin.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/gallery.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/gallery.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/goiqua.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/goiqua.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/hitcounter.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/hitcounter.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/login.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/memberinfor.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/memberinfor.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/myaccount.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/myaccount.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/news.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/news.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/nuochoatheogia.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/nuochoatheogia.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/question.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/question.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/question_result.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/question_result.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/search.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/search.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/searchproduct.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/searchproduct.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/searchtour.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/searchtour.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/sitebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/sitebar.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/submenu.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/submenu.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/supportonline.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/supportonline.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/trackingorder.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/trackingorder.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/weblink.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/weblink.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/sitebar/weblink1.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/sitebar/weblink1.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/viewtype/des.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/viewtype/des.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/viewtype/gallery.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/viewtype/gallery.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/viewtype/line.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/viewtype/line.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/viewtype/list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/viewtype/list.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/warring/cart.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/warring/cart.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/warring/wishlist.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/warring/wishlist.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,15 +175,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
-  </component>
-  <component name="FavoritesManager">
-    <favorites_list name="stetravel" />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -42,13 +200,14 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="FullScreen" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FullScreen" value="false" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
@@ -57,18 +216,6 @@
     <configuration default="true" type="JavascriptDebugType" singleton="true">
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -81,15 +228,31 @@
       <option name="presentableId" value="Default" />
       <updated>1482240361226</updated>
       <workItem from="1582632942917" duration="530000" />
+      <workItem from="1591066727049" duration="232000" />
+      <workItem from="1591066977893" duration="154000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
       <collection />
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="361" y="71" key="#Deployment" timestamp="1591067037048">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="361" y="71" key="#Deployment/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591067037048" />
+    <state x="444" y="94" key="#Options" timestamp="1591067007734">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="444" y="94" key="#Options/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591067007734" />
+    <state x="561" y="143" key="ftp.server.browser" timestamp="1591066954638">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="561" y="143" key="ftp.server.browser/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591066954638" />
   </component>
 </project>

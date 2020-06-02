@@ -396,6 +396,7 @@ input.ben-button:active {border-style: inset;}
 	width: 1000px;
 	height:140px;
 	padding-bottom: 0px;
+    position: relative;
 }
 
 
@@ -420,7 +421,7 @@ input.ben-button:active {border-style: inset;}
 	position:absolute;
 	color:red;
 	padding-top:58px;
-	padding-left:715px;
+	right: 0;
 }
 #ben-hotline span
 {

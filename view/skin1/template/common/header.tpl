@@ -7,7 +7,7 @@
         
         
     	
-        <div class="ben-right" id="ben-hotline">HOT LINE: <span>0909 556 023‏</span></div>
+        <div class="ben-right" id="ben-hotline">HOT LINE: <span>02943 77 78 79</span></div>
         <div class="ben-navigation ben-right">
         
             <ul id="ben-main-nav">
@@ -58,7 +58,7 @@ $('#txtsearch').keyup(function(e) {
 	}
 });
 <?php
-	if(@$_GET['keyword'])
+	if($_GET['keyword'])
 	{
 ?>
 $(document).ready(function(e) {
