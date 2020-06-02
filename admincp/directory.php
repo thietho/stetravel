@@ -1,7 +1,7 @@
 <?php
 // HTTP
-define('HTTP_SERVER', 'http://localhost:81/stetravel/admincp/');
-define('HTTP_IMAGE', 'http://localhost:81/stetravel/file/');
+define('HTTP_SERVER', 'http://saigontour-travinh.com/admincp/');
+define('HTTP_IMAGE', 'http://saigontour-travinh.com/file/');
 
 // HTTPS
 define('HTTPS_SERVER', '');

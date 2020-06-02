@@ -32,24 +32,24 @@ class ControllerModuleTour extends Controller
 		}
 		$this->data['title'] = $title;
 		$this->data['data_tour'] = array();
-		if(!isset($template['paging']))
+		if(!$template['paging'])
 		{
 			$this->data['data_tour'] = $data_tour;
 		}
 		else
 		{
 			$page = $_GET['page'];
-			$x=$page;
+			$x=$page;		
 			$limit = $template['itemofpage'];
 			$total = count($data_tour);
 			//$uri = $this->document->createLink($sitemapid);
 			$uri = $this->document->getURI();
-			// work out the pager values
-			$this->data['pager']  = $this->pager->pageLayoutWeb($total, $limit, $page,$uri);
-
-			$pager  = $this->pager->getPagerData($total, $limit, $page);
-			$offset = $pager->offset;
-			$limit  = $pager->limit;
+			// work out the pager values 
+			$this->data['pager']  = $this->pager->pageLayoutWeb($total, $limit, $page,$uri); 
+			
+			$pager  = $this->pager->getPagerData($total, $limit, $page); 
+			$offset = $pager->offset; 
+			$limit  = $pager->limit; 
 			$page   = $pager->page;
 			for($i=$offset;$i < $offset + $limit && count($data_tour[$i])>0;$i++)
 			{

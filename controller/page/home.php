@@ -48,13 +48,11 @@ class ControllerPageHome extends Controller
 						  
 						  );
 			$data_tour = array();
-            $listtournoibat = '';
-            if(isset($this->document->setup['listtournoibat']))
-			    $listtournoibat = $this->document->setup['listtournoibat'];
+			$listtournoibat = $this->document->setup['listtournoibat'];
 			if($listtournoibat)
 			{
 				
-				$arr_tourid = explode(',',$listtournoibat);
+				$arr_tourid = split(',',$listtournoibat);
 				foreach($arr_tourid as $tourid)
 				{
 					$tour = $this->model_ste_tour->getItem($tourid);
@@ -78,13 +76,11 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-            $listtourhangngay = '';
-            if(isset($this->document->setup['listtourhangngay']))
-			    $listtourhangngay = $this->document->setup['listtourhangngay'];
+			$listtourhangngay = $this->document->setup['listtourhangngay'];
 			if($listtourhangngay)
 			{
 				
-				$arr_tourid = explode(',',$listtourhangngay);
+				$arr_tourid = split(',',$listtourhangngay);
 				foreach($arr_tourid as $tourid)
 				{
 					$tour = $this->model_ste_tour->getItem($tourid);
@@ -108,9 +104,7 @@ class ControllerPageHome extends Controller
 						  'height' =>0,
 						  
 						  );
-            $listtourhangtuan = '';
-            if(isset($this->document->setup['listtourhangtuan']))
-			    $listtourhangtuan = $this->document->setup['listtourhangtuan'];
+			$listtourhangtuan = $this->document->setup['listtourhangtuan'];
 			if($listtourhangtuan)
 			{
 				

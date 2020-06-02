@@ -182,9 +182,9 @@ class ModelCoreCategory extends Model
 		$rows = $this->getChild($id);
 		
 		@$arr['countchild'] = count(rows);
-		if(isset($arr['parent']))
-            if($arr['parent'] != "")
-                    $parentpath .= "-".$arr['parent'];
+		
+		if($arr['parent'] != "") 
+			$parentpath .= "-".$arr['parent'];
 		
 		if($id!="")
 		{

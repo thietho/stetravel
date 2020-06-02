@@ -28,7 +28,8 @@ class ControllerModuleProductlist extends Controller
 		if($headername!="")
 			$this->data['sitemap']['sitemapname'] = $headername;
 		
-
+		
+		$step = (int)$this->request->get['step'];
 		$to = $count;
 		//$_GET = $this->document->getPara();
 		//Get list
@@ -45,10 +46,8 @@ class ControllerModuleProductlist extends Controller
 		$queryoptions['mediaparent'] = '';
 		$queryoptions['mediatype'] = '%';
 		$queryoptions['refersitemap'] = $listsitemap;
-        $order = '';
-        if(isset($_GET['order']))
-		    $order = $_GET['order'];
-
+		$order = $_GET['order'];
+		$orderby = "";
 		switch($order)
 		{
 			case "az":
@@ -77,9 +76,9 @@ class ControllerModuleProductlist extends Controller
 	
 		$index = -1;
 		//Page
-		$page = 0;
-		if(isset($_GET['page']))
-		    $page = $_GET['page'];
+		
+		
+		$page = $_GET['page'];
 		
 		$x=$page;		
 		$limit = $to;
@@ -93,53 +92,51 @@ class ControllerModuleProductlist extends Controller
 		$offset = $pager->offset; 
 		$limit  = $pager->limit; 
 		$page   = $pager->page;
-        if(count($medias))
-            for($i=@$offset;$i < @$offset + $limit && count(@$medias[$i])>0;$i++)
-            //foreach($medias as $media)
-            {
-                $index += 1;
-                $media = $medias[$i];
-
-                $arr = $this->string->referSiteMapToArray($media['refersitemap']);
-                $sitemapid = $arr[0];
-
-
-                $link = $this->document->createLink($sitemapid,$media['alias']);
-                $imagethumbnail = "";
-                $imagetpreview = "";
-                if(isset($template['width']) && isset($template['height'])) {
-                    $imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
-                }
-                if(isset($template['widthpreview']) && isset($template['heightpreview'])) {
-                    $imagetpreview = HelperImage::resizePNG($media['imagepath'], $template['widthpreview'], $template['heightpreview']);
-                }
-
-
-                $properties = $this->string->referSiteMapToArray($media['groupkeys']);
-                $media['summary'] = html_entity_decode($media['summary']);
-                $media['link']= $link;
-                $media['properties']= $properties;
-                $media['imagethumbnail']= $imagethumbnail;
-                $media['imagetpreview']= $imagetpreview;
-                $media['statusdate']= $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/");
-
-                $this->data['medias'][] = $media;
-                /*$this->data['medias'][] = array(
-                    'mediaid' => $media['mediaid'],
-                    'title' => $media['title'],
-                    'keyword' => $media['keyword'],
-                    'summary' => html_entity_decode($media['summary']),
-                    'price' => $price,
-                    'volume' => $volume,
-                    'properties' => $properties,
-                    'imagethumbnail' => $imagethumbnail,
-                    'imagetpreview' => $imagetpreview,
-                    'fileid' => $media['imageid'],
-                    'statusdate' => $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/"),
-                    'link' => $link
-                );*/
-
-            }
+		for($i=$offset;$i < $offset + $limit && count($medias[$i])>0;$i++)
+		//foreach($medias as $media)
+		{
+			$index += 1;
+			$media = $medias[$i];
+			
+			$arr = $this->string->referSiteMapToArray($media['refersitemap']);
+			$sitemapid = $arr[0];
+			
+			
+			$link = $this->document->createLink($sitemapid,$media['alias']);
+			$imagethumbnail = "";
+			
+			//if($media['imagepath'] != "" )
+			{
+				$imagethumbnail = HelperImage::resizePNG($media['imagepath'], $template['width'], $template['height']);
+				$imagetpreview = HelperImage::resizePNG($media['imagepath'], $template['widthpreview'], $template['heightpreview']);
+			}
+			
+			
+			$properties = $this->string->referSiteMapToArray($media['groupkeys']);
+			$media['summary'] = html_entity_decode($media['summary']);
+			$media['link']= $link;
+			$media['properties']= $properties;
+			$media['imagethumbnail']= $imagethumbnail;
+			$media['imagetpreview']= $imagetpreview;
+			$media['statusdate']= $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/");
+			
+			$this->data['medias'][] = $media;
+			/*$this->data['medias'][] = array(
+				'mediaid' => $media['mediaid'],
+				'title' => $media['title'],
+				'keyword' => $media['keyword'],
+				'summary' => html_entity_decode($media['summary']),
+				'price' => $price,
+				'volume' => $volume,
+				'properties' => $properties,
+				'imagethumbnail' => $imagethumbnail,
+				'imagetpreview' => $imagetpreview,
+				'fileid' => $media['imageid'],
+				'statusdate' => $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/"),
+				'link' => $link
+			);*/
+			
+		}
 			
 			
 		/*$this->data['medias'][$i] =$media;
@@ -150,8 +147,8 @@ class ControllerModuleProductlist extends Controller
 		$this->data['medias'][$i]['statusdate']= $this->date->formatMySQLDate($media['statusdate'], 'longdate', "/");*/
 		
 		
-		if(isset($template['status']))
-		    $this->data['status'] = $template['status'];
+		
+		$this->data['status'] = $template['status'];
 		$this->data['paging'] = $template['paging'];
 		$this->data['sorting'] = $template['sorting'];
 		$this->id="news";
