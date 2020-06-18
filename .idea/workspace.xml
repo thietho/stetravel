@@ -1,473 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9f26d74c-f66f-41ad-a8e4-a9df46c6b73d" name="Default" comment="Update">
-      <change beforePath="$PROJECT_DIR$/admincp/controller/addon/nhantin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/addon/nhantin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/addon/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/addon/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/addon/phieuchi.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/addon/phieuchi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/addon/phieuthu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/addon/phieuthu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/addon/sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/addon/sitemap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/changepassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/changepassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/country.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/forgotpassword.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/forgotpassword.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/leftsidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/leftsidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/profile.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/profile.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/sitebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/sitebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/sitemapmenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/sitemapmenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/test.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/uploadattachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/uploadattachment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/common/uploadpreview.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/common/uploadpreview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/backup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/backup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/changeskin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/changeskin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/content.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/content.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/country.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/file.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/mediapopup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/mediapopup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/member.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/module.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/module.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/postcontent.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/postcontent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/postlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/postlist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/sitemap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/skin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/skin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/core/usertype.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/core/usertype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/error/not_found.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/error/not_found.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/error/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/error/permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/layout/center.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/layout/center.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/layout/dialog.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/layout/dialog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/layout/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/layout/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/layout/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/layout/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/layout/print.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/layout/print.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/layout/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/layout/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/lotte/movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/lotte/movie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/album.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/album.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/audio.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/audio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/download.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/event.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/freedownload.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/freedownload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/link.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/link.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/location.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/location.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/traning.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/traning.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/module/video.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/module/video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/page/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/page/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/quanlykho/donvitinh.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/quanlykho/donvitinh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/quanlykho/nguyenlieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/quanlykho/nguyenlieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/quanlykho/nhacungcap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/quanlykho/nhacungcap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/quanlykho/nhanvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/quanlykho/nhanvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/quanlykho/phieunhap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/quanlykho/phieunhap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/quanlykho/phieuxuat.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/quanlykho/phieuxuat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/quanlykho/sanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/quanlykho/sanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/sales/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/sales/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/ste/tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/ste/tour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/thongke/banhang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/thongke/banhang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/thongke/congno.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/thongke/congno.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/thongke/nhaphang.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/thongke/nhaphang.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/thongke/sales.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/thongke/sales.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/thongke/thongke.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/thongke/thongke.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/thongke/thuchi.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/thongke/thuchi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/controller/thongke/tonkho.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/controller/thongke/tonkho.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/directory.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/directory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/download.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/addon/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/addon/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/common/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/common/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/common/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/common/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/common/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/common/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/core/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/core/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/core/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/core/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/core/sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/core/sitemap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/english.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/english.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/error/not_found.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/error/not_found.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/error/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/error/permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/album.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/album.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/audio.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/audio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/download.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/event.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/module/video.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/module/video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/english/page/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/english/page/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/addon/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/addon/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/common/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/common/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/common/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/common/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/common/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/common/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/core/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/core/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/core/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/core/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/core/sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/core/sitemap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/error/not_found.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/error/not_found.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/error/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/error/permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/album.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/album.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/audio.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/audio.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/download.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/download.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/event.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/event.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/module/video.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/module/video.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/page/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/page/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/language/vietnam/vietnam.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/language/vietnam/vietnam.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/addon/nhantin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/addon/nhantin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/addon/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/addon/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/addon/service.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/addon/service.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/addon/thuchi.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/addon/thuchi.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/common/control.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/common/control.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/backup.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/backup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/country.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/file.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/filetype.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/filetype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/language.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/language.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/module.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/module.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/site.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/site.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/sitemap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/skin.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/skin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/core/usertype.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/core/usertype.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/lotte/movie.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/lotte/movie.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/quanlykho/donvitinh.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/quanlykho/donvitinh.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/quanlykho/nguyenlieu.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/quanlykho/nguyenlieu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/quanlykho/nhacungcap.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/quanlykho/nhacungcap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/quanlykho/nhanvien.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/quanlykho/nhanvien.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/quanlykho/phieunhapxuat.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/quanlykho/phieunhapxuat.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/quanlykho/sanpham.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/quanlykho/sanpham.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/sales/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/sales/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/sales/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/sales/session.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/sales/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/sales/shop.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/model/ste/tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/model/ste/tour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/blockui.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/blockui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/ie_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/ie_style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/jquery-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/jquery-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.tabs-ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.tabs-ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.treeTable.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.treeTable.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.treeview.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/jquery.treeview.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/ajaxupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/ajaxupload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/control.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/control.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/ie_png.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/ie_png.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery-1.4.2.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery-1.4.2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery-1.4.3.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery-1.4.3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.bentables.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.bentables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.blockUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.blockUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.cookie.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.cookie.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.dataTables.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.fileupload.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.fileupload.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.quicksearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.quicksearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.tabs.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.tabs.pack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.treeTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.treeTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.treeview.edit.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.treeview.edit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.treeview.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.treeview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.dialog.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.draggable.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.draggable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.droppable.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.droppable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.mouse.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.mouse.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.sortable.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.sortable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.widget.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/jquery.ui.widget.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/maxheight.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/maxheight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/media.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/media.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/menu-collapsed.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/menu-collapsed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/order.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/phieunhapxuat.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/phieunhapxuat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/ui.datepicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/ui.datepicker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/uploadattament.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/uploadattament.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/uploadaudio.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/uploadaudio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/uploadfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/uploadfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/uploadpreview.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/uploadpreview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/uploadsubimage.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/uploadsubimage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/js/uploadvideo.js" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/js/uploadvideo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/browseproduct.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/browseproduct.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/listproduct - Copy.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/listproduct - Copy.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/listproduct.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/listproduct.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/nhantin_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/nhantin_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_bill.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_bill.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_edit.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_edit.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_form_delivery.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_form_delivery.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_history.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_history.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/order_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuchi_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuchi_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuchi_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuchi_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuchi_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuchi_view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuthu_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuthu_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuthu_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuthu_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuthu_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/phieuthu_view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/product_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/product_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/sitemap_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/sitemap_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/addon/sitemap_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/addon/sitemap_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/changepassword.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/changepassword.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/dashboard.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/dashboard.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/footer.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/forgotpassword.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/forgotpassword.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/header.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/header.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/login.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/permission.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/permission.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/profile.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/profile.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/sitebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/sitebar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/common/sitemapmenu.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/common/sitemapmenu.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/category_content.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/category_content.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/category_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/category_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/category_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/category_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/changeskin.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/changeskin.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/comment_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/comment_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/content.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/content.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/file.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/file.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/file_detail.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/file_detail.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/file_grid.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/file_grid.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/file_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/file_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/finecontact.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/finecontact.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/folder_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/folder_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/folder_move_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/folder_move_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_map.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_map.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_usefile.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/media_usefile.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/mediapopup_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/mediapopup_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_congno.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_congno.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/member_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/message_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/message_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/message_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/message_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/message_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/message_view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_move.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_move.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_permission.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/module_permission.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_form_price.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_form_price.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_list_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/post_list_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/price_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/price_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/site_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/site_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/site_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/site_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/sitemap_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/sitemap_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/sitemap_forward.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/sitemap_forward.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/sitemap_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/sitemap_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/skin_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/skin_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/skin_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/skin_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/subinfor_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/subinfor_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/user_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/user_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/user_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/user_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/usertype_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/usertype_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/core/usertype_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/core/usertype_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/error/not_found.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/error/not_found.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/error/permission.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/error/permission.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/layout/center.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/layout/center.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/layout/dialog.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/layout/dialog.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/layout/home.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/layout/home.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/layout/login.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/layout/login.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/layout/print.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/layout/print.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/layout/user.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/layout/user.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/lotte/movie_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/lotte/movie_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/lotte/movie_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/lotte/movie_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/lotte/movie_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/lotte/movie_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/freedownload_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/freedownload_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/freedownload_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/freedownload_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/link_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/link_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/link_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/link_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/location_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/location_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/product.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/product.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_cat.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_cat.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_cat_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_cat_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_history.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_history.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_import.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_import.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_selected.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/product_selected.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/traning_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/traning_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/module/traning_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/module/traning_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/page/home.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/page/home.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/donvitinh_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/donvitinh_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/donvitinh_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/donvitinh_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_bangbaogia.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_bangbaogia.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_bangbaogiaform.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_bangbaogiaform.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_capnhatgia.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_capnhatgia.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_dinhluong.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_dinhluong.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_export.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_export.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_form_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_form_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_import.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_import.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_tonkho.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_tonkho.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_xemgia.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nguyenlieu_xemgia.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_congno.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_congno.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhacungcap_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_phanquyen.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_phanquyen.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_profile.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_profile.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_resetpass.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_resetpass.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/nhanvien_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieunhap_view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_view.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/phieuxuat_view.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/sanpham_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/sanpham_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/sanpham_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/sanpham_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/sanpham_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/sanpham_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/user_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/user_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/usertype_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/quanlykho/usertype_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/sales/nhanvien_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/sales/nhanvien_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/sales/shop_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/sales/shop_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/sales/shop_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/sales/shop_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/sales/shop_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/sales/shop_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/ste/tour_form.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/ste/tour_form.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/ste/tour_list.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/ste/tour_list.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/ste/tour_table.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/ste/tour_table.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/banhang.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/banhang.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/banhang_thongke.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/banhang_thongke.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/congno.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/congno.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/nhaphang.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/nhaphang.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/nhaphang_thongke.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/nhaphang_thongke.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/sales.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/sales.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/thongke.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/thongke.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/thuchi.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/thuchi.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/thuchi_thongke.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/thuchi_thongke.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/tonkho.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/thongke/tonkho.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/template/user/leftsidebar.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/template/user/leftsidebar.tpl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/admincp/view/skin1/xml/rss_video.xml" beforeDir="false" afterPath="$PROJECT_DIR$/admincp/view/skin1/xml/rss_video.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/active.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/active.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/activelink.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/activelink.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/booking.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/booking.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/brand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/brandinfor.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/brandinfor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/changepass.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/changepass.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/checkoutcomplete.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/checkoutcomplete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/compose.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/compose.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/googsearch.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/googsearch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/historyorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/historyorder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/kt.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/kt.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/member.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/member.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/memberinfor.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/memberinfor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/register.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/searchtour.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/searchtour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/sitemap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/addon/wishlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/addon/wishlist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/brand.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/brand.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/footer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/goldrate.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/goldrate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/tygia.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/tygia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/uploadattachment.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/uploadattachment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/uploadpreview.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/uploadpreview.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/validate.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/validate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/common/warring.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/common/warring.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/group/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/group/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/layout/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/layout/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/block.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/block.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/contact.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/contact.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/information.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/information.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/location.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/location.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/pagedetail.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/pagedetail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/pagelist.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/pagelist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/product.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/product.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/productlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/productlist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/tour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/module/traning.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/module/traning.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/page/detail.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/page/detail.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/page/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/page/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pagesample/leftsidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pagesample/leftsidebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pagesample/singlecolumn.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pagesample/singlecolumn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pagesample/styledemo.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pagesample/styledemo.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/pagesample/threecolumn.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/pagesample/threecolumn.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sample/blanklist.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sample/blanklist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sample/defaultlist.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sample/defaultlist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sample/nicelist.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sample/nicelist.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/services/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/services/media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/abc.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/abc.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/banner.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/banner.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/cart.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/cart.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/catalogue.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/catalogue.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/dangkynhantin.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/dangkynhantin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/danhgianuochoa.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/danhgianuochoa.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/exchange.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/exchange.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/facebook.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/facebook.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/faq.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/faq.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/gallery.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/gallery.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/goiqua.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/goiqua.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/hitcounter.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/hitcounter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/myaccount.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/myaccount.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/news.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/nuochoatheogia.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/nuochoatheogia.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/question.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/question.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/searchproduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/searchproduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/searchtour.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/searchtour.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/sitebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/sitebar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/submenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/submenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/supportonline.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/supportonline.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/trackingorder.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/trackingorder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/sitebar/weblink.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/sitebar/weblink.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/addon/nhantin.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/addon/nhantin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/addon/order.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/addon/order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/ben/nhantin.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/ben/nhantin.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/common/counter.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/common/counter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/category.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/comment.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/comment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/country.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/country.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/file.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/file.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/media.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/media.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/message.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/message.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/sitemap.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/sitemap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/core/user.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/core/user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/ste/tour.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/ste/tour.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/skin1/template/common/footer.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/skin1/template/common/footer.tpl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -529,7 +83,8 @@
       <updated>1482240361226</updated>
       <workItem from="1582632942917" duration="530000" />
       <workItem from="1591066727049" duration="232000" />
-      <workItem from="1591066977893" duration="558000" />
+      <workItem from="1591066977893" duration="2107000" />
+      <workItem from="1591884814093" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="Update">
       <created>1591067472974</created>
@@ -538,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591067472975</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update">
+      <created>1591067766055</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591067766055</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -554,6 +116,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -573,10 +136,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="444" y="94" key="#Options/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591067007734" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591067480449">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1591072699164">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591067480449" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1591072699164" />
     <state x="561" y="143" key="ftp.server.browser" timestamp="1591066954638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -6,7 +6,7 @@
 
         <p class="companyinfo">
             VP TP.HCM: M Floor, 117 – 119 Lý Chính Thắng, Phường 7, Quận 3, TP.HCM<br />
-            Tel: (+84-08)  6678 1030<br />
+            Tel: 0937 158 789<br />
             Email:  dulich@saigontour-travinh.com<br>
             Website:  www.saigontour-travinh.com
         </p>
@@ -18,7 +18,7 @@
 
         <p class="companyinfo">
             VP TRÀ VINH: 178 Mậu Thân, Phường 9, TP. TRÀ VINH<br />
-            Tel: 0937 158 789<br />
+            Tel: 02943 77 78 79<br />
             
             Email:  dulich@saigontour-travinh.com<br>
             Website:  www.saigontour-travinh.com
