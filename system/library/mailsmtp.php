@@ -6,19 +6,19 @@ final class MailSMTP {
 	{
 		$mail = new PHPMailer();
 		$mail->IsSMTP(); // set mailer to use SMTP
-		/*$mail->Host = "smtp.gmail.com"; // specify main and backup server
+		$mail->Host = "smtp.gmail.com"; // specify main and backup server
 		$mail->Port = 465; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = 'ssl';
-		$mail->Username = "thietho1982@gmail.com"; // your SMTP username or your gmail username
-		$mail->Password = "Ho9501424"; // your SMTP password or your gmail password*/
+		$mail->Username = "dulichste@gmail.com"; // your SMTP username or your gmail username
+		$mail->Password = "phamquangkiet"; // your SMTP password or your gmail password*/
 		
-		$mail->Host = "mail.stetravel.com"; // specify main and backup server
+		/*$mail->Host = "mail.stetravel.com"; // specify main and backup server
 		$mail->Port = 587; // set the port to use
 		$mail->SMTPAuth = true; // turn on SMTP authentication
 		$mail->SMTPSecure = '';
 		$mail->Username = "dulich@stetravel.com"; // your SMTP username or your gmail username
-		$mail->Password = "STETravel357";
+		$mail->Password = "STETravel357";*/
 		
 		$from = $data['from']; // Reply to this email
 		$arremail = split(',',$data['to']);
