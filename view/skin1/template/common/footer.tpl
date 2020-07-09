@@ -18,7 +18,7 @@
 
         <p class="companyinfo">
             VP TRÀ VINH: 178 Mậu Thân, Phường 9, TP. TRÀ VINH<br />
-            Tel: 02943 77 78 79<br />
+            Tel: 02946 28 78 79<br />
             
             Email:  dulich@saigontour-travinh.com<br>
             Website:  www.saigontour-travinh.com
